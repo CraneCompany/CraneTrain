@@ -13,6 +13,16 @@ public class GlobalManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Controls();
+    }
+
+    void Controls()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            
+        }
+        //start callibration
         if (Input.GetKeyDown(KeyCode.C))
         {
             f_foveInterface.EnsureEyeTrackingCalibration();

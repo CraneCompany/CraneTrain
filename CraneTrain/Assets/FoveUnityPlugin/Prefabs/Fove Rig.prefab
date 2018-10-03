@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114000010313761880}
   m_Layer: 0
   m_Name: Fove Interface
-  m_TagString: Untagged
+  m_TagString: FIB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

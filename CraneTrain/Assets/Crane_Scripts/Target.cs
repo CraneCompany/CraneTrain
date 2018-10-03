@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestObject : MonoBehaviour {
+public class Target: MonoBehaviour {
     private GazeableObject GazeableObject;
 
 	// Use this for initialization
@@ -12,9 +12,13 @@ public class QuestObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.T) && GazeableObject.OnTarget())
+        if  (GazeableObject.OnTarget())//&& (Input.GetKeyDown(KeyCode.T)))
         {
-            GetComponent<Renderer>().material.color = Color.red;
-        } 
+            GetComponent<Renderer>().material.color = Color.blue;
+        }
+        else
+        {
+            GetComponent<Renderer>().material.color = Color.white;
+        }
 	}
 }

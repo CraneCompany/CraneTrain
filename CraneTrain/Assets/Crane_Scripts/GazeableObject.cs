@@ -2,13 +2,14 @@
 
 public class GazeableObject : MonoBehaviour
 {
-    public FoveInterfaceBase foveInterface;
+    private FoveInterfaceBase foveInterface;
 
     private Collider my_collider;
     private bool b_onTarget, b_eyesClosed;
     void Start()
     {
         my_collider = GetComponent<Collider>();
+        foveInterface = GameObject.FindGameObjectWithTag("FIB").GetComponent<FoveInterfaceBase>();
     }
 
     void Update()
