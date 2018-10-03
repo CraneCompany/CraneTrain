@@ -12,13 +12,23 @@ public class Target: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if  (GazeableObject.OnTarget())//&& (Input.GetKeyDown(KeyCode.T)))
-        {
-            GetComponent<Renderer>().material.color = Color.blue;
-        }
-        else
-        {
-            GetComponent<Renderer>().material.color = Color.white;
-        }
+        //Changes the color if looked on.
+        //if  (GazeableObject.OnTarget())
+        //{
+        //    GetComponent<Renderer>().material.color = Color.blue;
+        //}
+        //else
+        //{
+        //    GetComponent<Renderer>().material.color = Color.white;
+        //}
+        DeleteOnLook();
 	}
+
+    void DeleteOnLook()
+    {
+        if (GazeableObject.OnTarget())
+        {
+            GlobalManager.singleton_GlobalManager.DestroyBlock();
+        }
+    }
 }
