@@ -12,15 +12,6 @@ public class Target: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //Changes the color if looked on.
-        //if  (GazeableObject.OnTarget())
-        //{
-        //    GetComponent<Renderer>().material.color = Color.blue;
-        //}
-        //else
-        //{
-        //    GetComponent<Renderer>().material.color = Color.white;
-        //}
         DeleteOnLook();
 	}
 

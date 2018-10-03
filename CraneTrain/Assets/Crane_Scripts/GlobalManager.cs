@@ -1,18 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class GlobalManager : MonoBehaviour {
+public class GlobalManager : MonoBehaviour
+{
     public FoveInterfaceBase f_foveInterface;
     public static GlobalManager singleton_GlobalManager;
 
     #region GameLoop
-    public GameObject[] goA_targets;
-    public float timer = 3;
+    public List<GameObject> goL_targets;
+    public float f_timer = 3;
     private bool b_activeTarg = false;
     private bool b_isTiming = false;
     private GameObject go_activeTarg;
+
+    public float f_goodTime = 0.5f, f_mediumTime = 1.5f, f_badTime = 3f;
+    private int i_goodCount = 0, i_mediumCount = 0, i_badCount = 0;
+    public Text txt_good, txt_medium, txt_bad;
+    public GameObject go_canvas;
+    private float f_endTime = 10f;
     #endregion
 
     void Awake()
@@ -28,29 +37,28 @@ public class GlobalManager : MonoBehaviour {
         DontDestroyOnLoad(singleton_GlobalManager);
     }
 
-	// Use this for initialization
-	void Start ()
-	{
-        foreach (GameObject targ in goA_targets)
-        {
-            if (targ.activeInHierarchy)
-            {
-                targ.SetActive(false);
-            }
-        }
+    // Use this for initialization
+    void Start()
+    {
+       SetObjectsInactive();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         Controls();
         GameLoop();
+        if (Input.anyKeyDown)
+        {
+            DestroyBlock();
+        }
     }
 
     void Controls()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+
         }
         //start callibration
         if (Input.GetKeyDown(KeyCode.C))
@@ -69,55 +77,99 @@ public class GlobalManager : MonoBehaviour {
         }
     }
 
-    void GameLoop()
+    private void GameLoop()
     {
-        if (!b_activeTarg)
+        if (goL_targets.Count > 0)
         {
-            foreach (GameObject targ in goA_targets)
+            if (!b_activeTarg)
             {
-                //
-                if (targ.activeInHierarchy)
+                SpawnNewBlock();
+            }
+            else
+            {
+                b_isTiming = true;
+            }
+
+            #region Timing
+
+            if (b_isTiming)
+            {
+                f_timer -= 1 * Time.deltaTime;
+            }
+
+            if (f_timer <= 0.0)
+            {
+                if (go_activeTarg != null)
                 {
-                    b_activeTarg = true;
-                    return;
+                    DestroyBlock();
                 }
             }
-            SpawnNewBlock();
+            #endregion
         }
         else
         {
-            b_isTiming = true;
+            DisplayScore();
         }
-
-        #region Timing
-        if (b_isTiming)
-        {
-            timer -= 1 * Time.deltaTime;
-        }
-
-        if (timer <= 0.0)
-        {
-            if (go_activeTarg != null)
-                DestroyBlock();
-        }
-        #endregion
-
-
     }
 
-    void SpawnNewBlock()
+    private void SetObjectsInactive()
+    {
+        foreach (GameObject targ in goL_targets)
+        {
+            if (targ.activeInHierarchy)
+            {
+                targ.SetActive(false);
+            }
+        }
+    }
+
+    private void SpawnNewBlock()
     {
         Random r_rand = new Random();
-        int i_targ = Random.Range(0, goA_targets.Length - 1);
+        int i_targ = Random.Range(0, goL_targets.Count - 1);
         b_activeTarg = true;
-        goA_targets[i_targ].SetActive(true);
-        go_activeTarg = goA_targets[i_targ];
+        goL_targets[i_targ].SetActive(true);
+        go_activeTarg = goL_targets[i_targ];
     }
 
     public void DestroyBlock()
     {
+        CalculateScore();
+        goL_targets.Remove(go_activeTarg);
         Destroy(go_activeTarg);
-        timer = 3;
+        f_timer = 3;
+        b_isTiming = false;
         b_activeTarg = false;
+    }
+
+    private void CalculateScore()
+    {
+        if (f_timer <= f_goodTime)
+        {
+            i_goodCount += 1;
+        }
+        else if (f_timer <= f_mediumTime)
+        {
+            i_mediumCount += 1;
+        }
+        else
+        {
+            i_badCount += 1;
+        }
+
+        txt_good.text += i_goodCount.ToString();
+        txt_medium.text += i_mediumCount.ToString();
+        txt_bad.text += i_badCount.ToString();
+    }
+
+    private void DisplayScore()
+    {
+        go_canvas.SetActive(true);
+
+        f_endTime -= 1 * Time.deltaTime;
+        if (f_endTime <= 0)
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }
