@@ -73,6 +73,8 @@ public class GlobalManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+            //Application.LoadLevel(Application.loadedLevelName);
+            Application.LoadLevel("Scene1");
         }
     }
 
