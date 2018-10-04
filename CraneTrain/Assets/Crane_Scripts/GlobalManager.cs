@@ -12,16 +12,19 @@ public class GlobalManager : MonoBehaviour
 
     #region GameLoop
     public List<GameObject> goL_targets;
-    public float f_timer = 3;
     private bool b_activeTarg = false;
     private bool b_isTiming = false;
     private GameObject go_activeTarg;
 
+    public float f_totalTime = 3;
+    private float f_timer;
     public float f_goodTime = 0.5f, f_mediumTime = 1.5f, f_badTime = 3f;
     private int i_goodCount = 0, i_mediumCount = 0, i_badCount = 0;
     public Text txt_good, txt_medium, txt_bad;
     public GameObject go_canvas;
     private float f_endTime = 10f;
+
+    private bool b_scorePrinted = false;
     #endregion
 
     void Awake()
@@ -48,10 +51,6 @@ public class GlobalManager : MonoBehaviour
     {
         Controls();
         GameLoop();
-        if (Input.anyKeyDown)
-        {
-            DestroyBlock();
-        }
     }
 
     void Controls()
@@ -108,6 +107,11 @@ public class GlobalManager : MonoBehaviour
         }
         else
         {
+            if (!b_scorePrinted)
+            {
+                PrintScore();
+                b_scorePrinted = true;
+            }
             DisplayScore();
         }
     }
@@ -137,18 +141,18 @@ public class GlobalManager : MonoBehaviour
         CalculateScore();
         goL_targets.Remove(go_activeTarg);
         Destroy(go_activeTarg);
-        f_timer = 3;
+        f_timer = f_totalTime;
         b_isTiming = false;
         b_activeTarg = false;
     }
 
     private void CalculateScore()
     {
-        if (f_timer <= f_goodTime)
+        if ((f_totalTime - f_timer) <= f_goodTime)
         {
             i_goodCount += 1;
         }
-        else if (f_timer <= f_mediumTime)
+        else if ((f_totalTime - f_timer) <= f_mediumTime)
         {
             i_mediumCount += 1;
         }
@@ -156,7 +160,10 @@ public class GlobalManager : MonoBehaviour
         {
             i_badCount += 1;
         }
+    }
 
+    private void PrintScore()
+    {
         txt_good.text += i_goodCount.ToString();
         txt_medium.text += i_mediumCount.ToString();
         txt_bad.text += i_badCount.ToString();
