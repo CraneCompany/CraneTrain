@@ -4,64 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameLoop : MonoBehaviour {
+public class GameLoop : MonoBehaviour
+{
 
     #region Variables GameLoop
     public List<GameObject> goL_targets;
-    private bool b_activeTarg = false;
-    private bool b_isTiming = false;
-    private GameObject go_activeTarg;
-
-    public float f_totalTime = 3;
-    private float f_timer;
+    public bool b_targLifeCycle = true;
+    public int i_targNum;
     #endregion
 
     // Use this for initialization
-    void Start ()
-	{
-	    SetObjectsInactive();
-    }
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		Loop();
-	}
-
-    private void Loop()
+    void Start()
     {
-        if (goL_targets.Count > 0)
-        {
-            if (!b_activeTarg)
-            {
-                SpawnNewBlock();
-            }
-            else
-            {
-                b_isTiming = true;
-            }
+        i_targNum = 0;
+        SetObjectsInactive();
+        NextBlock();
+    }
 
-            #region Timing
-
-            if (b_isTiming)
-            {
-                f_timer -= 1 * Time.deltaTime;
-            }
-
-            if (f_timer <= 0.0)
-            {
-                if (go_activeTarg != null)
-                {
-                    DestroyBlock();
-                }
-            }
-            #endregion
-        }
-        else
-        {
-            //Add timer for switch
-            SceneManager.LoadScene("Menu");
-        }
+    // Update is called once per frame
+    void Update()
+    {
     }
 
     private void SetObjectsInactive()
@@ -75,21 +37,24 @@ public class GameLoop : MonoBehaviour {
         }
     }
 
-    private void SpawnNewBlock()
+    public void NextBlock()
     {
-        Random r_rand = new Random();
-        int i_targ = Random.Range(0, goL_targets.Count - 1);
-        b_activeTarg = true;
-        goL_targets[i_targ].SetActive(true);
-        go_activeTarg = goL_targets[i_targ];
+        if (i_targNum <= 2)
+        {
+            goL_targets[i_targNum].SetActive(true);
+            i_targNum++;
+        }
+        else
+        {
+            //Change later!
+            i_targNum = 0;
+            TrainLoop();
+            //SceneManager.LoadScene("Menu");
+        }
     }
 
-    public void DestroyBlock()
+    void TrainLoop()
     {
-        goL_targets.Remove(go_activeTarg);
-        Destroy(go_activeTarg);
-        f_timer = f_totalTime;
-        b_isTiming = false;
-        b_activeTarg = false;
-    } 
+        goL_targets[i_targNum].SetActive(true);
+    }
 }
