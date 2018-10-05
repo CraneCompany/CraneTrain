@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameLoop : MonoBehaviour {
 
-    #region GameLoop
+    #region Variables GameLoop
     public List<GameObject> goL_targets;
     private bool b_activeTarg = false;
     private bool b_isTiming = false;
@@ -14,13 +14,6 @@ public class GameLoop : MonoBehaviour {
 
     public float f_totalTime = 3;
     private float f_timer;
-    public float f_goodTime = 0.5f, f_mediumTime = 1.5f, f_badTime = 3f;
-    private int i_goodCount = 0, i_mediumCount = 0, i_badCount = 0;
-    public Text txt_good, txt_medium, txt_bad;
-    public GameObject go_canvas;
-    private float f_endTime = 10f;
-
-    private bool b_scorePrinted = false;
     #endregion
 
     // Use this for initialization
@@ -66,12 +59,8 @@ public class GameLoop : MonoBehaviour {
         }
         else
         {
-            if (!b_scorePrinted)
-            {
-                PrintScore();
-                b_scorePrinted = true;
-            }
-            DisplayScore();
+            //Add timer for switch
+            SceneManager.LoadScene("Menu");
         }
     }
 
@@ -97,45 +86,10 @@ public class GameLoop : MonoBehaviour {
 
     public void DestroyBlock()
     {
-        CalculateScore();
         goL_targets.Remove(go_activeTarg);
         Destroy(go_activeTarg);
         f_timer = f_totalTime;
         b_isTiming = false;
         b_activeTarg = false;
-    }
-
-    private void CalculateScore()
-    {
-        if ((f_totalTime - f_timer) <= f_goodTime)
-        {
-            i_goodCount += 1;
-        }
-        else if ((f_totalTime - f_timer) <= f_mediumTime)
-        {
-            i_mediumCount += 1;
-        }
-        else
-        {
-            i_badCount += 1;
-        }
-    }
-
-    private void PrintScore()
-    {
-        txt_good.text += i_goodCount.ToString();
-        txt_medium.text += i_mediumCount.ToString();
-        txt_bad.text += i_badCount.ToString();
-    }
-
-    private void DisplayScore()
-    {
-        go_canvas.SetActive(true);
-
-        f_endTime -= 1 * Time.deltaTime;
-        if (f_endTime <= 0)
-        {
-            SceneManager.LoadScene("Menu");
-        }
-    }
+    } 
 }
