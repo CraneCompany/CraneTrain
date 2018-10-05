@@ -19,7 +19,7 @@ public class Target: MonoBehaviour {
     {
         if (GazeableObject.OnTarget())
         {
-            GlobalManager.singleton_GlobalManager.DestroyBlock();
+            //GlobalManager.singleton_GlobalManager.DestroyBlock();
         }
     }
 }
