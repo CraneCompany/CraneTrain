@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     private AudioSource as_audioSource;
     public AudioClip[] ac_coinSounds = new AudioClip[3];
+    private AudioClip ac_lvlUp;
     public float f_volume;
     private int i_sCounter;
 
@@ -13,7 +14,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         i_sCounter = 0;
-        FillCoinSounds();
+        LoadSounds();
     }
 
     // Update is called once per frame
@@ -21,11 +22,11 @@ public class AudioManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlaySound();
+            PlayCoinSound();
         }
     }
 
-    void FillCoinSounds()
+    void LoadSounds()
     {
         as_audioSource = GameObject.FindGameObjectWithTag("GAS").GetComponent<AudioSource>();
         f_volume = 1;
@@ -33,9 +34,11 @@ public class AudioManager : MonoBehaviour
         {
             ac_coinSounds[i] = Resources.Load<AudioClip>("Crane_Audio/Coin" + (i + 1).ToString());
         }
+        ac_lvlUp = Resources.Load<AudioClip>("Crane_Audio/LvlUp");
+
     }
 
-    public void PlaySound()
+    public void PlayCoinSound()
     {
         if (i_sCounter == 3)
         {
@@ -43,5 +46,10 @@ public class AudioManager : MonoBehaviour
         }
         as_audioSource.PlayOneShot(ac_coinSounds[i_sCounter], f_volume);
         i_sCounter++;
+    }
+
+    public void LvlUpSound()
+    {
+        as_audioSource.PlayOneShot(ac_lvlUp);
     }
 }

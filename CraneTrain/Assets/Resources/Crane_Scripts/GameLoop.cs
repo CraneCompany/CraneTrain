@@ -9,12 +9,12 @@ public class GameLoop : MonoBehaviour
     public List<GameObject> goL_targets;
     public bool b_targLifeCycle = true;
     public int i_targNum;
+    public float f_targLifeCycle = 10;
 
     // Use this for initialization
     void Start()
     {
         i_targNum = 0;
-        //SetObjectsInactive();
         NextBlock();
     }
 
@@ -23,22 +23,11 @@ public class GameLoop : MonoBehaviour
     {
     }
 
-    private void SetObjectsInactive()
-    {
-        foreach (GameObject targ in goL_targets)
-        {
-            if (targ.activeInHierarchy)
-            {
-                targ.SetActive(false);
-            }
-        }
-    }
-
     public void NextBlock()
     {
         goL_targets[i_targNum].SetActive(true);
         i_targNum++;
-        if (i_targNum == 3)
+        if (i_targNum == goL_targets.Count)
         {
             LoopFinished();
         }
@@ -46,10 +35,6 @@ public class GameLoop : MonoBehaviour
 
     private void LoopFinished()
     {
-        //Add Scorecounter
-        //Add wincondition
-        //Add Audio
         i_targNum = 0;
-
     }
 }

@@ -113,52 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &140957696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 140957698}
-  - component: {fileID: 140957697}
-  m_Layer: 0
-  m_Name: GameLoop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &140957697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 140957696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6856de2b855aae140a381d702667bee4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goL_targets:
-  - {fileID: 1800831136}
-  - {fileID: 1578390370}
-  - {fileID: 1936630919}
-  b_targLifeCycle: 0
-  i_targNum: 0
---- !u!4 &140957698
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 140957696}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6393461, y: 1.0010085, z: 1.9057121}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +594,8 @@ GameObject:
   - component: {fileID: 1750314575}
   - component: {fileID: 1750314574}
   - component: {fileID: 1750314576}
+  - component: {fileID: 1750314577}
+  - component: {fileID: 1750314578}
   m_Layer: 0
   m_Name: _ScriptManagerObj
   m_TagString: Untagged
@@ -688,6 +644,37 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fab33015ef6525b4db08e645d8b3f762, type: 3}
   - {fileID: 8300000, guid: d1a1ab074c0856f42a4cd37507bc1f14, type: 3}
   f_volume: 0.2
+--- !u!114 &1750314577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750314573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0665489a2e501274f802087194381d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i_globalScore: 0
+  i_lvlReq: 7
+--- !u!114 &1750314578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750314573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6856de2b855aae140a381d702667bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goL_targets:
+  - {fileID: 1800831136}
+  - {fileID: 1578390370}
+  - {fileID: 1936630919}
+  b_targLifeCycle: 1
+  i_targNum: 0
+  f_targLifeCycle: 2
 --- !u!1 &1800831136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1460192788424534, guid: 783df0ba09f7b7e40980519f1738b9e8,
@@ -793,7 +780,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
