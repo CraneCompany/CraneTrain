@@ -19,7 +19,6 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         OnLook();
         LifeCycle();
     }
@@ -49,7 +48,6 @@ public class Target : MonoBehaviour
 
     private void DestroyMe()
     {
-        //gameLoop.i_targNum++;
         this.gameObject.SetActive(false);
     }
 }

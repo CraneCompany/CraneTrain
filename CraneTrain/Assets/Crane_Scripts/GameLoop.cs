@@ -6,18 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class GameLoop : MonoBehaviour
 {
-
-    #region Variables GameLoop
     public List<GameObject> goL_targets;
     public bool b_targLifeCycle = true;
     public int i_targNum;
-    #endregion
 
     // Use this for initialization
     void Start()
     {
         i_targNum = 0;
-        SetObjectsInactive();
+        //SetObjectsInactive();
         NextBlock();
     }
 
@@ -39,22 +36,20 @@ public class GameLoop : MonoBehaviour
 
     public void NextBlock()
     {
-        if (i_targNum <= 2)
+        goL_targets[i_targNum].SetActive(true);
+        i_targNum++;
+        if (i_targNum == 3)
         {
-            goL_targets[i_targNum].SetActive(true);
-            i_targNum++;
-        }
-        else
-        {
-            //Change later!
-            i_targNum = 0;
-            TrainLoop();
-            //SceneManager.LoadScene("Menu");
+            LoopFinished();
         }
     }
 
-    void TrainLoop()
+    private void LoopFinished()
     {
-        goL_targets[i_targNum].SetActive(true);
+        //Add Scorecounter
+        //Add wincondition
+        //Add Audio
+        i_targNum = 0;
+
     }
 }
