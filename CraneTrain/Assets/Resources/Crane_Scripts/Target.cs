@@ -66,7 +66,6 @@ public class Target : MonoBehaviour
     {
         f_timer = 0;
         f_t = 0;
-        //m_material.color = Color.blue;
         this.gameObject.SetActive(false);
     }
 
