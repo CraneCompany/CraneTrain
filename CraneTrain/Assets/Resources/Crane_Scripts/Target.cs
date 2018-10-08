@@ -10,12 +10,15 @@ public class Target : MonoBehaviour
     private ScoreManager cs_scoreManager;
     private GameObject go_scriptManager;
     private bool b_timer;
-    private float f_lifeTime, f_timer = 0;
+    private Material m_material;
+    private float f_lifeTime, f_timer = 0, f_t = 0;
+  
 
     // Use this for initialization
     void Start()
     {
         gazeableObject = GetComponent<GazeableObject>();
+        m_material = GetComponent<Renderer>().material;
 
         go_scriptManager = GameObject.Find("_ScriptManagerObj");
         cs_gameLoop = go_scriptManager.GetComponent<GameLoop>();
@@ -31,6 +34,7 @@ public class Target : MonoBehaviour
     {
         OnLook();
         LifeCycle();
+        ColorChange();
     }
 
     void OnLook()
@@ -62,5 +66,14 @@ public class Target : MonoBehaviour
     {
         f_timer = 0;
         this.gameObject.SetActive(false);
+    }
+
+    void ColorChange()
+    {
+        m_material.color = Color.Lerp(Color.blue, Color.red, f_t);
+        if (f_t < 1)
+        {
+            f_t += Time.deltaTime / f_lifeTime;
+        }
     }
 }
