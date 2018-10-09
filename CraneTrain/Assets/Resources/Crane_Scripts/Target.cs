@@ -49,7 +49,6 @@ public class Target : MonoBehaviour
         {
             cs_feedBackRing.ExpandOut();
         }
-        
     }
 
     public void PlayerDestroyed()

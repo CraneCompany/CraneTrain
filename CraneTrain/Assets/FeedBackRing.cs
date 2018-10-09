@@ -27,12 +27,11 @@ public class FeedBackRing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void ExpandOut()
     {
-        if (Vector3.Distance(t_childTrans.localScale, v3_buScales) > .5f)
+        if (Vector3.Distance(t_childTrans.localScale, v3_buScales) > .3f)
         {
             f_x += f_shrinkRate;
             f_y += f_shrinkRate;

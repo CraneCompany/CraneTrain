@@ -702,9 +702,9 @@ MonoBehaviour:
   - {fileID: 1800831136}
   - {fileID: 1578390370}
   - {fileID: 1936630919}
-  b_targLifeCycle: 0
+  b_targLifeCycle: 1
   i_targNum: 0
-  f_targLifeCycle: 2
+  f_targLifeCycle: 3
 --- !u!1 &1800831136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1460192788424534, guid: 783df0ba09f7b7e40980519f1738b9e8,
