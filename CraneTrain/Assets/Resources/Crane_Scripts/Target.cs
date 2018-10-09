@@ -5,23 +5,25 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     private GazeableObject gazeableObject;
-    private GameLoop cs_gameLoop;
+    private GameLoopManager cs_gameLoop;
     private AudioManager cs_Audio;
     private ScoreManager cs_scoreManager;
+    private FeedBackRing cs_feedBackRing;
     private GameObject go_scriptManager;
     private bool b_timer;
     private Material m_material;
     private float f_lifeTime, f_timer = 0, f_t = 0;
-  
+
 
     // Use this for initialization
     void Start()
     {
         gazeableObject = GetComponent<GazeableObject>();
         m_material = GetComponent<Renderer>().material;
+        cs_feedBackRing = GetComponent<FeedBackRing>();
 
         go_scriptManager = GameObject.Find("_ScriptManagerObj");
-        cs_gameLoop = go_scriptManager.GetComponent<GameLoop>();
+        cs_gameLoop = go_scriptManager.GetComponent<GameLoopManager>();
         cs_Audio = go_scriptManager.GetComponent<AudioManager>();
         cs_scoreManager = go_scriptManager.GetComponent<ScoreManager>();
 
@@ -41,12 +43,21 @@ public class Target : MonoBehaviour
     {
         if (gazeableObject.OnTarget())
         {
-            cs_gameLoop.NextBlock();
-            cs_Audio.PlayCoinSound();
-            cs_scoreManager.i_globalScore++;
-            DestroyThis();
-            //GlobalManager.singleton_GlobalManager.DestroyBlock();
+            cs_feedBackRing.ShrinkDown();
         }
+        else
+        {
+            cs_feedBackRing.ExpandOut();
+        }
+        
+    }
+
+    public void PlayerDestroyed()
+    {
+        cs_gameLoop.NextBlock();
+        cs_Audio.PlayCoinSound();
+        cs_scoreManager.i_globalScore++;
+        DestroyThis();
     }
 
     void LifeCycle()
@@ -71,10 +82,21 @@ public class Target : MonoBehaviour
 
     void ColorChange()
     {
-        m_material.color = Color.Lerp(Color.blue, Color.red, f_t);
-        if (f_t < 1)
+        if (b_timer)
         {
-            f_t += Time.deltaTime / f_lifeTime;
+            if (!gazeableObject.OnTarget())
+            {
+                m_material.color = Color.Lerp(Color.blue, Color.red, f_t);
+                if (f_t < 1)
+                {
+                    f_t += Time.deltaTime / f_lifeTime;
+                }
+            }
+        }
+        else
+        {
+            m_material.color = Color.blue;
         }
     }
+
 }
