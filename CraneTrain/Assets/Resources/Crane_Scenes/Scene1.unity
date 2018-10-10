@@ -614,23 +614,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010938986662, guid: 042142d01b081ab4ca555ec74a04c2cb,
     type: 2}
   m_PrefabInternal: {fileID: 1484307964}
---- !u!114 &1484307966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1484307965}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba7f85d458d9d041a1180c7018b9d00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioBG: {fileID: 0}
-  _audioHit: {fileID: 0}
-  _speed: 1
-  _capture: {fileID: 0}
-  _guiSkin: {fileID: 0}
-  _spinCamera: 1
 --- !u!114 &1484307967
 MonoBehaviour:
   m_ObjectHideFlags: 0
