@@ -616,9 +616,9 @@ PlayerSettings:
   cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 84ab35ed-0e84-46e8-9ce4-850ca1774356
-  projectName: CraneTrain
-  organizationId: unity_ycrt5itmltf6za
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
