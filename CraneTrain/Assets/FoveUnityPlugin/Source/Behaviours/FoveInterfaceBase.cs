@@ -11,6 +11,7 @@ using UnityEngine.VR;
 
 namespace UnityEngine
 {
+    
 	public abstract class FoveInterfaceBase : MonoBehaviour
 	{
 		public static class Version
