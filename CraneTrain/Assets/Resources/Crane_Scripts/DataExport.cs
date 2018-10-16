@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class DataExport : MonoBehaviour
 {
-    //public FoveInterface cs_FoveInterface;
+    public FoveInterface cs_FoveInterface;
+    public GameLoopManager cs_GameLoopManager;
 
     private List<string[]> rowData = new List<string[]>();
     private int i_idCount = 0;
@@ -51,7 +52,7 @@ public class DataExport : MonoBehaviour
         //handles the data for line 2 and 3
         CheckEyeAngle();
 
-        rowDataTemp[4] = "yes very quiyck";
+        rowDataTemp[4] = cs_GameLoopManager.GetLifeTime().ToString();
 
         rowData.Add(rowDataTemp);
         i_idCount += 1;
@@ -93,8 +94,8 @@ public class DataExport : MonoBehaviour
 
     private void CheckEyeAngle()
     {
-        float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), Vector3.forward);
-        float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), Vector3.forward);
+        float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
+        float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
         if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)
         {
             rowDataTemp[2] = f_leftEyeAngle.ToString();

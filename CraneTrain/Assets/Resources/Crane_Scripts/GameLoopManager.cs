@@ -33,6 +33,11 @@ public class GameLoopManager : MonoBehaviour
         }
     }
 
+    public float GetLifeTime()
+    {
+        return goL_targets[i_targNum].GetComponent<Target>().f_timer;
+    }
+
     private void LoopFinished()
     {
         i_targNum = 0;
