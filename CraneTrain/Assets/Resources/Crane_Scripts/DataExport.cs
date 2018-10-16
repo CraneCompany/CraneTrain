@@ -12,15 +12,23 @@ public class DataExport : MonoBehaviour
     private List<string[]> rowData = new List<string[]>();
     private int i_idCount = 0;
     private string[] rowDataTemp;
+
+    private bool b_seen = false; public bool b_newSeen = false;
+    private float f_reaction = 0.0f, f_newReaction;
     
     // Use this for initialization
     void Start ()
     {
         CreateDataFormat();
     }
-	
+
+    void Update()
+    {
+
+    }
+
 	// Update is called once per frame
-	void Update ()
+	void LateUpdate ()
 	{
         UpdateData();
 	    
@@ -31,6 +39,21 @@ public class DataExport : MonoBehaviour
 	    }
 	}
 
+    public void GetData()
+    {
+        cs_GameLoopManager.GetBlockData(b_newSeen, f_reaction);
+        VerifyData();
+    }
+
+    public void VerifyData()
+    {
+        if (b_newSeen != b_seen)
+        {
+            b_seen = b_newSeen;
+            f_reaction = f_newReaction;
+        }
+    }
+
     private void CreateDataFormat()
     {
         rowDataTemp = new string[4];
@@ -39,6 +62,7 @@ public class DataExport : MonoBehaviour
         rowDataTemp[1] = "Elapsed Time";
         rowDataTemp[2] = "Angle left eye";
         rowDataTemp[3] = "Angle right eye";
+        rowDataTemp[5] = "Block seen";
         rowDataTemp[4] = "Reaction time block";
         rowData.Add(rowDataTemp);
     }
@@ -52,7 +76,11 @@ public class DataExport : MonoBehaviour
         //handles the data for line 2 and 3
         CheckEyeAngle();
 
-        rowDataTemp[4] = cs_GameLoopManager.GetLifeTime().ToString();
+        bool blockAlive = false;
+        float blockTime = 0;
+        rowDataTemp[4] = b_seen.ToString();
+        rowDataTemp[5] = f_reaction.ToString();
+
 
         rowData.Add(rowDataTemp);
         i_idCount += 1;

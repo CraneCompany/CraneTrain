@@ -11,6 +11,9 @@ public class GameLoopManager : MonoBehaviour
     public int i_targNum;
     public float f_targLifeCycle = 10;
 
+    public bool b_blockDestroyed;
+    public float f_blockTime;
+
     // Use this for initialization
     void Start()
     {
@@ -33,9 +36,21 @@ public class GameLoopManager : MonoBehaviour
         }
     }
 
-    public float GetLifeTime()
+    /// <summary>
+    /// Sets the data values to given params
+    /// </summary>
+    /// <param name="status">Parameter value to for block destroyed (true is destroyed, false is alive).</param>
+    /// <param name="time">Parameter value for the reaction time, if not destroyed keep 0.0f</param>
+    /// <returns></returns>
+    public void PrepareDataVars(bool looking, float time)
     {
-        return goL_targets[i_targNum].GetComponent<Target>().f_timer;
+        b_blockDestroyed = looking;
+        f_blockTime = time;
+    }
+    public void GetBlockData(bool destroyed,  float time)
+    {
+        destroyed = b_blockDestroyed;
+        time = f_blockTime;
     }
 
     private void LoopFinished()

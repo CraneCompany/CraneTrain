@@ -46,6 +46,7 @@ public class Target : MonoBehaviour
         if (gazeableObject.OnTarget())
         {
             cs_feedBackRing.ShrinkDown();
+            cs_gameLoop.PrepareDataVars(true,f_lifeTime);
         }
         else
         {
@@ -76,6 +77,9 @@ public class Target : MonoBehaviour
 
     private void DestroyThis()
     {
+        //resets reaction time
+        cs_gameLoop.PrepareDataVars(false, 0.0f);
+
         f_timer = 0;
         f_t = 0;
         this.gameObject.SetActive(false);
