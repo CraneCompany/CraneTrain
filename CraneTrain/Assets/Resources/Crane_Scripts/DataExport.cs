@@ -25,18 +25,17 @@ public class DataExport : MonoBehaviour
     void Update()
     {
         GetData();
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("Saving");
+            SaveData();
+        }
     }
 
 	// Update is called once per frame
 	void LateUpdate ()
 	{
         UpdateData();
-	    
-	    if (Input.GetKeyDown(KeyCode.D))
-	    {
-            Debug.Log("Saving");
-            SaveData();
-	    }
 	}
 
     public void GetData()
@@ -56,20 +55,20 @@ public class DataExport : MonoBehaviour
 
     private void CreateDataFormat()
     {
-        rowDataTemp = new string[4];
+        rowDataTemp = new string[6];
         // Creating First row of titles manually..
         rowDataTemp[0] = "ID (frame)";
         rowDataTemp[1] = "Elapsed Time";
         rowDataTemp[2] = "Angle left eye";
         rowDataTemp[3] = "Angle right eye";
-        rowDataTemp[5] = "Block seen";
-        rowDataTemp[4] = "Reaction time block";
+        rowDataTemp[4] = "Block seen";
+        rowDataTemp[5] = "Reaction time block";
         rowData.Add(rowDataTemp);
     }
 
     private void UpdateData()
     {
-        rowDataTemp = new string[4];
+        rowDataTemp = new string[6];
         rowDataTemp[0] = i_idCount.ToString(); // ID
         rowDataTemp[1] = Time.deltaTime.ToString();
 
