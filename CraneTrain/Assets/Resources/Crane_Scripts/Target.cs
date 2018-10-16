@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    public float f_timer = 0;
+
     private GazeableObject gazeableObject;
     private GameLoopManager cs_gameLoop;
     private AudioManager cs_Audio;
@@ -12,7 +14,7 @@ public class Target : MonoBehaviour
     private GameObject go_scriptManager;
     private bool b_timer;
     private Material m_material;
-    private float f_lifeTime, f_timer = 0, f_t = 0;
+    private float f_lifeTime, f_t = 0;
 
 
     // Use this for initialization

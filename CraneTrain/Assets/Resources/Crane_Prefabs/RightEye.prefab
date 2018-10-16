@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33376790274249568}
   - component: {fileID: 23549493896159500}
   - component: {fileID: 114634515021497436}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RightEye
   m_TagString: RightEye
   m_Icon: {fileID: 0}

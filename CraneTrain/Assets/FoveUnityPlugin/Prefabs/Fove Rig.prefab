@@ -29,6 +29,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1082649278995860
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4562092187408612}
+  - component: {fileID: 114569240685378328}
+  m_Layer: 0
+  m_Name: Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1524966152511250
 GameObject:
   m_ObjectHideFlags: 1
@@ -37,8 +53,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4687330940896098}
-  - component: {fileID: 114928991063903942}
   - component: {fileID: 20546827918447530}
+  - component: {fileID: 114094861585733414}
   m_Layer: 0
   m_Name: RecordCamera
   m_TagString: Untagged
@@ -103,8 +119,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4687330940896098}
+  - {fileID: 4562092187408612}
   m_Father: {fileID: 4000013084846212}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4562092187408612
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082649278995860}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4000013440253868}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4687330940896098
 Transform:
@@ -160,7 +190,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -350,7 +380,7 @@ MonoBehaviour:
   antialiasSampleCount: 1
   overrideAntialiasing: 0
   enableRendering: 1
---- !u!114 &114928991063903942
+--- !u!114 &114094861585733414
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,3 +444,15 @@ MonoBehaviour:
   _lastCamera: {fileID: 20546827918447530}
   _contribCameras: []
   _useContributingCameras: 1
+--- !u!114 &114569240685378328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082649278995860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c564f88680117ab47be7157acdc9aa73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cs_FoveInterface: {fileID: 114000010313761880}

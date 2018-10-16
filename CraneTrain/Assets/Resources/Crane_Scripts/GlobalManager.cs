@@ -23,10 +23,6 @@ public class GlobalManager : MonoBehaviour
 
     void Controls()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-
-        }
         //start callibration
         if (Input.GetKeyDown(KeyCode.C))
         {

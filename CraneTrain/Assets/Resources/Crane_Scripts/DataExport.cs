@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class DataExport : MonoBehaviour
 {
-    public FoveInterface cs_FoveInterface;
+    //public FoveInterface cs_FoveInterface;
 
     private List<string[]> rowData = new List<string[]>();
     private int i_idCount = 0;
-
     private string[] rowDataTemp;
+    
     // Use this for initialization
     void Start ()
     {
@@ -21,42 +21,42 @@ public class DataExport : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    UpdateData();
-	    //Debug.Log(((FoveInterfaceBase) cs_FoveInterface).GetLeftEyeVector_Immediate());
-	    float Hoek = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), Vector3.forward);
-        Debug.Log(Hoek);
+        UpdateData();
+	    
 	    if (Input.GetKeyDown(KeyCode.D))
 	    {
+            Debug.Log("Saving");
             SaveData();
 	    }
 	}
 
     private void CreateDataFormat()
     {
-        rowDataTemp = new string[3];
+        rowDataTemp = new string[4];
         // Creating First row of titles manually..
-
-        rowDataTemp[0] = "ID";
-        rowDataTemp[1] = "Frame";
-        rowDataTemp[2] = "Elapsed Time";
-        //rowDataTemp[3] = "User Position";
-        //rowDataTemp[4] = "User Orientation";
-        //rowDataTemp[5] = "User left eye data";
-        //rowDataTemp[6] = "Degree switch left eye";
-        //rowDataTemp[7] = "User right eye data";
-        //rowDataTemp[8] = "Degree switch right eye";
+        rowDataTemp[0] = "ID (frame)";
+        rowDataTemp[1] = "Elapsed Time";
+        rowDataTemp[2] = "Angle left eye";
+        rowDataTemp[3] = "Angle right eye";
+        rowDataTemp[4] = "Reaction time block";
         rowData.Add(rowDataTemp);
     }
 
     private void UpdateData()
     {
-        rowDataTemp = new string[3];
+        rowDataTemp = new string[4];
         rowDataTemp[0] = i_idCount.ToString(); // ID
-        rowDataTemp[1] = "Frame" + i_idCount; // Frame
-        rowDataTemp[2] = Time.deltaTime.ToString();
+        rowDataTemp[1] = Time.deltaTime.ToString();
+
+        //handles the data for line 2 and 3
+        CheckEyeAngle();
+
+        rowDataTemp[4] = "yes very quiyck";
+
         rowData.Add(rowDataTemp);
         i_idCount += 1;
     }
+
     private void SaveData()
     {
         string[][] output = new string[rowData.Count][];
@@ -89,5 +89,31 @@ public class DataExport : MonoBehaviour
 #else
         return Application.dataPath +"/"+"Saved_data.csv";
 #endif
+    }
+
+    private void CheckEyeAngle()
+    {
+        float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), Vector3.forward);
+        float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), Vector3.forward);
+        if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)
+        {
+            rowDataTemp[2] = f_leftEyeAngle.ToString();
+            rowDataTemp[3] = f_rightEyeAngle.ToString();
+        }
+        else if(FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
+        {
+            rowDataTemp[2] = "eye closed";
+            rowDataTemp[3] = "eye closed";
+        }
+        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Left)
+        {
+            rowDataTemp[2] = "eye closed";
+            rowDataTemp[3] = f_rightEyeAngle.ToString();
+        }
+        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Right)
+        {
+            rowDataTemp[2] = f_leftEyeAngle.ToString();
+            rowDataTemp[3] = "eye closed";
+        }
     }
 }
