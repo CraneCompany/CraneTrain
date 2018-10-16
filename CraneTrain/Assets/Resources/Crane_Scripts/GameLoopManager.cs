@@ -11,8 +11,8 @@ public class GameLoopManager : MonoBehaviour
     public int i_targNum;
     public float f_targLifeCycle = 10;
 
-    public bool b_blockDestroyed;
-    public float f_blockTime;
+    public bool b_blockDestroyed = false;
+    public float f_blockTime = 0.0f;
 
     // Use this for initialization
     void Start()
