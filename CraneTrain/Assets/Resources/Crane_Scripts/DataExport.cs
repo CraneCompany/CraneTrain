@@ -22,7 +22,9 @@ public class DataExport : MonoBehaviour
 	void Update ()
 	{
 	    UpdateData();
-	    Debug.Log(((FoveInterfaceBase) cs_FoveInterface).GetLeftEyeVector_Immediate());
+	    //Debug.Log(((FoveInterfaceBase) cs_FoveInterface).GetLeftEyeVector_Immediate());
+	    float Hoek = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), Vector3.forward);
+        Debug.Log(Hoek);
 	    if (Input.GetKeyDown(KeyCode.D))
 	    {
             SaveData();
