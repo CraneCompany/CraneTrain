@@ -24,7 +24,7 @@ public class DataExport : MonoBehaviour
 
     void Update()
     {
-
+        GetData();
     }
 
 	// Update is called once per frame
