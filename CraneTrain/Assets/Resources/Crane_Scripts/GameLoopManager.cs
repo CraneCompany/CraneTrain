@@ -47,10 +47,15 @@ public class GameLoopManager : MonoBehaviour
         b_blockDestroyed = looking;
         f_blockTime = time;
     }
-    public void GetBlockData(bool destroyed,  float time)
+
+    public bool GetSeen()
     {
-        destroyed = b_blockDestroyed;
-        time = f_blockTime;
+        return b_blockDestroyed;
+    }
+
+    public float GetReactionTime()
+    {
+        return f_blockTime;
     }
 
     private void LoopFinished()

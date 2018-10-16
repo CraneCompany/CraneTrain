@@ -40,7 +40,8 @@ public class DataExport : MonoBehaviour
 
     public void GetData()
     {
-        cs_GameLoopManager.GetBlockData(b_newSeen, f_reaction);
+        b_newSeen = cs_GameLoopManager.GetSeen();
+        f_newReaction = cs_GameLoopManager.GetReactionTime();
         VerifyData();
     }
 
