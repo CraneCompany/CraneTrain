@@ -413,6 +413,47 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4368765947621264, guid: 9ea1f536e96d0ae45901417e7ff5aa40,
     type: 2}
   m_PrefabInternal: {fileID: 1372573121}
+--- !u!1 &847184749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847184751}
+  - component: {fileID: 847184750}
+  m_Layer: 0
+  m_Name: Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &847184750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847184749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c564f88680117ab47be7157acdc9aa73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cs_FoveInterface: {fileID: 1437903795}
+--- !u!4 &847184751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847184749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1278586499
 Prefab:
   m_ObjectHideFlags: 0
@@ -554,6 +595,10 @@ Prefab:
       propertyPath: foveInterface
       value: 
       objectReference: {fileID: 1437903795}
+    - target: {fileID: 1981993424472526, guid: 9820c0b6168a8274bbf1a53879a0dc2b, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9820c0b6168a8274bbf1a53879a0dc2b, type: 2}
   m_IsPrefabAsset: 0
@@ -601,6 +646,16 @@ Prefab:
     - target: {fileID: 4000013084846212, guid: 042142d01b081ab4ca555ec74a04c2cb, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20546827918447530, guid: 042142d01b081ab4ca555ec74a04c2cb,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 20000013469000644, guid: 042142d01b081ab4ca555ec74a04c2cb,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042142d01b081ab4ca555ec74a04c2cb, type: 2}
@@ -766,6 +821,10 @@ Prefab:
       propertyPath: foveInterface
       value: 
       objectReference: {fileID: 1437903795}
+    - target: {fileID: 1626759709604118, guid: db4e666d6b08edc41bb21d72404b49c9, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db4e666d6b08edc41bb21d72404b49c9, type: 2}
   m_IsPrefabAsset: 0
