@@ -26,8 +26,6 @@ public class MainMenuController : MonoBehaviour {
         PlayerPrefs.SetInt("quickSaveSlot", quickSaveSlotID);
     }
 
-    #region Open Different panels
-
     public void openOptions()
     {
         //enable respective panel
@@ -132,9 +130,8 @@ public class MainMenuController : MonoBehaviour {
             Debug.Log("Please write a scene name in the 'newGameSceneName' field of the Main Menu Script and don't forget to " +
                 "add that scene in the Build Settings!");
     }
-    #endregion
 
-    #region Back Buttons
+
 
     public void back_options()
     {
@@ -162,9 +159,9 @@ public class MainMenuController : MonoBehaviour {
     {
         Application.Quit();
     }
-    #endregion
 
-    #region Sounds
+
+
     public void playHoverClip()
     {
        
@@ -174,6 +171,4 @@ public class MainMenuController : MonoBehaviour {
 
     }
 
-
-    #endregion
 }
