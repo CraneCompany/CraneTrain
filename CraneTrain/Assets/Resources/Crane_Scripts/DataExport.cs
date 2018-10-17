@@ -14,17 +14,16 @@ public class DataExport : MonoBehaviour
     private string[] rowDataTemp;
 
     private bool b_seen = false; public bool b_newSeen = false;
-    private float f_reaction = 0.0f, f_newReaction;
-    
+    private float f_reaction = 0.0f, f_newReaction = 0.0f;
+
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         CreateDataFormat();
     }
 
     void Update()
     {
-        GetData();
         if (Input.GetKeyDown(KeyCode.D))
         {
             Debug.Log("Saving");
@@ -32,25 +31,35 @@ public class DataExport : MonoBehaviour
         }
     }
 
-	// Update is called once per frame
-	void LateUpdate ()
-	{
+    // Update is called once per frame
+    void LateUpdate()
+    {
         UpdateData();
-	}
+    }
 
     public void GetData()
     {
         b_newSeen = cs_GameLoopManager.GetSeen();
         f_newReaction = cs_GameLoopManager.GetReactionTime();
-        VerifyData();
-    }
 
-    public void VerifyData()
-    {
-        if (b_newSeen != b_seen)
+        if (b_newSeen && f_newReaction != f_reaction)
+        {
+            f_reaction = f_newReaction;
+            b_seen = b_newSeen;
+
+            rowDataTemp[4] = b_seen.ToString();
+            rowDataTemp[5] = f_reaction.ToString();
+        }
+        else if(b_newSeen == false && b_newSeen != b_seen)
         {
             b_seen = b_newSeen;
-            f_reaction = f_newReaction;
+            rowDataTemp[4] = b_seen.ToString();
+            rowDataTemp[5] = "";
+        }
+        else
+        {
+            rowDataTemp[4] = "";
+            rowDataTemp[5] = "";
         }
     }
 
@@ -76,10 +85,9 @@ public class DataExport : MonoBehaviour
         //handles the data for line 2 and 3
         CheckEyeAngle();
 
-        bool blockAlive = false;
-        float blockTime = 0;
-        rowDataTemp[4] = b_seen.ToString();
-        rowDataTemp[5] = f_reaction.ToString();
+        GetData();
+        //rowDataTemp[4] = b_seen.ToString();
+        //rowDataTemp[5] = f_reaction.ToString();
 
 
         rowData.Add(rowDataTemp);
@@ -100,7 +108,7 @@ public class DataExport : MonoBehaviour
 
         StringBuilder sb = new StringBuilder();
 
-        for(int index = 0; index < length; index++)
+        for (int index = 0; index < length; index++)
             sb.AppendLine(string.Join(delimiter, output[index]));
 
         string s_filePath = s_getPath();
@@ -114,7 +122,7 @@ public class DataExport : MonoBehaviour
     private string s_getPath()
     {
 #if UNITY_EDITOR
-        return Application.dataPath +"/CSV/"+"Saved_data.csv";
+        return Application.dataPath + "/CSV/" + "Saved_data.csv";
 #else
         return Application.dataPath +"/"+"Saved_data.csv";
 #endif
@@ -129,7 +137,7 @@ public class DataExport : MonoBehaviour
             rowDataTemp[2] = f_leftEyeAngle.ToString();
             rowDataTemp[3] = f_rightEyeAngle.ToString();
         }
-        else if(FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
+        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
         {
             rowDataTemp[2] = "eye closed";
             rowDataTemp[3] = "eye closed";

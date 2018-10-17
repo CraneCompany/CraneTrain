@@ -29,6 +29,7 @@ public class Target : MonoBehaviour
         cs_Audio = go_scriptManager.GetComponent<AudioManager>();
         cs_scoreManager = go_scriptManager.GetComponent<ScoreManager>();
 
+
         b_timer = cs_gameLoop.b_targLifeCycle;
         f_lifeTime = cs_gameLoop.f_targLifeCycle;
     }
@@ -46,7 +47,6 @@ public class Target : MonoBehaviour
         if (gazeableObject.OnTarget())
         {
             cs_feedBackRing.ShrinkDown();
-            cs_gameLoop.PrepareDataVars(true,f_lifeTime);
         }
         else
         {
@@ -59,6 +59,7 @@ public class Target : MonoBehaviour
         cs_gameLoop.NextBlock();
         cs_Audio.PlayCoinSound();
         cs_scoreManager.i_globalScore++;
+        cs_gameLoop.PrepareDataVars(true, (f_timer - (cs_feedBackRing.f_shrinkRate * f_lifeTime)));
         DestroyThis();
     }
 
@@ -69,6 +70,7 @@ public class Target : MonoBehaviour
             if (f_timer >= f_lifeTime)
             {
                 cs_gameLoop.NextBlock();
+                cs_gameLoop.PrepareDataVars(false);
                 DestroyThis();
             }
             f_timer += 1 * Time.deltaTime;
@@ -78,8 +80,6 @@ public class Target : MonoBehaviour
     private void DestroyThis()
     {
         //resets reaction time
-        cs_gameLoop.PrepareDataVars(false, 0.0f);
-
         f_timer = 0;
         f_t = 0;
         this.gameObject.SetActive(false);

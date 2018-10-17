@@ -47,6 +47,11 @@ public class GameLoopManager : MonoBehaviour
         b_blockDestroyed = looking;
         f_blockTime = time;
     }
+    public void PrepareDataVars(bool looking)
+    {
+        b_blockDestroyed = looking;
+        //f_blockTime = time;
+    }
 
     public bool GetSeen()
     {
