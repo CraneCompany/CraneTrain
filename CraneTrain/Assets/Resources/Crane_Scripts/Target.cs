@@ -47,10 +47,12 @@ public class Target : MonoBehaviour
         if (gazeableObject.OnTarget())
         {
             cs_feedBackRing.ShrinkDown();
+            cs_gameLoop.OnOffTarget(true);
         }
         else
         {
             cs_feedBackRing.ExpandOut();
+            cs_gameLoop.OnOffTarget(false);
         }
     }
 

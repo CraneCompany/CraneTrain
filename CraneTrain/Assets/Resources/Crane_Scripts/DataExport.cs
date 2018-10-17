@@ -61,11 +61,21 @@ public class DataExport : MonoBehaviour
             rowDataTemp[4] = "";
             rowDataTemp[5] = "";
         }
+
+        if (cs_GameLoopManager.GetOnOffTarget())
+        {
+            rowDataTemp[6] = "Looking at Target";
+        }
+        else
+        {
+            rowDataTemp[6] = "Not looking at Target";
+        }
+       
     }
 
     private void CreateDataFormat()
     {
-        rowDataTemp = new string[6];
+        rowDataTemp = new string[7];
         // Creating First row of titles manually..
         rowDataTemp[0] = "ID (frame)";
         rowDataTemp[1] = "Elapsed Time";
@@ -73,22 +83,21 @@ public class DataExport : MonoBehaviour
         rowDataTemp[3] = "Angle right eye";
         rowDataTemp[4] = "Block seen";
         rowDataTemp[5] = "Reaction time block";
+        rowDataTemp[6] = "On Target";
         rowData.Add(rowDataTemp);
     }
 
     private void UpdateData()
     {
-        rowDataTemp = new string[6];
+        rowDataTemp = new string[7];
         rowDataTemp[0] = i_idCount.ToString(); // ID
         rowDataTemp[1] = Time.deltaTime.ToString();
 
         //handles the data for line 2 and 3
         CheckEyeAngle();
 
+        //handles the data for line 4 and 5
         GetData();
-        //rowDataTemp[4] = b_seen.ToString();
-        //rowDataTemp[5] = f_reaction.ToString();
-
 
         rowData.Add(rowDataTemp);
         i_idCount += 1;

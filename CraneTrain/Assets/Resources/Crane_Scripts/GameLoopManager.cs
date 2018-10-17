@@ -11,8 +11,9 @@ public class GameLoopManager : MonoBehaviour
     public int i_targNum;
     public float f_targLifeCycle = 10;
 
-    public bool b_blockDestroyed = false;
-    public float f_blockTime = 0.0f;
+    private bool b_blockDestroyed = false;
+    private float f_blockTime = 0.0f;
+    private bool b_onTarget = false;
 
     // Use this for initialization
     void Start()
@@ -50,9 +51,12 @@ public class GameLoopManager : MonoBehaviour
     public void PrepareDataVars(bool looking)
     {
         b_blockDestroyed = looking;
-        //f_blockTime = time;
     }
 
+    public void OnOffTarget(bool status)
+    {
+        b_onTarget = status;
+    }
     public bool GetSeen()
     {
         return b_blockDestroyed;
@@ -61,6 +65,11 @@ public class GameLoopManager : MonoBehaviour
     public float GetReactionTime()
     {
         return f_blockTime;
+    }
+
+    public bool GetOnOffTarget()
+    {
+        return b_onTarget;
     }
 
     private void LoopFinished()
