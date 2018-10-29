@@ -12,13 +12,18 @@ public class GlobalManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        updateParameters();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         Controls();
+    }
+    void updateParameters()
+    {
+
     }
 
     void Controls()

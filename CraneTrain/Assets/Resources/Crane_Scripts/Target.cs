@@ -6,6 +6,7 @@ public class Target : MonoBehaviour
 {
     private GazeableObject gazeableObject;
     private GameLoopManager cs_gameLoop;
+    private GlobalParameterScript cs_globalParameters;
     private AudioManager cs_Audio;
     private ScoreManager cs_scoreManager;
     private FeedBackRing cs_feedBackRing;
@@ -23,12 +24,16 @@ public class Target : MonoBehaviour
         cs_feedBackRing = GetComponent<FeedBackRing>();
 
         go_scriptManager = GameObject.Find("_ScriptManagerObj");
+
         cs_gameLoop = go_scriptManager.GetComponent<GameLoopManager>();
         cs_Audio = go_scriptManager.GetComponent<AudioManager>();
         cs_scoreManager = go_scriptManager.GetComponent<ScoreManager>();
 
-        b_timer = cs_gameLoop.b_targLifeCycle;
-        f_lifeTime = cs_gameLoop.f_targLifeCycle;
+        cs_globalParameters = GameObject.Find("_GlobalParameterScriptObj").GetComponent<GlobalParameterScript>();
+        //b_timer = cs_gameLoop.b_targLifeCycle;
+        //f_lifeTime = cs_gameLoop.f_targLifeCycle;
+        b_timer = cs_globalParameters.b_targLifeCycle;
+        f_lifeTime = cs_globalParameters.i_targLifeCycle;
     }
 
     // Update is called once per frame

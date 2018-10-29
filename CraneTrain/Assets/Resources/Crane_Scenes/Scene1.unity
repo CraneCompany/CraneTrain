@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -408,11 +408,6 @@ Transform:
   m_Father: {fileID: 425859777}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &604306041 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4368765947621264, guid: 9ea1f536e96d0ae45901417e7ff5aa40,
-    type: 2}
-  m_PrefabInternal: {fileID: 1372573121}
 --- !u!1001 &1278586499
 Prefab:
   m_ObjectHideFlags: 0
@@ -507,6 +502,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1398826275628210, guid: 9ea1f536e96d0ae45901417e7ff5aa40, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ea1f536e96d0ae45901417e7ff5aa40, type: 2}
   m_IsPrefabAsset: 0
@@ -515,7 +514,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 604306041}
+    m_TransformParent: {fileID: 1610001428}
     m_Modifications:
     - target: {fileID: 4231502331022204, guid: 9820c0b6168a8274bbf1a53879a0dc2b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -561,6 +560,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9820c0b6168a8274bbf1a53879a0dc2b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1411824043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4231502331022204, guid: 9820c0b6168a8274bbf1a53879a0dc2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1411824042}
 --- !u!114 &1437903795 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114000010313761880, guid: 042142d01b081ab4ca555ec74a04c2cb,
@@ -572,7 +576,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 604306041}
+    m_TransformParent: {fileID: 1610001428}
     m_Modifications:
     - target: {fileID: 4000013084846212, guid: 042142d01b081ab4ca555ec74a04c2cb, type: 2}
       propertyPath: m_LocalPosition.x
@@ -609,11 +613,47 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042142d01b081ab4ca555ec74a04c2cb, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1484307965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000013084846212, guid: 042142d01b081ab4ca555ec74a04c2cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1484307964}
 --- !u!1 &1578390370 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1460192788424534, guid: 783df0ba09f7b7e40980519f1738b9e8,
     type: 2}
   m_PrefabInternal: {fileID: 1278586499}
+--- !u!1 &1610001427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610001428}
+  m_Layer: 0
+  m_Name: FoveRigActive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1610001428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610001427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1484307965}
+  - {fileID: 1411824043}
+  - {fileID: 1969817221}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750314573
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +771,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 604306041}
+    m_TransformParent: {fileID: 1610001428}
     m_Modifications:
     - target: {fileID: 4943004697423356, guid: db4e666d6b08edc41bb21d72404b49c9, type: 2}
       propertyPath: m_LocalPosition.x
@@ -777,6 +817,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db4e666d6b08edc41bb21d72404b49c9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1969817221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4943004697423356, guid: db4e666d6b08edc41bb21d72404b49c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1969817220}
 --- !u!4 &2046280188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4665679223846462, guid: 783df0ba09f7b7e40980519f1738b9e8,
