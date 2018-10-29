@@ -38,5 +38,10 @@ public class GlobalManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            SceneManager.LoadScene("Testing1");
+        }
     }
 }
