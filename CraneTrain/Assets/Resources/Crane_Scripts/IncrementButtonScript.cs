@@ -5,37 +5,36 @@ using UnityEngine.UI;
 
 public class IncrementButtonScript : MonoBehaviour {
 
-    private int b_buttonValue;
+    public int i_buttonValue;
     private Text textComp;
-    //public int test;
+    private ParameterManager cs_parameterManager;
 
     // Use this for initialization
     void Start () {
-        //Debug.Log(gameObject.GetComponent<Text>());
-        //Debug.Log(textComp);
+        cs_parameterManager = GameObject.Find("ParameterManagerObj").GetComponent<ParameterManager>();
         textComp = gameObject.GetComponent<Text>();
-        //Debug.Log(textComp);
     }
 	
 	// Update is called once per frame
 	public void Plus1()
     {
-        b_buttonValue++;
+        i_buttonValue++;
         UpdateValue();
     }
 
     public void Minus1()
     {
-        b_buttonValue--;
+        i_buttonValue--;
         UpdateValue();
     }
 
     void UpdateValue()
     {
-        if (b_buttonValue < 0)
+        if (i_buttonValue < 0)
         {
-            b_buttonValue = 0;
+            i_buttonValue = 0;
         }
-        textComp.text = b_buttonValue.ToString();
+        textComp.text = i_buttonValue.ToString();
+        cs_parameterManager.UpdateParameters();
     }
 }

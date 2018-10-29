@@ -7,11 +7,13 @@ public class SceneChanger : MonoBehaviour {
 
 	// Update is called once per frame
 	public void Left () {
-        SceneManager.LoadScene(0);
+        Debug.Log("SWITCH");
+        SceneManager.LoadScene(1);
     }
 
     public void Right () {
-        SceneManager.LoadScene(0);
+        Debug.Log("SWITCH");
+        SceneManager.LoadScene(1);
     }
 
     public void Quit()
