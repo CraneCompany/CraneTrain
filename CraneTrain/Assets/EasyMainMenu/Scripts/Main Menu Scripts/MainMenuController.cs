@@ -67,6 +67,13 @@ public class MainMenuController : MonoBehaviour
         int i_thisPanel = 5;
         PanelManager(i_thisPanel);
     }
+
+    public void TestPanel()
+    {
+        int i_thisPanel = 6;
+        PanelManager(i_thisPanel);
+    }
+
     #endregion
 
     void PanelManager(int panel)
