@@ -21,7 +21,7 @@ public class ParameterManager : MonoBehaviour {
 
     void Update()
     {
-        if (i_updateTimer >= 540)
+        if (i_updateTimer >= 60)
         {
             UpdateParameters();
             i_updateTimer = 0;
