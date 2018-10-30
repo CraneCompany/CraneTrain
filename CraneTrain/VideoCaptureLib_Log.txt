@@ -1,0 +1,8 @@
+[LOG]: [FFmpegLib]: DEST URL: C:\Users\marcb\Documents/RockVR/Video/2018-10-11-10-29-16-1ECGL.mp4
+[LOG]: [FFmpegLib]: Build command: "C:/Users/marcb/Desktop/Bartiméus/Fove2/CraneTrain/Assets/StreamingAssets/RockVR/FFmpeg/Windows/ffmpeg.exe" -f rawvideo -pix_fmt rgb24 -r 30 -s 722x406 -i - -y -preset ultrafast -pix_fmt yuv420p -vcodec libx264 -crf 18 -vf vflip -framerate 30 -tune zerolatency "C:\Users\marcb\Documents/RockVR/Video/2018-10-11-10-29-16-1ECGL.mp4"
+[ERROR]: [FFmpegLib]: Failed to CreateProcess
+[ERROR]: [FFmpegLib]: Failed to create ffmpeg process
+[LOG]: [FFmpegLib]: DEST URL: C:\Users\marcb\Documents/RockVR/Video/2018-10-11-10-29-16-0468I.wav
+[LOG]: [FFmpegLib]: Build command: "C:/Users/marcb/Desktop/Bartiméus/Fove2/CraneTrain/Assets/StreamingAssets/RockVR/FFmpeg/Windows/ffmpeg.exe" -f f32le -ar 48000 -ac 2 -i - -y -preset ultrafast -tune zerolatency "C:\Users\marcb\Documents/RockVR/Video/2018-10-11-10-29-16-0468I.wav"
+[ERROR]: [FFmpegLib]: Failed to CreateProcess
+[ERROR]: [FFmpegLib]: Failed to create ffmpeg process

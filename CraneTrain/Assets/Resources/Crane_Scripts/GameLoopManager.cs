@@ -11,6 +11,10 @@ public class GameLoopManager : MonoBehaviour
     public int i_targNum;
     public float f_targLifeCycle = 10;
 
+    private bool b_blockDestroyed = false;
+    private float f_blockTime = 0.0f;
+    private bool b_onTarget = false;
+
     // Use this for initialization
     void Start()
     {
@@ -31,6 +35,41 @@ public class GameLoopManager : MonoBehaviour
         {
             LoopFinished();
         }
+    }
+
+    /// <summary>
+    /// Sets the data values to given params
+    /// </summary>
+    /// <param name="status">Parameter value to for block destroyed (true is destroyed, false is alive).</param>
+    /// <param name="time">Parameter value for the reaction time, if not destroyed keep 0.0f</param>
+    /// <returns></returns>
+    public void PrepareDataVars(bool looking, float time)
+    {
+        b_blockDestroyed = looking;
+        f_blockTime = time;
+    }
+    public void PrepareDataVars(bool looking)
+    {
+        b_blockDestroyed = looking;
+    }
+
+    public void OnOffTarget(bool status)
+    {
+        b_onTarget = status;
+    }
+    public bool GetSeen()
+    {
+        return b_blockDestroyed;
+    }
+
+    public float GetReactionTime()
+    {
+        return f_blockTime;
+    }
+
+    public bool GetOnOffTarget()
+    {
+        return b_onTarget;
     }
 
     private void LoopFinished()
