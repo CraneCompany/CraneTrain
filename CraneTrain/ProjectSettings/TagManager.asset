@@ -8,6 +8,7 @@ TagManager:
   - FIB
   - GAS
   - RightEye
+  - Trigger
   layers:
   - Default
   - TransparentFX
