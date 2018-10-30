@@ -5,12 +5,17 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour {
 
     private AudioManager am_Audio;
+    private GlobalParameterScript cs_globalParameters;
     public int i_globalScore;
     private int i_prevScore;
     public int i_lvlReq = 5;
     private bool b_lvlUpPlayed;
+
     // Use this for initialization
     void Start () {
+        cs_globalParameters = GameObject.Find("_GlobalParameterScriptObj").GetComponent<GlobalParameterScript>();
+        i_lvlReq = cs_globalParameters.i_lvlReq;
+
         am_Audio = GameObject.Find("_ScriptManagerObj").GetComponent<AudioManager>();
         i_globalScore = 0;
         i_prevScore = 0;
