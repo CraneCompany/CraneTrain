@@ -1273,7 +1273,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go_events:
-  - {fileID: 1234445222163150, guid: 43d5d4c1800856b41b2133858c34d9bd, type: 2}
   - {fileID: 1721523883909486, guid: deffab43b745eab4384b3f6ca7f0dfda, type: 2}
 --- !u!65 &1482010506
 BoxCollider:

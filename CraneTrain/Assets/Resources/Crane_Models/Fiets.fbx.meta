@@ -131,6 +131,17 @@ ModelImporter:
     100250: transform85
     100252: wiel_1
     100254: wiel_2
+    100256: pCylinder99 1
+    100258: transform86
+    100260: transform87
+    100262: transform88
+    100264: transform89
+    100266: transform90
+    100268: transform91
+    100270: transform92
+    100272: transform93
+    100274: transform94
+    100276: transform95
     400000: //RootNode
     400002: fiets_frame
     400004: group1
@@ -259,6 +270,17 @@ ModelImporter:
     400250: transform85
     400252: wiel_1
     400254: wiel_2
+    400256: pCylinder99 1
+    400258: transform86
+    400260: transform87
+    400262: transform88
+    400264: transform89
+    400266: transform90
+    400268: transform91
+    400270: transform92
+    400272: transform93
+    400274: transform94
+    400276: transform95
     2000000: persp1
     2100000: lambert1
     2300000: fiets_frame
