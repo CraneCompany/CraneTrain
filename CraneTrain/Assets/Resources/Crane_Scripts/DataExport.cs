@@ -3,44 +3,84 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public enum SCENETYPE
+{
+    NONE = 0,
+    testing = 1,
+    training = 2
+}
 
 public class DataExport : MonoBehaviour
 {
-    public FoveInterface cs_FoveInterface;
+    [SerializeField] private SCENETYPE SceneType = SCENETYPE.NONE;
+
+    private FoveInterface cs_FoveInterface;
     public GameLoopManager cs_GameLoopManager;
 
     private List<string[]> rowData = new List<string[]>();
     private int i_idCount = 0;
     private string[] rowDataTemp;
 
-    private bool b_seen = false; public bool b_newSeen = false;
-    private float f_reaction = 0.0f, f_newReaction = 0.0f;
+    private bool b_seen = false;
+    [HideInInspector] public bool b_newSeen = false;
+    private float f_reaction = 0.0f;
+    [HideInInspector] public float f_newReaction = 0.0f;
 
     // Use this for initialization
     void Start()
     {
+        //cs_FoveInterface = GameObject.Find("FoveRigActive").GetComponent<FoveInterface>();
         CreateDataFormat();
+
+        if (SceneType == SCENETYPE.NONE)
+        {
+            Debug.LogError("No SceneType has been selected");
+        }
+
+        if (SceneType == SCENETYPE.training && cs_GameLoopManager == null)
+        {
+            Debug.LogError("GameLoopManager has not been assigned");
+        }
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("Saving");
-            SaveData();
+            SaveData(SceneManager.GetActiveScene().name);
         }
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
+        Debug.Log("YEEEET");
         UpdateData();
     }
 
     public void GetData()
     {
-        b_newSeen = cs_GameLoopManager.GetSeen();
-        f_newReaction = cs_GameLoopManager.GetReactionTime();
+        switch (SceneType)
+        {
+            case SCENETYPE.testing:
+
+                break;
+            case SCENETYPE.training:
+                b_newSeen = cs_GameLoopManager.GetSeen();
+                f_newReaction = cs_GameLoopManager.GetReactionTime();
+
+                if (cs_GameLoopManager.GetOnOffTarget())
+                {
+                    rowDataTemp[6] = "Looking at Target";
+                }
+                else
+                {
+                    rowDataTemp[6] = "Not looking at Target";
+                }
+                break;
+        }      
 
         if (b_newSeen && f_newReaction != f_reaction)
         {
@@ -62,14 +102,7 @@ public class DataExport : MonoBehaviour
             rowDataTemp[5] = "";
         }
 
-        if (cs_GameLoopManager.GetOnOffTarget())
-        {
-            rowDataTemp[6] = "Looking at Target";
-        }
-        else
-        {
-            rowDataTemp[6] = "Not looking at Target";
-        }
+        
        
     }
 
@@ -99,11 +132,12 @@ public class DataExport : MonoBehaviour
         //handles the data for line 4 and 5
         GetData();
 
+        Debug.Log("about to add shit *dab*");
         rowData.Add(rowDataTemp);
         i_idCount += 1;
     }
 
-    private void SaveData()
+    public void SaveData(string scene)
     {
         string[][] output = new string[rowData.Count][];
 
@@ -120,7 +154,7 @@ public class DataExport : MonoBehaviour
         for (int index = 0; index < length; index++)
             sb.AppendLine(string.Join(delimiter, output[index]));
 
-        string s_filePath = s_getPath();
+        string s_filePath = s_getPath(scene);
         Debug.Log(s_filePath);
 
         StreamWriter outStream = System.IO.File.CreateText(s_filePath);
@@ -128,38 +162,41 @@ public class DataExport : MonoBehaviour
         outStream.Close();
     }
 
-    private string s_getPath()
+    private string s_getPath(string scene)
     {
 #if UNITY_EDITOR
-        return Application.dataPath + "/CSV/" + "Saved_data.csv";
+        return Application.dataPath + "/CSV/" + "Saved_"+ scene + "_data.csv";
 #else
-        return Application.dataPath +"/"+"Saved_data.csv";
+        return Application.dataPath +"/"+"Saved" + scene + "_data.csv";
 #endif
     }
 
     private void CheckEyeAngle()
     {
-        float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
-        float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
-        if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)
+        if(cs_FoveInterface != null)
         {
-            rowDataTemp[2] = f_leftEyeAngle.ToString();
-            rowDataTemp[3] = f_rightEyeAngle.ToString();
-        }
-        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
-        {
-            rowDataTemp[2] = "eye closed";
-            rowDataTemp[3] = "eye closed";
-        }
-        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Left)
-        {
-            rowDataTemp[2] = "eye closed";
-            rowDataTemp[3] = f_rightEyeAngle.ToString();
-        }
-        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Right)
-        {
-            rowDataTemp[2] = f_leftEyeAngle.ToString();
-            rowDataTemp[3] = "eye closed";
+            float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
+            float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
+            if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)
+            {
+                rowDataTemp[2] = f_leftEyeAngle.ToString();
+                rowDataTemp[3] = f_rightEyeAngle.ToString();
+            }
+            else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
+            {
+                rowDataTemp[2] = "eye closed";
+                rowDataTemp[3] = "eye closed";
+            }
+            else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Left)
+            {
+                rowDataTemp[2] = "eye closed";
+                rowDataTemp[3] = f_rightEyeAngle.ToString();
+            }
+            else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Right)
+            {
+                rowDataTemp[2] = f_leftEyeAngle.ToString();
+                rowDataTemp[3] = "eye closed";
+            }
         }
     }
 }

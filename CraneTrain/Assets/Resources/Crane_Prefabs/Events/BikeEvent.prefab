@@ -921,6 +921,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4512978108920960}
+  - component: {fileID: 114830864792772058}
+  - component: {fileID: 65963013452106648}
+  - component: {fileID: 54791197890612952}
   m_Layer: 0
   m_Name: Fiets
   m_TagString: Untagged
@@ -4231,6 +4234,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220398387120938}
   m_Mesh: {fileID: 4300000, guid: 0a9d6a2a13d82514280ea6e85c72a60d, type: 3}
+--- !u!54 &54791197890612952
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355255436167946}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65963013452106648
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355255436167946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22229652, y: 0.2682519, z: 0.48366532}
+  m_Center: {x: 0.0013308724, y: 0.15844497, z: 0.015895288}
 --- !u!114 &114406705383042464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4250,3 +4280,14 @@ MonoBehaviour:
   - {fileID: 1139437361319450}
   f_driveSpeed: 2.5
   f_waypointRadius: 0.2
+--- !u!114 &114830864792772058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355255436167946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd070a3c1e3fa2428967000b80583e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
