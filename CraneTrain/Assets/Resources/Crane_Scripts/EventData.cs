@@ -5,7 +5,6 @@ using UnityEngine;
 public class EventData : MonoBehaviour
 {
     private float f_lifeTime = 0.0f;
-    private bool b_seen = false;
     private bool b_checkGaze = true;
     private FoveInterface cs_foveInterface;
     private Collider col_Event;
@@ -28,19 +27,23 @@ public class EventData : MonoBehaviour
             if (cs_foveInterface.Gazecast(col_Event))
             {
                 //cs_dataExport.b_newSeen = true;
-                cs_dataExport.f_newReaction = f_lifeTime;
+                cs_dataExport.f_reaction = f_lifeTime;
                 cs_dataExport.objSeen = SEEN.YES;
+                b_checkGaze = false;
             }
         }
     }
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.name == "Trigger")
+        if (b_checkGaze)
         {
-            //cs_dataExport.b_newSeen = false;
-            cs_dataExport.objSeen = SEEN.NO;
-            b_checkGaze = false;
+            if (col.gameObject.name == "Trigger")
+            {
+                //cs_dataExport.b_newSeen = false;
+                cs_dataExport.objSeen = SEEN.NO;
+                b_checkGaze = false;
+            }
         }
     }
 }

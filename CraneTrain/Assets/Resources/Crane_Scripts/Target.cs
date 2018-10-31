@@ -49,10 +49,12 @@ public class Target : MonoBehaviour
         if (gazeableObject.OnTarget())
         {
             cs_feedBackRing.ShrinkDown();
+            cs_gameLoop.OnOffTarget(true);
         }
         else
         {
             cs_feedBackRing.ExpandOut();
+            cs_gameLoop.OnOffTarget(false);
         }
     }
 
@@ -60,6 +62,7 @@ public class Target : MonoBehaviour
     {
         cs_gameLoop.NextBlock();
         cs_gameLoop.PrepareDataVars(SEEN.YES, f_timer);
+        Debug.Log(f_timer);
         cs_Audio.PlayCoinSound();
         cs_scoreManager.i_globalScore++;
         DestroyThis();

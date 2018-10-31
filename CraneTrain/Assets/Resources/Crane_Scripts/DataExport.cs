@@ -31,15 +31,12 @@ public class DataExport : MonoBehaviour
     private int i_idCount = 0;
     private string[] rowDataTemp;
 
-    private bool b_seen = false;
-    [HideInInspector] public bool b_newSeen = false;
-    private float f_reaction = 0.0f;
-    [HideInInspector] public float f_newReaction = 0.0f;
+    [HideInInspector] public float f_reaction = 0.0f;
 
     // Use this for initialization
     void Start()
     {
-        //cs_FoveInterface = GameObject.Find("FoveRigActive").GetComponent<FoveInterface>();
+        cs_FoveInterface = GameObject.Find("Fove Interface").GetComponent<FoveInterface>();
         CreateDataFormat();
 
         if (SceneType == SCENETYPE.NONE)
@@ -79,7 +76,7 @@ public class DataExport : MonoBehaviour
                 SEEN currentSeen;
                 currentSeen = cs_GameLoopManager.GetTargData();
 
-                if(currentSeen == SEEN.YES)
+                if (currentSeen == SEEN.YES)
                 {
                     objSeen = SEEN.YES;
                     f_reaction = cs_GameLoopManager.GetTargTime();
@@ -99,7 +96,7 @@ public class DataExport : MonoBehaviour
                 }
                 cs_GameLoopManager.ResetParams();
                 break;
-        }      
+        }
 
         switch (objSeen)
         {
@@ -178,7 +175,7 @@ public class DataExport : MonoBehaviour
     private string s_getPath(string scene)
     {
 #if UNITY_EDITOR
-        return Application.dataPath + "/CSV/" + "Saved_"+ scene + "_data.csv";
+        return Application.dataPath + "/CSV/" + "Saved_" + scene + "_data.csv";
 #else
         return Application.dataPath +"/"+"Saved" + scene + "_data.csv";
 #endif
@@ -186,31 +183,28 @@ public class DataExport : MonoBehaviour
 
     private void CheckEyeAngle()
     {
-        if(cs_FoveInterface != null)
+        Debug.Log("Checking eye angle");
+        float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
+        float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
+        if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)
         {
-            Debug.Log("Checking eye angle");
-            float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
-            float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
-            if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)
-            {
-                rowDataTemp[2] = f_leftEyeAngle.ToString();
-                rowDataTemp[3] = f_rightEyeAngle.ToString();
-            }
-            else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
-            {
-                rowDataTemp[2] = "eye closed";
-                rowDataTemp[3] = "eye closed";
-            }
-            else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Left)
-            {
-                rowDataTemp[2] = "eye closed";
-                rowDataTemp[3] = f_rightEyeAngle.ToString();
-            }
-            else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Right)
-            {
-                rowDataTemp[2] = f_leftEyeAngle.ToString();
-                rowDataTemp[3] = "eye closed";
-            }
+            rowDataTemp[2] = f_leftEyeAngle.ToString();
+            rowDataTemp[3] = f_rightEyeAngle.ToString();
+        }
+        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
+        {
+            rowDataTemp[2] = "eye closed";
+            rowDataTemp[3] = "eye closed";
+        }
+        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Left)
+        {
+            rowDataTemp[2] = "eye closed";
+            rowDataTemp[3] = f_rightEyeAngle.ToString();
+        }
+        else if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Right)
+        {
+            rowDataTemp[2] = f_leftEyeAngle.ToString();
+            rowDataTemp[3] = "eye closed";
         }
     }
 }
