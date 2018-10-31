@@ -22,7 +22,7 @@ public enum SEEN
 public class DataExport : MonoBehaviour
 {
     [SerializeField] private SCENETYPE SceneType = SCENETYPE.NONE;
-    [SerializeField] public SEEN objSeen = SEEN.NONE;
+    [HideInInspector] public SEEN objSeen = SEEN.NONE;
 
     private FoveInterface cs_FoveInterface;
     public GameLoopManager cs_GameLoopManager;
