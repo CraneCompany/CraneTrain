@@ -76,16 +76,17 @@ public class DataExport : MonoBehaviour
 
                 break;
             case SCENETYPE.training:
-                b_newSeen = cs_GameLoopManager.GetSeen(); b_seen = b_newSeen;
-                f_newReaction = cs_GameLoopManager.GetReactionTime(); f_reaction = f_newReaction;
+                SEEN currentSeen;
+                currentSeen = cs_GameLoopManager.GetTargData();
 
-                if (b_seen)
+                if(currentSeen == SEEN.YES)
                 {
                     objSeen = SEEN.YES;
+                    f_reaction = cs_GameLoopManager.GetTargTime();
                 }
-                else if (!b_seen)
+                else
                 {
-                    objSeen = SEEN.NO;
+                    objSeen = currentSeen;
                 }
 
                 if (cs_GameLoopManager.GetOnOffTarget())
@@ -96,28 +97,9 @@ public class DataExport : MonoBehaviour
                 {
                     rowDataTemp[6] = "Not looking at Target";
                 }
+                cs_GameLoopManager.ResetParams();
                 break;
         }      
-
-        //if (b_newSeen && f_newReaction != f_reaction)
-        //{
-        //    f_reaction = f_newReaction;
-        //    b_seen = b_newSeen;
-
-        //    rowDataTemp[4] = b_seen.ToString();
-        //    rowDataTemp[5] = f_reaction.ToString();
-        //}
-        //else if(b_newSeen == false && b_newSeen != b_seen)
-        //{
-        //    b_seen = b_newSeen;
-        //    rowDataTemp[4] = b_seen.ToString();
-        //    rowDataTemp[5] = "";
-        //}
-        //else
-        //{
-        //    rowDataTemp[4] = "";
-        //    rowDataTemp[5] = "";
-        //}
 
         switch (objSeen)
         {
@@ -164,7 +146,6 @@ public class DataExport : MonoBehaviour
         //handles the data for line 4 and 5
         GetData();
 
-        Debug.Log("about to add shit *dab*");
         rowData.Add(rowDataTemp);
         i_idCount += 1;
     }
@@ -207,6 +188,7 @@ public class DataExport : MonoBehaviour
     {
         if(cs_FoveInterface != null)
         {
+            Debug.Log("Checking eye angle");
             float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
             float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
             if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)

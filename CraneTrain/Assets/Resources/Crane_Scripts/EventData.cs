@@ -5,7 +5,8 @@ using UnityEngine;
 public class EventData : MonoBehaviour
 {
     private float f_lifeTime = 0.0f;
-    private bool b_seen;
+    private bool b_seen = false;
+    private bool b_checkGaze = true;
     private FoveInterface cs_foveInterface;
     private Collider col_Event;
     private DataExport cs_dataExport;
@@ -21,12 +22,15 @@ public class EventData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        f_lifeTime += 1 * Time.deltaTime;
-        if (cs_foveInterface.Gazecast(col_Event))
+        if (b_checkGaze)
         {
-            //cs_dataExport.b_newSeen = true;
-            cs_dataExport.f_newReaction = f_lifeTime;
-            cs_dataExport.objSeen = SEEN.YES;
+            f_lifeTime += 1 * Time.deltaTime;
+            if (cs_foveInterface.Gazecast(col_Event))
+            {
+                //cs_dataExport.b_newSeen = true;
+                cs_dataExport.f_newReaction = f_lifeTime;
+                cs_dataExport.objSeen = SEEN.YES;
+            }
         }
     }
 
@@ -36,6 +40,7 @@ public class EventData : MonoBehaviour
         {
             //cs_dataExport.b_newSeen = false;
             cs_dataExport.objSeen = SEEN.NO;
+            b_checkGaze = false;
         }
     }
 }
