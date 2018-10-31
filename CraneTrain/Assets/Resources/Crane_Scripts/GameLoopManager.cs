@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameLoopManager : MonoBehaviour
 {
     public List<GameObject> goL_targets;
-    public bool b_targLifeCycle = true;
-    public int i_targNum;
-    public float f_targLifeCycle = 10;
+    public GlobalParameterScript cs_globalParameterScript;
 
+
+    private int i_targNum;
     private bool b_blockDestroyed = false;
     private float f_blockTime = 0.0f;
     private bool b_onTarget = false;
@@ -18,6 +18,7 @@ public class GameLoopManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        cs_globalParameterScript = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
         i_targNum = 0;
         NextBlock();
     }
@@ -34,6 +35,14 @@ public class GameLoopManager : MonoBehaviour
         if (i_targNum == goL_targets.Count)
         {
             LoopFinished();
+        }
+    }
+
+    void LevelFinished()
+    {
+        if (cs_globalParameterScript.)
+        {
+
         }
     }
 

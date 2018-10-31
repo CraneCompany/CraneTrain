@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 64556492}
   - component: {fileID: 64556493}
   m_Layer: 0
-  m_Name: _GlobalParameterScriptObj
+  m_Name: _GlobalGameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
