@@ -59,6 +59,7 @@ public class Target : MonoBehaviour
     public void PlayerDestroyed()
     {
         cs_gameLoop.NextBlock();
+        cs_gameLoop.PrepareDataVars(true, f_timer);
         cs_Audio.PlayCoinSound();
         cs_scoreManager.i_globalScore++;
         DestroyThis();
@@ -71,6 +72,7 @@ public class Target : MonoBehaviour
             if (f_timer >= f_lifeTime)
             {
                 cs_gameLoop.NextBlock();
+                cs_gameLoop.PrepareDataVars(false);
                 DestroyThis();
             }
             f_timer += 1 * Time.deltaTime;

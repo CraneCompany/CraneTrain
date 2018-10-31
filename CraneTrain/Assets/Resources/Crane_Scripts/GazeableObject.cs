@@ -32,13 +32,16 @@ public class GazeableObject : MonoBehaviour
             }
         }
         //Checks if the user has its eyes closed
-        if (foveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
+        if (foveInterface != null)
         {
-            b_eyesClosed = true;
-        }
-        else
-        {
-            b_eyesClosed = false;    
+            if (foveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Both)
+            {
+                b_eyesClosed = true;
+            }
+            else
+            {
+                b_eyesClosed = false;
+            }
         }
     }
 

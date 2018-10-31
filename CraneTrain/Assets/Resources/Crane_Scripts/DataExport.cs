@@ -12,9 +12,17 @@ public enum SCENETYPE
     training = 2
 }
 
+public enum SEEN
+{
+    NONE = 0,
+    YES = 1,
+    NO = 2
+}
+
 public class DataExport : MonoBehaviour
 {
     [SerializeField] private SCENETYPE SceneType = SCENETYPE.NONE;
+    [SerializeField] public SEEN objSeen = SEEN.NONE;
 
     private FoveInterface cs_FoveInterface;
     public GameLoopManager cs_GameLoopManager;
@@ -56,8 +64,8 @@ public class DataExport : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Debug.Log("YEEEET");
         UpdateData();
+        objSeen = SEEN.NONE;
     }
 
     public void GetData()
@@ -68,8 +76,17 @@ public class DataExport : MonoBehaviour
 
                 break;
             case SCENETYPE.training:
-                b_newSeen = cs_GameLoopManager.GetSeen();
-                f_newReaction = cs_GameLoopManager.GetReactionTime();
+                b_newSeen = cs_GameLoopManager.GetSeen(); b_seen = b_newSeen;
+                f_newReaction = cs_GameLoopManager.GetReactionTime(); f_reaction = f_newReaction;
+
+                if (b_seen)
+                {
+                    objSeen = SEEN.YES;
+                }
+                else if (!b_seen)
+                {
+                    objSeen = SEEN.NO;
+                }
 
                 if (cs_GameLoopManager.GetOnOffTarget())
                 {
@@ -82,28 +99,43 @@ public class DataExport : MonoBehaviour
                 break;
         }      
 
-        if (b_newSeen && f_newReaction != f_reaction)
-        {
-            f_reaction = f_newReaction;
-            b_seen = b_newSeen;
+        //if (b_newSeen && f_newReaction != f_reaction)
+        //{
+        //    f_reaction = f_newReaction;
+        //    b_seen = b_newSeen;
 
-            rowDataTemp[4] = b_seen.ToString();
-            rowDataTemp[5] = f_reaction.ToString();
-        }
-        else if(b_newSeen == false && b_newSeen != b_seen)
-        {
-            b_seen = b_newSeen;
-            rowDataTemp[4] = b_seen.ToString();
-            rowDataTemp[5] = "";
-        }
-        else
-        {
-            rowDataTemp[4] = "";
-            rowDataTemp[5] = "";
-        }
+        //    rowDataTemp[4] = b_seen.ToString();
+        //    rowDataTemp[5] = f_reaction.ToString();
+        //}
+        //else if(b_newSeen == false && b_newSeen != b_seen)
+        //{
+        //    b_seen = b_newSeen;
+        //    rowDataTemp[4] = b_seen.ToString();
+        //    rowDataTemp[5] = "";
+        //}
+        //else
+        //{
+        //    rowDataTemp[4] = "";
+        //    rowDataTemp[5] = "";
+        //}
 
-        
-       
+        switch (objSeen)
+        {
+            case SEEN.NONE:
+                rowDataTemp[4] = "";
+                rowDataTemp[5] = "";
+                break;
+
+            case SEEN.NO:
+                rowDataTemp[4] = "FALSE";
+                rowDataTemp[5] = "";
+                break;
+
+            case SEEN.YES:
+                rowDataTemp[4] = "TRUE";
+                rowDataTemp[5] = f_reaction.ToString();
+                break;
+        }
     }
 
     private void CreateDataFormat()

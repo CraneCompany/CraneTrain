@@ -24,17 +24,18 @@ public class EventData : MonoBehaviour
         f_lifeTime += 1 * Time.deltaTime;
         if (cs_foveInterface.Gazecast(col_Event))
         {
-            cs_dataExport.b_newSeen = true;
+            //cs_dataExport.b_newSeen = true;
             cs_dataExport.f_newReaction = f_lifeTime;
+            cs_dataExport.objSeen = SEEN.YES;
         }
     }
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log(col.gameObject.name);
         if(col.gameObject.name == "Trigger")
         {
-            cs_dataExport.b_newSeen = false;
+            //cs_dataExport.b_newSeen = false;
+            cs_dataExport.objSeen = SEEN.NO;
         }
     }
 }
