@@ -16,7 +16,7 @@ public class ScoreManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        cs_globalParameters = GameObject.Find("_GlobalParameterScriptObj").GetComponent<GlobalParameterScript>();
+        cs_globalParameters = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
         i_lvlReq = cs_globalParameters.i_lvlReq;
 
         am_Audio = GameObject.Find("_ScriptManagerObj").GetComponent<AudioManager>();
@@ -38,9 +38,8 @@ public class ScoreManager : MonoBehaviour {
             b_lvlUpPlayed = !b_lvlUpPlayed;
         }
         i_prevScore = i_globalScore;
-
-
     }
+
     void LevelFinished()
     {
         if (cs_globalParameters.i_amountToFinish == i_globalScore)

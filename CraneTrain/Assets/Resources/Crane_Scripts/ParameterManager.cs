@@ -16,7 +16,7 @@ public class ParameterManager : MonoBehaviour {
     void Start()
     {
         i_updateTimer = 0;
-        cs_GlobalParameterScript = GameObject.Find("_GlobalParameterScriptObj").GetComponent<GlobalParameterScript>();
+        cs_GlobalParameterScript = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
     }
 
     void Update()

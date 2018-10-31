@@ -8,6 +8,8 @@ public class GameLoopManager : MonoBehaviour
 {
     public List<GameObject> goL_targets;
     public GlobalParameterScript cs_globalParameterScript;
+    public ScoreManager cs_scoreManager;
+    public SceneChanger cs_sceneChanger;
 
 
     private int i_targNum;
@@ -19,13 +21,11 @@ public class GameLoopManager : MonoBehaviour
     void Start()
     {
         cs_globalParameterScript = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
+        cs_scoreManager = GetComponent<ScoreManager>();
+        cs_sceneChanger = GameObject.Find("_GlobalGameObject").GetComponent<SceneChanger>();
+
         i_targNum = 0;
         NextBlock();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void NextBlock()
@@ -36,13 +36,14 @@ public class GameLoopManager : MonoBehaviour
         {
             LoopFinished();
         }
+        TrainingFinished();
     }
 
-    void LevelFinished()
+    public void TrainingFinished()
     {
-        if (cs_globalParameterScript.)
+        if (cs_globalParameterScript.i_amountToFinish == cs_scoreManager.i_globalScore)
         {
-
+            cs_sceneChanger.Testmap1();
         }
     }
 

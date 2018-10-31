@@ -5,22 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour {
 
-    private CraneSceneManager cs_globalParameterScript;
+    private ActiveRigManager cs_activeRigManager;
     private void Start()
     {
-        cs_globalParameterScript = GameObject.Find("_GlobalParameterScriptObj").GetComponent<CraneSceneManager>();
+        cs_activeRigManager = GameObject.Find("_GlobalGameObject").GetComponent<ActiveRigManager>();
     }
     // Update is called once per frame
     public void Left () {
         Debug.Log("SWITCH");
-        cs_globalParameterScript.go_foveRig.SetActive(true);
+        cs_activeRigManager.go_foveRig.SetActive(true);
         SceneManager.LoadScene(1);
     }
 
     public void Right () {
         Debug.Log("SWITCH");
-        cs_globalParameterScript.go_foveRig.SetActive(true);
+        cs_activeRigManager.go_foveRig.SetActive(true);
         SceneManager.LoadScene(1);
+    }
+
+    public void Testmap1()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void Quit()
