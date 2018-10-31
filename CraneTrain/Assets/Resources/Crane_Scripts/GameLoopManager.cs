@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameLoopManager : MonoBehaviour
 {
     public List<GameObject> goL_targets;
-    public bool b_targLifeCycle = true;
-    public int i_targNum;
-    public float f_targLifeCycle = 10;
+    public GlobalParameterScript cs_globalParameterScript;
+    public ScoreManager cs_scoreManager;
+    public SceneChanger cs_sceneChanger;
 
+
+    private int i_targNum;
     private bool b_blockDestroyed = false;
     private float f_blockTime = 0.0f;
     private bool b_onTarget = false;
@@ -19,13 +21,12 @@ public class GameLoopManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        cs_globalParameterScript = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
+        cs_scoreManager = GetComponent<ScoreManager>();
+        cs_sceneChanger = GameObject.Find("_GlobalGameObject").GetComponent<SceneChanger>();
+
         i_targNum = 0;
         NextBlock();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void NextBlock()
@@ -35,6 +36,15 @@ public class GameLoopManager : MonoBehaviour
         if (i_targNum == goL_targets.Count)
         {
             LoopFinished();
+        }
+        TrainingFinished();
+    }
+
+    public void TrainingFinished()
+    {
+        if (cs_globalParameterScript.i_amountToFinish == cs_scoreManager.i_globalScore)
+        {
+            cs_sceneChanger.Testmap1();
         }
     }
 

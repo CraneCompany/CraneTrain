@@ -269,8 +269,9 @@ GameObject:
   - component: {fileID: 64556491}
   - component: {fileID: 64556492}
   - component: {fileID: 64556493}
+  - component: {fileID: 64556494}
   m_Layer: 0
-  m_Name: _GlobalParameterScriptObj
+  m_Name: _GlobalGameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,6 +320,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go_foveRig: {fileID: 2005710172}
+--- !u!114 &64556494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64556490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c20d9c031de09e4d97a2b4a9e68a05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &80566650
 Prefab:
   m_ObjectHideFlags: 0
@@ -357,6 +369,16 @@ Prefab:
     - target: {fileID: 4916389244540040, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818701667296004, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: m_Text
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134936069750390, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: i_buttonValue
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
@@ -959,6 +981,16 @@ Prefab:
     - target: {fileID: 4916389244540040, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818701667296004, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: m_Text
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134936069750390, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: i_buttonValue
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
@@ -2786,7 +2818,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375287391}
+      - m_Target: {fileID: 64556494}
         m_MethodName: Right
         m_Mode: 1
         m_Arguments:
@@ -3968,7 +4000,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375287391}
+      - m_Target: {fileID: 0}
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -4295,7 +4327,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375287391}
+      - m_Target: {fileID: 64556494}
         m_MethodName: Left
         m_Mode: 1
         m_Arguments:
@@ -4999,7 +5031,6 @@ GameObject:
   - component: {fileID: 1375287393}
   - component: {fileID: 1375287392}
   - component: {fileID: 1375287390}
-  - component: {fileID: 1375287391}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -5056,17 +5087,6 @@ MonoBehaviour:
   - {fileID: 935645082}
   s_openAnim: OpenAnim
   s_closeAnim: CloseAnim
---- !u!114 &1375287391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1375287388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c20d9c031de09e4d97a2b4a9e68a05a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1375287392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5320,6 +5340,16 @@ Prefab:
     - target: {fileID: 4916389244540040, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818701667296004, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: m_Text
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134936069750390, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: i_buttonValue
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
@@ -5859,7 +5889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375287391}
+      - m_Target: {fileID: 64556494}
         m_MethodName: Left
         m_Mode: 1
         m_Arguments:
@@ -6638,7 +6668,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375287391}
+      - m_Target: {fileID: 64556494}
         m_MethodName: Right
         m_Mode: 1
         m_Arguments:

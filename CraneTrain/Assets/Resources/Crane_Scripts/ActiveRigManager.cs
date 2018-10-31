@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CraneSceneManager : MonoBehaviour {
+public class ActiveRigManager : MonoBehaviour {
 
     public GameObject go_foveRig;
     private DataExport cs_data;
