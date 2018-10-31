@@ -25,6 +25,7 @@ public class SceneChanger : MonoBehaviour {
 
     public void Testmap1()
     {
+        cs_activeRigManager.HandleData();
         SceneManager.LoadScene(2);
     }
 

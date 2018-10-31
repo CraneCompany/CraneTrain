@@ -22,28 +22,7 @@ public class ActiveRigManager : MonoBehaviour {
         }
     }
 
-    public void TutorialSwitch()
-    {
-
-    }
-
-    public void AdamTestSwitch()
-    {
-        HandleData();
-        SceneManager.LoadScene("Testing1");
-    }
-
-    public void GroceryTestSwitch()
-    {
-
-    }
-
-    public void ParkTestSwitch()
-    {
-
-    }
-
-    private void HandleData()
+    public void HandleData()
     {
         cs_data = GameObject.Find("Data").GetComponent<DataExport>();
         if (cs_data != null)
