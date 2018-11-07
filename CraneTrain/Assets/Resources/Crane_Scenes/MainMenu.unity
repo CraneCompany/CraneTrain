@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.87
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 9ba05f538ee36044da5cd2a4f14a8b18, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: daeee7568fa3ddd43ba2b6662bce888e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.29697776, g: 0.24607444, b: 0.23221657, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2592,59 +2592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41e58c74463edf43a9624fcdf483d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _postCaptureSettings:
-    writeFastStartStreamingForMp4: 1
-  _captureKey: 44
-  _captureOnStart: 0
-  _startPaused: 0
-  _listVideoCodecsOnStart: 0
-  _isRealTime: 1
-  _persistAcrossSceneLoads: 0
-  _stopMode: 0
-  _stopFrames: 0
-  _stopSeconds: 0
-  _useMediaFoundationH264: 0
-  _videoCodecPriority:
-  - Lagarith Lossless Codec
-  - x264vfw - H.264/MPEG-4 AVC codec
-  - Xvid MPEG-4 Codec
-  _frameRate: 30
-  _timelapseScale: 1
-  _downScale: 1
-  _maxVideoSize: {x: 0, y: 0}
-  _forceVideoCodecIndex: -1
-  _flipVertically: 0
-  _supportAlpha: 0
-  _forceGpuFlush: 0
-  _noAudio: 1
-  _audioCodecPriority: []
-  _forceAudioCodecIndex: -1
-  _forceAudioDeviceIndex: -1
-  _audioCapture: {fileID: 0}
-  _autoGenerateFilename: 1
-  _outputFolderType: 0
-  _outputFolderPath: Captures
-  _autoFilenamePrefix: MovieCapture
-  _autoFilenameExtension: avi
-  _forceFilename: movie.avi
-  _imageSequenceStartFrame: 0
-  _imageSequenceZeroDigits: 6
-  _outputType: 0
-  _imageSequenceFormat: 0
-  _renderResolution: 11
-  _renderSize: {x: 1, y: 1}
-  _renderAntiAliasing: -1
-  _useMotionBlur: 0
-  _motionBlurSamples: 16
-  _motionBlurCameras: []
-  _allowVSyncDisable: 1
-  _supportTextureRecreate: 0
-  _captureMouseCursor: 0
-  _mouseCursor: {fileID: 0}
-  _minimumDiskSpaceMB: -1
-  _lastCamera: {fileID: 830888418}
-  _contribCameras: []
-  _useContributingCameras: 1
 --- !u!20 &830888418
 Camera:
   m_ObjectHideFlags: 0
@@ -5156,6 +5103,7 @@ GameObject:
   - component: {fileID: 1395424563}
   - component: {fileID: 1796191997}
   - component: {fileID: 1395424562}
+  - component: {fileID: 1395424565}
   m_Layer: 0
   m_Name: Fove Interface
   m_TagString: FIB
@@ -5227,6 +5175,17 @@ Transform:
   m_Father: {fileID: 1796191998}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395424565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1395424561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab381d73f74af4a880a031973fbb50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1415266400
 GameObject:
   m_ObjectHideFlags: 0
@@ -8137,8 +8096,8 @@ Camera:
   m_GameObject: {fileID: 2083876769}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
