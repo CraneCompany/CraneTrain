@@ -1556,7 +1556,7 @@ MonoBehaviour:
   - {fileID: 1237019540}
   - {fileID: 405302097}
   - {fileID: 875898732}
-  f_walkSpeed: 1
+  f_walkSpeed: 1.6
   go_marker: {fileID: 1463913016}
   f_markerRadius: 3
   mat_waypoint: {fileID: 2100000, guid: c9f9f4b5f68dd91418cc8e4d5e5215ac, type: 2}

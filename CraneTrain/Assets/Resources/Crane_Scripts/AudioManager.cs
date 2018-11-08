@@ -28,6 +28,8 @@ public class AudioManager : MonoBehaviour
 
     void LoadSounds()
     {
+        if (!GameObject.FindGameObjectWithTag("GAS")) return;
+
         as_audioSource = GameObject.FindGameObjectWithTag("GAS").GetComponent<AudioSource>();
         f_volume = 1;
         for (int i = 0; i < 3; i++)
