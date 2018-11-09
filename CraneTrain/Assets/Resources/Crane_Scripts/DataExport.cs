@@ -180,16 +180,13 @@ public class DataExport : MonoBehaviour
         {
             Directory.CreateDirectory(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene);
         }
-        //else
-        //{
-        //    Directory.CreateDirectory(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene);
-
-        //}
         return @Directory.GetCurrentDirectory() + "\\CSV\\" + scene + "/" + "Saved_" + scene + "_data.csv";
-
-
 #else
-        return Application.dataPath +"/"+"Saved" + scene + "_data.csv";
+        if (!Directory.Exists(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene))
+        {
+            Directory.CreateDirectory(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene);
+        }
+        return @Directory.GetCurrentDirectory() + "\\CSV\\" + scene + "/" + "Saved_" + scene + "_data.csv";
 #endif
     }
 

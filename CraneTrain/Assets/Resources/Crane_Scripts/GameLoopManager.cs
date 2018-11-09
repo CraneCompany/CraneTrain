@@ -11,6 +11,7 @@ public class GameLoopManager : MonoBehaviour
     public ScoreManager cs_scoreManager;
     public SceneChanger cs_sceneChanger;
 
+    private AddBoardToCamera cs_addBoardToCam;
 
     private int i_targNum;
     private bool b_blockDestroyed = false;
@@ -24,6 +25,7 @@ public class GameLoopManager : MonoBehaviour
         cs_globalParameterScript = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
         cs_scoreManager = GetComponent<ScoreManager>();
         cs_sceneChanger = GameObject.Find("_GlobalGameObject").GetComponent<SceneChanger>();
+        cs_addBoardToCam = GetComponent<AddBoardToCamera>();
 
         i_targNum = 0;
         NextBlock();
@@ -44,6 +46,7 @@ public class GameLoopManager : MonoBehaviour
     {
         if (cs_globalParameterScript.i_amountToFinish == cs_scoreManager.i_globalScore)
         {
+            cs_addBoardToCam.RemoveBoardFromCam();
             cs_sceneChanger.Testmap1();
         }
     }
