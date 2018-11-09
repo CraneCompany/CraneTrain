@@ -17,8 +17,6 @@ public class AddBoardToCamera : MonoBehaviour {
             trainingBoard.transform.SetParent(foveInterface.transform);
             trainingBoard.transform.position = new Vector3(-1.3f, 0, 6.5f);
         }
-
-
     }
 
 }
