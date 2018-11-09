@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class setSkybox : MonoBehaviour {
 
     Camera cam;
+    Camera[] cams;
 
 	// Use this for initialization
 	void Start ()
     {
         cam = GetComponent<Camera>();
+        cams = GetComponentsInChildren<Camera>();
 	}
 	
 	// Update is called once per frame
@@ -28,5 +30,10 @@ public class setSkybox : MonoBehaviour {
         {
             cam.clearFlags = CameraClearFlags.Skybox;
         }
-	}
+
+        foreach (Camera c in cams)
+        {
+            c.clearFlags = cam.clearFlags;
+        }
+    }
 }
