@@ -1,0 +1,622 @@
+ID (frame),Elapsed Time,Angle left eye,Angle right eye,Block seen,Reaction time block,On Target
+0,0.1127989,eye closed,32.39557,,,Not looking at Target
+1,0.1127989,eye closed,57.79608,,,Not looking at Target
+2,0.02,eye closed,57.76865,,,Not looking at Target
+3,0.01694654,eye closed,57.75167,,,Not looking at Target
+4,0.01699331,eye closed,57.7153,,,Not looking at Target
+5,0.01576177,eye closed,57.59329,,,Not looking at Target
+6,0.0172319,eye closed,57.35176,,,Not looking at Target
+7,0.01598876,eye closed,56.96238,,,Not looking at Target
+8,0.0169974,eye closed,56.51542,,,Not looking at Target
+9,0.0160461,eye closed,55.87683,,,Not looking at Target
+10,0.01694654,eye closed,55.2394,,,Not looking at Target
+11,0.01618844,eye closed,eye closed,,,Not looking at Target
+12,0.01680114,eye closed,eye closed,,,Not looking at Target
+13,0.01633487,eye closed,eye closed,,,Not looking at Target
+14,0.01665061,eye closed,eye closed,,,Not looking at Target
+15,0.01648028,eye closed,eye closed,,,Not looking at Target
+16,0.016568,eye closed,eye closed,,,Not looking at Target
+17,0.0165663,eye closed,eye closed,,,Not looking at Target
+18,0.01736638,eye closed,eye closed,,,Not looking at Target
+19,0.0159949,eye closed,eye closed,,,Not looking at Target
+20,0.01633692,eye closed,eye closed,,,Not looking at Target
+21,0.01665061,eye closed,eye closed,,,Not looking at Target
+22,0.01648267,eye closed,eye closed,,,Not looking at Target
+23,0.01656766,eye closed,eye closed,,,Not looking at Target
+24,0.05259477,eye closed,eye closed,,,Not looking at Target
+25,0.016568,eye closed,eye closed,,,Not looking at Target
+26,0.01675949,47.90949,eye closed,,,Not looking at Target
+27,0.01637583,32.43838,eye closed,,,Not looking at Target
+28,0.01660487,33.6137,eye closed,,,Not looking at Target
+29,0.01652704,34.83102,eye closed,,,Not looking at Target
+30,0.01656698,35.52966,eye closed,,,Not looking at Target
+31,0.01689739,36.31974,eye closed,,,Not looking at Target
+32,0.01623623,34.60383,eye closed,,,Not looking at Target
+33,0.01674755,35.23608,eye closed,,,Not looking at Target
+34,0.01638505,35.72942,eye closed,,,Not looking at Target
+35,0.01660145,36.37753,eye closed,,,Not looking at Target
+36,0.01701003,37.32458,eye closed,,,Not looking at Target
+37,0.01608911,38.43658,eye closed,,,Not looking at Target
+38,0.01688749,39.71646,41.74926,,,Not looking at Target
+39,0.01699331,41.09553,42.89538,,,Not looking at Target
+40,0.01600241,42.52242,43.86688,,,Not looking at Target
+41,0.01638437,43.71935,45.40874,,,Not looking at Target
+42,0.0165663,45.13161,45.9972,,,Not looking at Target
+43,0.01656664,45.98149,46.67916,,,Not looking at Target
+44,0.01656835,45.90794,46.19282,,,Not looking at Target
+45,0.01656357,43.59801,45.81674,,,Not looking at Target
+46,0.01656903,44.32561,45.6103,,,Not looking at Target
+47,0.01656664,44.42164,45.5032,,,Not looking at Target
+48,0.01716704,44.1631,44.60651,,,Not looking at Target
+49,0.01599217,44.07429,44.64629,,,Not looking at Target
+50,0.01700491,43.76912,44.66962,,,Not looking at Target
+51,0.01610208,43.80372,44.74342,,,Not looking at Target
+52,0.01656596,43.73853,44.40689,,,Not looking at Target
+53,0.01656732,43.53021,44.17165,,,Not looking at Target
+54,0.01673458,43.5308,44.06174,,,Not looking at Target
+55,0.01639734,43.66426,44.10902,,,Not looking at Target
+56,0.01659019,44.08775,44.50182,,,Not looking at Target
+57,0.0170015,44.85128,45.18293,,,Not looking at Target
+58,0.01698989,45.87857,46.20872,,,Not looking at Target
+59,0.01568634,46.92569,47.19096,,,Not looking at Target
+60,0.01656527,47.5282,47.27118,,,Not looking at Target
+61,0.01672946,47.41159,47.03236,,,Not looking at Target
+62,0.01699604,46.91917,47.12613,,,Not looking at Target
+63,0.01599525,47.23597,47.31337,,,Not looking at Target
+64,0.01654616,46.15715,47.03667,,,Not looking at Target
+65,0.01656732,46.29343,47.09673,,,Not looking at Target
+66,0.01656766,46.31899,46.9107,,,Not looking at Target
+67,0.01656596,46.13493,46.40941,,,Not looking at Target
+68,0.01672809,46.12598,46.39377,,,Not looking at Target
+69,0.01640451,46.19995,46.49349,,,Not looking at Target
+70,0.016582,46.38856,46.48492,,,Not looking at Target
+71,0.0165523,46.53045,46.56424,,,Not looking at Target
+72,0.0165663,46.66073,46.66715,,,Not looking at Target
+73,0.01656698,46.84908,46.84843,,,Not looking at Target
+74,0.016568,47.12849,47.12226,,,Not looking at Target
+75,0.01672536,47.55316,47.56543,,,Not looking at Target
+76,0.01640689,47.99455,48.15532,,,Not looking at Target
+77,0.01658336,47.89389,48.61956,,,Not looking at Target
+78,0.01654889,47.7478,48.76114,,,Not looking at Target
+79,0.01656562,47.72082,48.41381,,,Not looking at Target
+80,0.01686223,47.48384,48.44361,,,Looking at Target
+81,0.01627104,47.65992,48.44352,,,Looking at Target
+82,0.01671751,47.90286,48.58269,,,Looking at Target
+83,0.01700047,48.13227,48.80065,,,Looking at Target
+84,0.01598944,48.23597,48.78191,,,Looking at Target
+85,0.03467577,48.22892,48.7928,,,Looking at Target
+86,0.01656766,48.45802,48.91367,,,Looking at Target
+87,0.01656732,48.25374,47.69171,,,Looking at Target
+88,0.01656596,48.12708,47.1622,,,Not looking at Target
+89,0.01659053,47.9974,47.18459,,,Not looking at Target
+90,0.01654377,48.29793,47.55683,,,Not looking at Target
+91,0.01656596,48.43793,48.16778,,,Not looking at Target
+92,0.01687384,48.53687,48.42391,,,Not looking at Target
+93,0.01699604,48.75866,48.77923,,,Not looking at Target
+94,0.01599593,48.94467,49.07476,,,Not looking at Target
+95,0.01640143,49.11628,49.325,,,Not looking at Target
+96,0.01658678,50.95269,50.82856,,,Not looking at Target
+97,0.01699501,50.89381,51.95819,,,Not looking at Target
+98,0.01611949,50.62915,52.425,,,Not looking at Target
+99,0.01656698,51.15115,52.63196,,,Looking at Target
+100,0.01656766,51.27384,52.73172,,,Looking at Target
+101,0.01673628,51.44377,52.71222,,,Looking at Target
+102,0.01639495,51.55876,52.72644,,,Looking at Target
+103,0.01658507,51.65015,52.55878,,,Looking at Target
+104,0.01699262,51.69777,52.53352,,,Looking at Target
+105,0.01612222,51.71855,52.4837,,,Looking at Target
+106,0.01687247,51.75429,52.40494,,,Looking at Target
+107,0.01625944,51.71404,52.40675,,,Looking at Target
+108,0.01656766,51.623,52.43013,,,Looking at Target
+109,0.01715408,51.6121,52.43603,,,Looking at Target
+110,0.01599251,51.49408,52.41135,,,Looking at Target
+111,0.01699877,50.82871,52.32727,,,Looking at Target
+112,0.01699262,50.96559,52.30725,,,Looking at Target
+113,0.01599525,51.04012,52.29379,,,Looking at Target
+114,0.01626661,51.08558,52.32966,,,Looking at Target
+115,0.01672126,51.14911,52.33613,,,Looking at Target
+116,0.01699331,51.09256,52.32323,,,Looking at Target
+117,0.01599525,51.06031,52.23106,,,Looking at Target
+118,0.01655606,50.80534,52.1404,TRUE,2.204923,Looking at Target
+119,0.01656664,50.75463,51.98446,,,Not looking at Target
+120,0.01686121,50.71021,51.84043,,,Not looking at Target
+121,0.01699365,50.66638,51.77806,,,Not looking at Target
+122,0.01599593,50.6273,51.72697,,,Not looking at Target
+123,0.01699399,50.57634,51.67655,,,Not looking at Target
+124,0.01599661,50.52314,51.6134,,,Not looking at Target
+125,0.01699706,50.18886,51.52979,,,Not looking at Target
+126,0.01613041,50.01164,51.41845,,,Not looking at Target
+127,0.01685711,49.90717,51.33026,,,Not looking at Target
+128,0.01627412,49.92455,51.25565,,,Not looking at Target
+129,0.01671273,56.14023,57.6577,,,Not looking at Target
+130,0.01642055,62.52842,64.69444,,,Not looking at Target
+131,0.01657142,66.64815,69.51147,,,Not looking at Target
+132,0.01699331,68.60984,70.8093,,,Not looking at Target
+133,0.01613519,68.39854,71.0062,,,Not looking at Target
+134,0.01656732,67.66853,70.57787,,,Not looking at Target
+135,0.01727934,67.26424,70.2193,,,Not looking at Target
+136,0.01599866,66.7906,69.74405,,,Not looking at Target
+137,0.01700286,63.74726,66.20867,,,Not looking at Target
+138,0.01599081,60.19638,62.17439,,,Not looking at Target
+139,0.01656288,55.78828,56.4609,,,Not looking at Target
+140,0.0165663,53.33557,52.60121,,,Not looking at Target
+141,0.01685097,52.05301,52.0708,,,Not looking at Target
+142,0.01699194,51.09348,51.27026,,,Not looking at Target
+143,0.01599729,49.99201,50.03757,,,Not looking at Target
+144,0.01699877,48.93883,48.9671,,,Not looking at Target
+145,0.0159932,48.06647,48.07848,,,Not looking at Target
+146,0.0372426,46.54228,47.075,,,Not looking at Target
+147,0.01674004,45.44392,46.09942,,,Not looking at Target
+148,0.01699808,45.01817,45.81063,,,Not looking at Target
+149,0.01598876,44.8578,45.32806,,,Not looking at Target
+150,0.01699501,44.5415,45.02039,,,Not looking at Target
+151,0.01611335,43.80539,44.67718,,,Not looking at Target
+152,0.01656766,43.37614,44.39318,,,Not looking at Target
+153,0.0165663,42.92357,43.87979,,,Not looking at Target
+154,0.0167315,42.45828,43.56672,,,Not looking at Target
+155,0.0164028,42.09487,43.1562,,,Not looking at Target
+156,0.01658371,41.76865,42.82866,,,Not looking at Target
+157,0.01700252,45.33394,46.63042,,,Not looking at Target
+158,0.0161113,48.30019,50.17555,,,Not looking at Target
+159,0.01656698,54.43631,57.83525,,,Not looking at Target
+160,0.01656766,58.6077,62.80021,,,Not looking at Target
+161,0.01673253,62.92886,67.00817,,,Not looking at Target
+162,0.01640007,65.46107,70.53812,,,Not looking at Target
+163,0.01658405,64.78726,68.37695,,,Looking at Target
+164,0.01699467,63.95451,67.37666,,,Looking at Target
+165,0.01612086,62.9855,66.35505,,,Not looking at Target
+166,0.01656698,62.15974,65.50723,,,Not looking at Target
+167,0.01730426,61.50157,64.91516,,,Not looking at Target
+168,0.01582867,61.08268,64.35021,,,Not looking at Target
+169,0.01656664,61.04184,64.70183,,,Not looking at Target
+170,0.01658302,61.01453,64.3792,,,Not looking at Target
+171,0.01699296,61.00169,64.40507,,,Not looking at Target
+172,0.01612461,61.19388,64.54963,,,Not looking at Target
+173,0.01687145,61.33647,64.76772,,,Not looking at Target
+174,0.01626251,61.69204,66.03434,,,Not looking at Target
+175,0.01672195,61.93844,66.29685,,,Not looking at Target
+176,0.01641065,62.19127,66.52152,,,Not looking at Target
+177,0.01658371,62.48918,66.75291,,,Not looking at Target
+178,0.01654957,62.86982,66.92789,,,Not looking at Target
+179,0.0165663,63.03082,67.11269,,,Not looking at Target
+180,0.01686053,63.26505,67.06757,,,Not looking at Target
+181,0.01627275,63.36643,67.17727,,,Not looking at Target
+182,0.0165663,63.49432,67.30599,,,Not looking at Target
+183,0.01656698,63.61317,66.97415,,,Not looking at Target
+184,0.01657347,65.274,68.61791,,,Not looking at Target
+185,0.01699365,65.81809,69.74686,,,Looking at Target
+186,0.01613485,66.05502,69.97819,,,Looking at Target
+187,0.0165663,66.30971,70.05533,,,Looking at Target
+188,0.01656493,66.62151,70.34771,,,Looking at Target
+189,0.01672092,66.97234,70.70155,,,Looking at Target
+190,0.01641338,67.44946,71.17191,,,Looking at Target
+191,0.01657108,67.83053,71.56068,,,Looking at Target
+192,0.01656323,68.48728,72.11356,,,Looking at Target
+193,0.01742714,68.92166,72.55872,,,Looking at Target
+194,0.01599525,69.36412,72.81991,,,Looking at Target
+195,0.01699911,69.72752,73.06723,,,Looking at Target
+196,0.01599149,69.87164,73.23609,,,Looking at Target
+197,0.01642055,70.04208,73.47787,,,Looking at Target
+198,0.0165663,69.856,73.32355,,,Looking at Target
+199,0.01699535,69.71725,73.08032,,,Looking at Target
+200,0.0161369,69.44144,73.03442,,,Looking at Target
+201,0.01685097,69.29345,72.97647,,,Looking at Target
+202,0.01628333,69.20184,72.87954,,,Looking at Target
+203,0.01670795,69.12325,72.74922,,,Looking at Target
+204,0.01642567,69.08243,72.60404,,,Looking at Target
+205,0.01656732,69.06922,72.60313,,,Looking at Target
+206,0.01656459,68.92368,72.59116,,,Looking at Target
+207,0.03367941,68.84307,72.56387,,,Looking at Target
+208,0.01673082,68.7966,72.59729,,,Looking at Target
+209,0.01699194,68.8086,72.60403,TRUE,1.528954,Looking at Target
+210,0.01599525,68.79906,72.61186,,,Not looking at Target
+211,0.01654991,68.80599,72.56272,,,Not looking at Target
+212,0.01656698,68.88957,72.57322,,,Not looking at Target
+213,0.01687282,69.00107,72.66451,,,Not looking at Target
+214,0.01626012,69.20444,72.79938,,,Not looking at Target
+215,0.01672468,69.36469,72.91777,,,Not looking at Target
+216,0.0164086,69.54773,73.2047,,,Not looking at Target
+217,0.01657756,69.6441,73.15781,,,Not looking at Target
+218,0.01699638,61.34454,62.28728,,,Not looking at Target
+219,0.01612598,52.74016,53.94057,,,Not looking at Target
+220,0.01656732,43.70722,45.75312,,,Not looking at Target
+221,0.0165663,38.00191,37.61349,,,Not looking at Target
+222,0.01672229,32.71607,32.39291,,,Not looking at Target
+223,0.01699979,29.78546,30.32273,,,Not looking at Target
+224,0.01599217,29.89405,30.54069,,,Not looking at Target
+225,0.01699228,29.9329,30.74187,,,Not looking at Target
+226,0.01612802,30.08139,30.76052,,,Not looking at Target
+227,0.01686053,29.7195,30.78117,,,Not looking at Target
+228,0.01627377,29.67197,30.64337,,,Not looking at Target
+229,0.01671717,29.60819,30.51244,,,Not looking at Target
+230,0.0169957,29.50223,30.41196,,,Looking at Target
+231,0.01599013,29.39365,30.41632,,,Looking at Target
+232,0.0165622,29.30715,30.40059,,,Looking at Target
+233,0.01656835,28.78462,29.5263,,,Looking at Target
+234,0.01685268,26.2821,26.09405,,,Looking at Target
+235,0.01628094,26.25234,26.07246,,,Looking at Target
+236,0.01671409,26.00811,26.09406,,,Looking at Target
+237,0.01698955,25.98504,26.2651,,,Looking at Target
+238,0.01599866,25.90572,26.51123,,,Looking at Target
+239,0.01656152,25.76765,26.50462,,,Looking at Target
+240,0.01656766,25.74075,26.39649,,,Looking at Target
+241,0.01685234,25.77703,26.08135,,,Looking at Target
+242,0.01699638,25.78419,26.166,,,Looking at Target
+243,0.01599183,25.84935,26.311,,,Looking at Target
+244,0.01699399,26.021,26.39106,,,Looking at Target
+245,0.01599764,26.1266,26.49743,,,Looking at Target
+246,0.01699467,26.22515,26.60728,,,Looking at Target
+247,0.01616933,26.33007,26.69618,,,Looking at Target
+248,0.01681923,26.436,26.8525,,,Looking at Target
+249,0.0162847,26.57477,26.99842,,,Looking at Target
+250,0.01670556,26.59335,27.05565,,,Looking at Target
+251,0.01642874,26.60837,27.02729,,,Looking at Target
+252,0.01656664,26.70366,27.08686,,,Looking at Target
+253,0.01656698,26.78385,27.11542,,,Looking at Target
+254,0.01656664,26.83874,27.16642,,,Looking at Target
+255,0.01684824,26.93052,27.24718,,,Looking at Target
+256,0.01628333,26.92936,27.2927,TRUE,0.7617623,Looking at Target
+257,0.01670147,26.89709,27.34461,,,Not looking at Target
+258,0.01700116,26.80554,27.36601,,,Not looking at Target
+259,0.01599764,26.76718,27.37244,,,Not looking at Target
+260,0.01698614,26.78366,27.40864,,,Not looking at Target
+261,0.01699535,26.81024,27.45977,,,Not looking at Target
+262,0.01599217,26.86928,27.51444,,,Not looking at Target
+263,0.01699399,26.93751,27.5828,,,Not looking at Target
+264,0.01599832,26.9733,27.67319,,,Not looking at Target
+265,0.0169974,33.68111,32.43828,,,Not looking at Target
+266,0.01600344,39.06507,40.05071,,,Not looking at Target
+267,0.01698614,42.42564,43.75904,,,Not looking at Target
+268,0.05423556,50.01553,51.86334,,,Not looking at Target
+269,0.01656869,50.03509,51.82707,,,Not looking at Target
+270,0.01656664,50.19143,51.80828,,,Not looking at Target
+271,0.01659053,50.30935,51.78896,,,Not looking at Target
+272,0.0165424,50.39114,51.79353,,,Not looking at Target
+273,0.01744933,50.42195,52.03381,,,Not looking at Target
+274,0.01599422,50.65815,52.11985,,,Not looking at Target
+275,0.01625739,50.68225,52.18708,,,Not looking at Target
+276,0.01673116,50.70848,52.24567,,,Not looking at Target
+277,0.01699535,50.75808,52.35497,,,Not looking at Target
+278,0.01599388,50.76096,52.35614,,,Not looking at Target
+279,0.01654616,50.82028,52.39531,,,Not looking at Target
+280,0.01656596,50.81881,52.46763,,,Not looking at Target
+281,0.01656835,50.81247,52.62045,,,Not looking at Target
+282,0.01656425,50.7815,52.53341,,,Not looking at Target
+283,0.01673321,50.77691,52.41666,,,Not looking at Target
+284,0.01640178,50.76217,52.38634,,,Not looking at Target
+285,0.01658405,50.78569,52.35091,,,Not looking at Target
+286,0.01699672,48.85392,51.62452,,,Not looking at Target
+287,0.01611949,49.33711,51.8614,,,Looking at Target
+288,0.01656562,49.44057,51.89523,,,Looking at Target
+289,0.01729539,49.56466,51.85535,,,Looking at Target
+290,0.01599661,49.39729,51.80956,,,Looking at Target
+291,0.01640724,49.27419,51.79881,,,Looking at Target
+292,0.01658746,49.25841,51.79985,,,Looking at Target
+293,0.01699296,49.31942,51.78543,,,Looking at Target
+294,0.01612052,49.29771,51.77699,,,Looking at Target
+295,0.01686428,49.24025,51.76611,,,Looking at Target
+296,0.01626968,49.17563,51.75544,,,Looking at Target
+297,0.01672707,49.16726,51.72921,,,Looking at Target
+298,0.01640689,49.1658,51.70256,,,Looking at Target
+299,0.01657585,49.16713,51.61376,,,Looking at Target
+300,0.01700116,49.15559,51.58957,,,Looking at Target
+301,0.01612256,49.13891,51.59217,,,Looking at Target
+302,0.01686292,49.1373,51.57684,,,Looking at Target
+303,0.01626934,49.128,51.60143,,,Looking at Target
+304,0.01672024,49.13306,51.61969,,,Looking at Target
+305,0.01699331,49.59752,51.6309,,,Looking at Target
+306,0.01599832,51.62947,52.86321,,,Looking at Target
+307,0.01655435,51.56136,53.15928,,,Looking at Target
+308,0.0165663,51.4618,53.26192,,,Looking at Target
+309,0.01656698,51.41926,53.30745,,,Looking at Target
+310,0.01656732,51.42939,53.37917,,,Not looking at Target
+311,0.01672741,51.45635,53.37803,,,Not looking at Target
+312,0.01640519,51.46428,53.37341,,,Not looking at Target
+313,0.01659531,51.50523,53.36407,,,Not looking at Target
+314,0.01696839,51.53838,53.3452,,,Not looking at Target
+315,0.01699535,51.57006,53.35184,,,Not looking at Target
+316,0.01600105,51.61417,53.39477,,,Not looking at Target
+317,0.0169957,51.67501,53.43549,,,Not looking at Target
+318,0.01600037,51.7547,53.50436,,,Not looking at Target
+319,0.01641099,51.85191,53.56055,,,Not looking at Target
+320,0.01656732,51.88165,53.60416,,,Not looking at Target
+321,0.01699535,52.03442,53.59205,,,Not looking at Target
+322,0.01613826,52.02185,53.575,,,Not looking at Target
+323,0.0168595,51.98374,53.5181,,,Not looking at Target
+324,0.0162748,51.93718,53.46099,,,Not looking at Target
+325,0.01656562,51.87486,53.40224,,,Not looking at Target
+326,0.01656698,51.80883,53.30254,,,Not looking at Target
+327,0.01656664,51.82218,53.27327,,,Not looking at Target
+328,0.01656766,51.80175,53.21345,,,Not looking at Target
+329,0.02651413,51.24158,52.51397,,,Not looking at Target
+330,0.01689773,49.76134,50.46608,,,Looking at Target
+331,0.01623794,49.6314,50.30535,,,Looking at Target
+332,0.01675096,49.55251,50.2789,,,Looking at Target
+333,0.01638095,49.48138,50.24124,,,Looking at Target
+334,0.01660692,49.46899,50.23446,,,Looking at Target
+335,0.01652738,49.38592,50.30666,,,Looking at Target
+336,0.01656698,49.31149,50.31971,,,Looking at Target
+337,0.01689091,49.17946,50.30569,,,Looking at Target
+338,0.01624237,49.16778,50.29584,,,Looking at Target
+339,0.01674413,49.11359,50.26818,,,Looking at Target
+340,0.01638846,49.09278,50.2686,,,Looking at Target
+341,0.01661067,49.03382,50.25316,,,Looking at Target
+342,0.01698511,49.02981,50.25056,,,Looking at Target
+343,0.01699604,49.02294,50.24599,,,Looking at Target
+344,0.01599593,49.0142,50.25045,,,Looking at Target
+345,0.01624544,49.0125,50.26276,,,Looking at Target
+346,0.01674004,49.02771,50.27339,,,Looking at Target
+347,0.0163929,49.0273,50.26297,,,Looking at Target
+348,0.01659872,49.04587,50.23505,,,Looking at Target
+349,0.01653455,49.03513,50.21737,TRUE,1.588762,Looking at Target
+350,0.01745377,49.04601,50.21782,,,Not looking at Target
+351,0.01599661,49.05561,50.24343,,,Not looking at Target
+352,0.0162492,49.0737,50.26402,,,Not looking at Target
+353,0.01673833,49.08266,50.27353,,,Not looking at Target
+354,0.01699638,49.04514,50.278,,,Not looking at Target
+355,0.01599388,49.03604,50.26638,,,Not looking at Target
+356,0.01653831,48.99496,50.23936,,,Not looking at Target
+357,0.01656698,48.96766,50.20918,,,Not looking at Target
+358,0.01687657,49.10813,50.23843,,,Not looking at Target
+359,0.01625637,57.05613,58.15179,,,Not looking at Target
+360,0.01673696,63.68827,64.97517,,,Not looking at Target
+361,0.01699228,68.02655,71.60887,,,Not looking at Target
+362,0.01599832,69.95674,73.42672,,,Looking at Target
+363,0.01654036,69.93167,73.63157,,,Looking at Target
+364,0.01656698,69.92889,73.62219,,,Looking at Target
+365,0.01687691,69.9138,73.60007,,,Looking at Target
+366,0.01699262,69.9601,73.57207,,,Looking at Target
+367,0.01599627,69.9537,73.54673,,,Looking at Target
+368,0.01640143,70.01218,73.55505,,,Looking at Target
+369,0.01658985,70.2213,73.53999,,,Looking at Target
+370,0.01699296,70.27247,73.5086,,,Looking at Target
+371,0.01611676,70.28163,73.51113,,,Looking at Target
+372,0.0168752,70.28624,73.50723,,,Looking at Target
+373,0.01625671,70.29223,73.50922,,,Looking at Target
+374,0.01672877,70.25752,73.52469,,,Looking at Target
+375,0.01640519,70.23629,73.52486,,,Looking at Target
+376,0.01658405,70.23586,73.54282,,,Looking at Target
+377,0.01699706,70.23852,73.52513,,,Looking at Target
+378,0.01611881,70.23982,73.53627,,,Looking at Target
+379,0.01686565,70.21714,73.53491,,,Looking at Target
+380,0.01699604,70.20621,73.52969,,,Looking at Target
+381,0.01600071,70.18488,73.51733,,,Looking at Target
+382,0.01640382,70.1577,73.47964,,,Looking at Target
+383,0.01658405,70.13498,73.464,,,Looking at Target
+384,0.01655025,70.12567,73.44466,,,Looking at Target
+385,0.01656527,70.10313,73.46051,,,Looking at Target
+386,0.01686428,70.06373,73.45109,,,Looking at Target
+387,0.01626934,70.09933,73.46353,,,Looking at Target
+388,0.01672365,70.12039,73.47015,TRUE,0.6465252,Looking at Target
+389,0.01641065,70.12722,73.47466,,,Not looking at Target
+390,0.05604736,70.05572,73.4926,,,Not looking at Target
+391,0.01656766,70.06079,73.4946,,,Not looking at Target
+392,0.01656698,70.0791,73.43033,,,Not looking at Target
+393,0.01656732,70.10161,73.46453,,,Not looking at Target
+394,0.01680182,69.5462,72.72726,,,Not looking at Target
+395,0.01633146,65.31042,65.72379,,,Not looking at Target
+396,0.01665436,53.10693,53.01864,,,Not looking at Target
+397,0.01699262,43.75414,44.31711,,,Not looking at Target
+398,0.01605225,39.97849,40.43279,,,Not looking at Target
+399,0.01695508,31.92732,32.488,,,Not looking at Target
+400,0.0161782,30.24943,29.83829,,,Not looking at Target
+401,0.01656664,29.7632,29.66164,,,Looking at Target
+402,0.0165663,29.35963,29.68843,,,Looking at Target
+403,0.016568,29.34587,29.72435,,,Looking at Target
+404,0.01707864,29.34927,29.76967,,,Looking at Target
+405,0.0160543,29.33399,29.78074,,,Looking at Target
+406,0.01656698,29.19251,29.77871,,,Looking at Target
+407,0.01656698,29.12329,29.76643,,,Looking at Target
+408,0.01678885,29.12174,29.75472,,,Looking at Target
+409,0.01634341,28.74498,29.75499,,,Looking at Target
+410,0.01665778,28.78543,29.76148,,,Looking at Target
+411,0.01647584,28.82397,29.77548,,,Looking at Target
+412,0.01656664,28.86835,29.78836,,,Looking at Target
+413,0.01656664,28.94094,29.81126,,,Looking at Target
+414,0.02049232,28.96405,29.78885,,,Looking at Target
+415,0.01685814,28.93358,29.75793,,,Looking at Target
+416,0.0162765,28.95391,29.75426,,,Looking at Target
+417,0.01670966,28.93818,29.74759,,,Looking at Target
+418,0.01642328,28.9103,29.73809,,,Looking at Target
+419,0.016568,28.92953,29.76286,,,Looking at Target
+420,0.01699706,28.93982,29.7768,,,Looking at Target
+421,0.01613519,28.97277,29.79011,,,Looking at Target
+422,0.01684961,28.957,29.77458,,,Looking at Target
+423,0.01628367,28.92644,29.77929,,,Looking at Target
+424,0.0167199,28.93047,29.77042,,,Looking at Target
+425,0.01698443,28.82561,29.74286,,,Looking at Target
+426,0.01599729,28.78041,29.73577,,,Looking at Target
+427,0.01701174,28.77307,29.71005,TRUE,0.6890711,Looking at Target
+428,0.01611983,28.75434,29.68414,,,Not looking at Target
+429,0.01684961,28.74804,29.62763,,,Not looking at Target
+430,0.01628367,28.72391,29.59027,,,Not looking at Target
+431,0.01670898,28.7219,29.5874,,,Not looking at Target
+432,0.01642464,28.73303,29.58319,,,Not looking at Target
+433,0.01656596,28.74582,29.59377,,,Not looking at Target
+434,0.01656903,28.7457,29.57938,,,Not looking at Target
+435,0.01656493,28.73217,29.52277,,,Not looking at Target
+436,0.0165663,31.89004,30.96058,,,Not looking at Target
+437,0.01656664,38.58377,37.3567,,,Not looking at Target
+438,0.01669976,44.13989,45.16557,,,Not looking at Target
+439,0.01643522,47.96094,50.52501,,,Not looking at Target
+440,0.01656596,48.72721,50.55625,,,Looking at Target
+441,0.01698272,48.82079,50.50613,,,Looking at Target
+442,0.01615055,49.03017,50.51163,,,Looking at Target
+443,0.01683936,49.04675,50.45132,,,Looking at Target
+444,0.01699262,49.11327,50.30949,,,Looking at Target
+445,0.01599525,49.3067,50.32067,,,Looking at Target
+446,0.01643864,49.3927,50.37852,,,Looking at Target
+447,0.01657312,49.39317,50.41061,,,Looking at Target
+448,0.01697624,49.37626,50.41968,,,Looking at Target
+449,0.01615055,49.45454,50.52533,,,Looking at Target
+450,0.05143594,49.33512,50.54883,,,Looking at Target
+451,0.01656835,49.47323,50.53279,,,Looking at Target
+452,0.01681649,49.53324,50.56245,,,Looking at Target
+453,0.01631678,49.60868,50.61058,,,Looking at Target
+454,0.0166704,49.64271,50.65657,,,Looking at Target
+455,0.01646321,49.68643,50.67091,,,Looking at Target
+456,0.01656698,49.6972,50.65099,,,Looking at Target
+457,0.01694961,49.67024,50.58849,,,Looking at Target
+458,0.0161823,49.59571,50.5495,,,Looking at Target
+459,0.01680899,49.61477,50.53281,,,Looking at Target
+460,0.01632361,49.61493,50.5206,,,Looking at Target
+461,0.01666767,49.61071,50.5206,,,Looking at Target
+462,0.01699092,49.60366,50.51127,,,Looking at Target
+463,0.01604133,49.58139,50.43504,,,Looking at Target
+464,0.01694791,49.58677,50.41418,,,Looking at Target
+465,0.01618571,49.57628,50.39817,,,Looking at Target
+466,0.01680626,49.56604,50.38283,TRUE,0.6804903,Looking at Target
+467,0.01632668,49.54277,50.36953,,,Not looking at Target
+468,0.01665914,49.52976,50.42385,,,Not looking at Target
+469,0.01647448,49.53065,50.42602,,,Not looking at Target
+470,0.0165663,49.5527,50.43934,,,Not looking at Target
+471,0.01694654,49.63239,50.46854,,,Not looking at Target
+472,0.01618742,49.76468,50.48481,,,Not looking at Target
+473,0.0165663,49.79671,50.49625,,,Not looking at Target
+474,0.01656664,49.79591,50.49569,,,Not looking at Target
+475,0.01666358,53.45372,53.33661,,,Not looking at Target
+476,0.01647072,60.91758,61.97121,,,Not looking at Target
+477,0.01656596,67.03209,69.89395,,,Not looking at Target
+478,0.01694074,69.61167,73.73148,,,Looking at Target
+479,0.01619322,70.22282,73.77055,,,Looking at Target
+480,0.01679977,70.22573,73.71439,,,Looking at Target
+481,0.01699262,70.2592,73.73775,,,Looking at Target
+482,0.0159932,70.40533,73.69553,,,Looking at Target
+483,0.01699467,70.49715,73.65385,,,Looking at Target
+484,0.01605225,70.52628,73.60243,,,Looking at Target
+485,0.01656869,70.50503,73.48759,,,Looking at Target
+486,0.0165663,70.48064,73.47068,,,Looking at Target
+487,0.01679977,70.46774,73.45864,,,Looking at Target
+488,0.01633419,70.47453,73.47551,,,Looking at Target
+489,0.01664924,70.45913,73.4811,,,Looking at Target
+490,0.01648335,70.46333,73.52055,,,Looking at Target
+491,0.01656596,70.46066,73.52058,,,Looking at Target
+492,0.01656664,70.44247,73.5087,,,Looking at Target
+493,0.01736638,70.42946,73.50595,,,Looking at Target
+494,0.01599695,70.4155,73.49372,,,Looking at Target
+495,0.01633658,70.46213,73.43224,,,Looking at Target
+496,0.01664753,70.44931,73.42258,,,Looking at Target
+497,0.01648608,70.44392,73.41537,,,Looking at Target
+498,0.01656596,70.47036,73.43117,,,Looking at Target
+499,0.01693528,70.51363,73.45884,,,Looking at Target
+500,0.01620005,70.52805,73.54912,,,Looking at Target
+501,0.0167868,70.5542,73.56666,,,Looking at Target
+502,0.01701413,70.60175,73.61812,,,Looking at Target
+503,0.01597442,70.63364,73.67436,,,Looking at Target
+504,0.01648984,70.67776,73.70763,TRUE,0.6295283,Looking at Target
+505,0.01656698,70.7011,73.73828,,,Not looking at Target
+506,0.01692606,70.71522,73.74208,,,Not looking at Target
+507,0.01699672,70.72849,73.76065,,,Not looking at Target
+508,0.01599354,70.74873,73.76565,,,Not looking at Target
+509,0.01699672,70.77668,73.79691,,,Not looking at Target
+510,0.01599217,70.7951,73.84875,,,Not looking at Target
+511,0.04793488,60.81155,61.21289,,,Not looking at Target
+512,0.016568,53.5043,53.36102,,,Not looking at Target
+513,0.0165663,44.43942,44.50491,,,Not looking at Target
+514,0.01690661,37.76629,36.72984,,,Not looking at Target
+515,0.01622701,34.01965,32.6002,,,Not looking at Target
+516,0.01675881,29.08431,29.61852,,,Not looking at Target
+517,0.01701174,28.87849,28.89062,,,Looking at Target
+518,0.01597716,28.85251,28.90018,,,Looking at Target
+519,0.01651885,28.6029,28.9052,,,Looking at Target
+520,0.0165663,28.50292,28.9334,,,Looking at Target
+521,0.01656732,28.50002,28.95093,,,Looking at Target
+522,0.01732474,28.48085,28.96728,,,Looking at Target
+523,0.01599354,28.48546,28.97018,,,Looking at Target
+524,0.0163813,28.31279,28.96506,,,Looking at Target
+525,0.01660692,28.16859,28.94975,,,Looking at Target
+526,0.01699535,28.16021,28.84494,,,Looking at Target
+527,0.01609731,28.0771,28.80262,,,Looking at Target
+528,0.0168933,28.05671,28.79339,,,Looking at Target
+529,0.0169957,28.07544,28.76171,,,Looking at Target
+530,0.0159932,28.11093,28.77242,,,Looking at Target
+531,0.01638437,28.15746,28.79914,,,Looking at Target
+532,0.01660487,28.18268,28.8015,,,Looking at Target
+533,0.01699808,28.20984,28.78048,,,Looking at Target
+534,0.01609765,28.21135,28.66262,,,Looking at Target
+535,0.01656698,28.20464,28.58246,,,Looking at Target
+536,0.0165663,28.19314,28.50612,,,Looking at Target
+537,0.01674379,28.15728,28.4919,,,Looking at Target
+538,0.01639017,28.10536,28.47315,,,Looking at Target
+539,0.01659838,28.09602,28.45889,,,Looking at Target
+540,0.0169957,28.10228,28.46331,,,Looking at Target
+541,0.0161055,28.12045,28.4717,,,Looking at Target
+542,0.01688442,28.13219,28.49533,,,Looking at Target
+543,0.01624954,28.14862,28.51705,TRUE,0.6783044,Looking at Target
+544,0.01674038,28.12535,28.52107,,,Not looking at Target
+545,0.01639188,28.14283,28.49781,,,Not looking at Target
+546,0.01659633,28.18771,28.51704,,,Not looking at Target
+547,0.01699604,28.23975,28.54095,,,Not looking at Target
+548,0.01610823,28.27991,28.52534,,,Not looking at Target
+549,0.01687964,28.30706,28.43856,,,Not looking at Target
+550,0.01625329,28.31335,28.39516,,,Not looking at Target
+551,0.01675062,28.30606,28.3899,,,Not looking at Target
+552,0.01638232,32.92194,31.66044,,,Not looking at Target
+553,0.01659633,38.82727,38.50128,,,Not looking at Target
+554,0.01653763,43.79549,44.74581,,,Not looking at Target
+555,0.0165663,47.05182,48.63541,,,Not looking at Target
+556,0.01687725,48.01686,49.40001,,,Looking at Target
+557,0.01625603,48.00334,49.2656,,,Looking at Target
+558,0.01673458,48.03935,49.29104,,,Looking at Target
+559,0.01700901,48.05562,49.34277,,,Looking at Target
+560,0.01599525,48.04309,49.34823,,,Looking at Target
+561,0.01652875,48.05227,49.36091,,,Looking at Target
+562,0.01656596,48.06717,49.36523,,,Looking at Target
+563,0.01687282,48.08864,49.36819,,,Looking at Target
+564,0.01626046,48.09734,49.36662,,,Looking at Target
+565,0.01673321,48.18958,49.39651,,,Looking at Target
+566,0.01640075,47.90088,49.36827,,,Looking at Target
+567,0.01658507,47.88797,49.32185,,,Looking at Target
+568,0.01654787,47.87829,49.30241,,,Looking at Target
+569,0.0165663,47.84354,49.27107,,,Looking at Target
+570,0.01687179,47.81386,49.24779,,,Looking at Target
+571,0.01626149,47.80723,49.2329,,,Looking at Target
+572,0.05185476,47.86583,49.20349,,,Looking at Target
+573,0.016568,47.87193,49.21588,,,Looking at Target
+574,0.01728378,47.77594,49.18116,,,Looking at Target
+575,0.0158495,47.76408,49.09472,,,Looking at Target
+576,0.01714008,47.75714,49.08336,,,Looking at Target
+577,0.0159932,47.75041,49.16503,,,Looking at Target
+578,0.01699843,47.73556,49.15226,,,Looking at Target
+579,0.01613451,47.7233,49.12618,,,Looking at Target
+580,0.01685131,47.70697,49.10106,,,Looking at Target
+581,0.01628197,47.669,49.08155,,,Looking at Target
+582,0.01670829,47.64647,49.08118,TRUE,0.6816273,Looking at Target
+583,0.01642499,47.64018,49.12045,,,Not looking at Target
+584,0.01656732,47.65097,49.19783,,,Not looking at Target
+585,0.01700013,47.6546,49.20269,,,Not looking at Target
+586,0.01613314,47.66372,49.21658,,,Not looking at Target
+587,0.01685438,47.78967,49.21101,,,Not looking at Target
+588,0.01627889,47.82884,49.20831,,,Not looking at Target
+589,0.01656732,47.8287,49.19707,,,Not looking at Target
+590,0.01656596,47.94184,49.18248,,,Not looking at Target
+591,0.0165663,56.94347,56.8131,,,Not looking at Target
+592,0.01698887,63.62454,64.79121,,,Not looking at Target
+593,0.01614475,68.71007,72.28735,,,Not looking at Target
+594,0.01684585,71.19093,73.15665,,,Looking at Target
+595,0.01628675,71.11491,73.42803,,,Looking at Target
+596,0.01669976,70.95586,73.44578,,,Looking at Target
+597,0.01699774,70.92543,73.47376,,,Looking at Target
+598,0.0160031,70.94923,73.56499,,,Looking at Target
+599,0.01698238,70.97433,73.65903,,,Looking at Target
+600,0.01615124,70.96836,73.66206,,,Looking at Target
+601,0.01656766,70.97997,73.66975,,,Looking at Target
+602,0.017279,70.97935,73.66781,,,Looking at Target
+603,0.01585359,70.98297,73.6697,,,Looking at Target
+604,0.01713223,70.98215,73.60759,,,Looking at Target
+605,0.01600037,70.99732,73.63634,,,Looking at Target
+606,0.01656698,71.00454,73.64133,,,Looking at Target
+607,0.01656664,71.0247,73.66824,,,Looking at Target
+608,0.0165663,71.03621,73.66181,,,Looking at Target
+609,0.01656766,71.06126,73.66389,,,Looking at Target
+610,0.01669157,71.04166,73.66399,,,Looking at Target
+611,0.01644137,71.03687,73.65533,,,Looking at Target
+612,0.01656664,71.03008,73.65974,,,Looking at Target
+613,0.01697624,71.02663,73.63591,,,Looking at Target
+614,0.01615704,71.01971,73.58578,,,Looking at Target
+615,0.01683288,71.00392,73.50921,,,Looking at Target
+616,0.01630108,70.98492,73.4964,,,Looking at Target
+617,0.01669088,70.98331,73.48727,,,Looking at Target
+618,0.0170015,70.98679,73.43654,,,Looking at Target
+619,0.01600685,70.98786,73.44145,,,Looking at Target
+
