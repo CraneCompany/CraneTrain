@@ -14,11 +14,11 @@ public class setSkybox : MonoBehaviour {
         cam = GetComponent<Camera>();
         cams = GetComponentsInChildren<Camera>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-		if(SceneManager.GetActiveScene().name == "Scene1")
+        if (SceneManager.GetActiveScene().name == "Scene1" || SceneManager.GetActiveScene().name == "Amsterdam")
         {
             cam.clearFlags = CameraClearFlags.SolidColor;
         }
