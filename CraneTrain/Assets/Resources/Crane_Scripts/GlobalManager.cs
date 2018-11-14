@@ -46,7 +46,7 @@ public class GlobalManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.N))
         {
-            SceneManager.LoadScene("Testing1");
+            SceneManager.LoadScene(2);
         }
     }
 }
