@@ -183,7 +183,6 @@ public class DataExport : MonoBehaviour
 
     private void CheckEyeAngle()
     {
-        Debug.Log("Checking eye angle");
         float f_leftEyeAngle = Vector3.Angle(FoveInterface.GetLeftEyeVector_Immediate(), cs_FoveInterface.transform.forward);
         float f_rightEyeAngle = Vector3.Angle(FoveInterface.GetRightEyeVector_Immediate(), cs_FoveInterface.transform.forward);
         if (FoveInterface.CheckEyesClosed() == Fove.Managed.EFVR_Eye.Neither)

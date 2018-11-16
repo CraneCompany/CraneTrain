@@ -15,7 +15,7 @@ public class Event_Active: MonoBehaviour
     // Use this for initialization
     void Start ()
 	{
-		
+        go_car.transform.position = go_waypoints[0].transform.position;
 	}
 	
 	// Update is called once per frame
