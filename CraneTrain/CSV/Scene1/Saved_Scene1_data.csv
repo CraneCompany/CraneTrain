@@ -1,0 +1,266 @@
+ID (frame),Elapsed Time,Angle left eye,Angle right eye,Block seen,Reaction time block,On Target
+0,0.101766,eye closed,eye closed,,,Looking at Target
+1,0.101766,eye closed,eye closed,,,Looking at Target
+2,0.02,eye closed,eye closed,,,Looking at Target
+3,0.01626524,eye closed,eye closed,,,Looking at Target
+4,0.01672604,eye closed,eye closed,,,Looking at Target
+5,0.01700833,eye closed,eye closed,,,Looking at Target
+6,0.01599286,eye closed,eye closed,,,Looking at Target
+7,0.01653899,eye closed,eye closed,,,Looking at Target
+8,0.01656698,eye closed,eye closed,,,Looking at Target
+9,0.0165663,eye closed,eye closed,,,Looking at Target
+10,0.01656698,eye closed,eye closed,,,Looking at Target
+11,0.01671409,eye closed,eye closed,,,Looking at Target
+12,0.01641884,eye closed,eye closed,,,Looking at Target
+13,0.01656869,eye closed,eye closed,,,Looking at Target
+14,0.01699092,eye closed,eye closed,,,Looking at Target
+15,0.016141,eye closed,eye closed,,,Looking at Target
+16,0.01684858,eye closed,eye closed,,,Looking at Target
+17,0.0162847,eye closed,71.16937,,,Looking at Target
+18,0.01673219,eye closed,71.17037,,,Looking at Target
+19,0.01640075,eye closed,eye closed,,,Looking at Target
+20,0.01656766,eye closed,eye closed,,,Looking at Target
+21,0.01700047,eye closed,71.17074,,,Looking at Target
+22,0.01613246,eye closed,71.17056,,,Looking at Target
+23,0.01684448,eye closed,71.16942,,,Looking at Target
+24,0.01628845,eye closed,71.16846,,,Looking at Target
+25,0.0167001,eye closed,eye closed,,,Looking at Target
+26,0.01699365,eye closed,eye closed,TRUE,0.6043971,Looking at Target
+27,0.05045972,eye closed,eye closed,,,Not looking at Target
+28,0.01753705,eye closed,eye closed,,,Not looking at Target
+29,0.01599081,eye closed,eye closed,,,Not looking at Target
+30,0.01617342,eye closed,eye closed,,,Not looking at Target
+31,0.01683015,eye closed,eye closed,,,Not looking at Target
+32,0.01630347,eye closed,eye closed,,,Not looking at Target
+33,0.01666324,eye closed,eye closed,,,Not looking at Target
+34,0.01646936,eye closed,eye closed,,,Not looking at Target
+35,0.01656732,eye closed,eye closed,,,Not looking at Target
+36,0.01694415,eye closed,eye closed,,,Not looking at Target
+37,0.01619015,eye closed,eye closed,,,Not looking at Target
+38,0.01679977,eye closed,eye closed,,,Not looking at Target
+39,0.01700901,eye closed,eye closed,,,Not looking at Target
+40,0.01598228,eye closed,eye closed,,,Not looking at Target
+41,0.01699228,eye closed,eye closed,,,Not looking at Target
+42,0.01604986,eye closed,eye closed,,,Not looking at Target
+43,0.0165663,eye closed,eye closed,,,Not looking at Target
+44,0.01656698,eye closed,eye closed,,,Not looking at Target
+45,0.01679465,eye closed,eye closed,,,Not looking at Target
+46,0.01633692,eye closed,eye closed,,,Not looking at Target
+47,0.016653,eye closed,eye closed,,,Not looking at Target
+48,0.01699228,eye closed,eye closed,,,Not looking at Target
+49,0.01605532,eye closed,eye closed,,,Not looking at Target
+50,0.01694108,eye closed,eye closed,,,Not looking at Target
+51,0.01619186,eye closed,eye closed,,,Not looking at Target
+52,0.01656732,eye closed,eye closed,,,Not looking at Target
+53,0.0165663,eye closed,eye closed,,,Not looking at Target
+54,0.01664651,eye closed,eye closed,,,Not looking at Target
+55,0.01701037,eye closed,eye closed,,,Not looking at Target
+56,0.01604337,eye closed,eye closed,,,Not looking at Target
+57,0.01693152,eye closed,eye closed,,,Not looking at Target
+58,0.01702505,eye closed,eye closed,,,Not looking at Target
+59,0.01596453,eye closed,eye closed,,,Not looking at Target
+60,0.01634545,eye closed,eye closed,,,Not looking at Target
+61,0.01665846,eye closed,eye closed,,,Not looking at Target
+62,0.01698136,eye closed,eye closed,,,Not looking at Target
+63,0.01606044,eye closed,eye closed,,,Not looking at Target
+64,0.01693801,eye closed,eye closed,,,Not looking at Target
+65,0.01619527,eye closed,eye closed,,,Not looking at Target
+66,0.01678339,eye closed,eye closed,,,Not looking at Target
+67,0.01635023,eye closed,eye closed,,,Not looking at Target
+68,0.01664412,eye closed,eye closed,,,Not looking at Target
+69,0.01648984,eye closed,eye closed,,,Not looking at Target
+70,0.01656664,eye closed,eye closed,,,Not looking at Target
+71,0.0169264,eye closed,eye closed,,,Not looking at Target
+72,0.01699194,eye closed,eye closed,,,Not looking at Target
+73,0.01599695,eye closed,eye closed,,,Not looking at Target
+74,0.01635092,eye closed,eye closed,,,Not looking at Target
+75,0.016639,eye closed,eye closed,,,Not looking at Target
+76,0.01699194,eye closed,eye closed,,,Not looking at Target
+77,0.01607034,eye closed,eye closed,,,Not looking at Target
+78,0.0169247,eye closed,eye closed,,,Not looking at Target
+79,0.01698955,eye closed,eye closed,,,Not looking at Target
+80,0.0157843,eye closed,eye closed,,,Not looking at Target
+81,0.01656766,eye closed,eye closed,,,Not looking at Target
+82,0.01664241,eye closed,eye closed,,,Not looking at Target
+83,0.01649052,eye closed,eye closed,,,Not looking at Target
+84,0.01656562,eye closed,eye closed,,,Not looking at Target
+85,0.01656732,eye closed,eye closed,,,Not looking at Target
+86,0.0165663,eye closed,eye closed,,,Not looking at Target
+87,0.01677246,eye closed,eye closed,,,Not looking at Target
+88,0.0336347,eye closed,eye closed,,,Not looking at Target
+89,0.01735307,eye closed,eye closed,,,Not looking at Target
+90,0.01599217,eye closed,eye closed,,,Not looking at Target
+91,0.01701174,eye closed,eye closed,,,Not looking at Target
+92,0.01597613,eye closed,eye closed,,,Not looking at Target
+93,0.01700423,eye closed,eye closed,,,Not looking at Target
+94,0.01606419,eye closed,eye closed,,,Not looking at Target
+95,0.01691958,eye closed,eye closed,,,Not looking at Target
+96,0.01699433,eye closed,eye closed,,,Not looking at Target
+97,0.01599217,eye closed,eye closed,,,Not looking at Target
+98,0.01636081,eye closed,eye closed,,,Not looking at Target
+99,0.01663252,eye closed,eye closed,,,Not looking at Target
+100,0.01649974,eye closed,eye closed,,,Not looking at Target
+101,0.01748449,eye closed,eye closed,,,Not looking at Target
+102,0.01600105,eye closed,eye closed,,,Not looking at Target
+103,0.01621507,eye closed,eye closed,,,Not looking at Target
+104,0.01678782,eye closed,eye closed,,,Not looking at Target
+105,0.01634511,eye closed,eye closed,,,Not looking at Target
+106,0.01663559,eye closed,eye closed,,,Not looking at Target
+107,0.01649837,eye closed,eye closed,,,Not looking at Target
+108,0.01656664,eye closed,eye closed,,,Not looking at Target
+109,0.01691002,eye closed,eye closed,,,Not looking at Target
+110,0.01622326,eye closed,eye closed,,,Not looking at Target
+111,0.01656732,eye closed,eye closed,,,Not looking at Target
+112,0.01656664,eye closed,eye closed,,,Not looking at Target
+113,0.01662296,eye closed,eye closed,,,Not looking at Target
+114,0.01701106,eye closed,eye closed,,,Not looking at Target
+115,0.01606624,eye closed,eye closed,,,Not looking at Target
+116,0.0169049,eye closed,eye closed,,,Not looking at Target
+117,0.01622769,eye closed,eye closed,,,Not looking at Target
+118,0.01676632,eye closed,eye closed,,,Not looking at Target
+119,0.01636832,eye closed,eye closed,,,Not looking at Target
+120,0.01662432,eye closed,eye closed,,,Not looking at Target
+121,0.0169974,eye closed,eye closed,,,Not looking at Target
+122,0.01607819,eye closed,eye closed,,,Not looking at Target
+123,0.01690592,eye closed,eye closed,,,Not looking at Target
+124,0.01622633,eye closed,eye closed,,,Not looking at Target
+125,0.01677417,eye closed,eye closed,,,Not looking at Target
+126,0.01635877,eye closed,eye closed,,,Not looking at Target
+127,0.01661886,50.45601,eye closed,,,Not looking at Target
+128,0.01699126,50.4794,eye closed,,,Not looking at Target
+129,0.0160898,50.64096,eye closed,,,Not looking at Target
+130,0.01690012,eye closed,eye closed,,,Not looking at Target
+131,0.01623384,eye closed,eye closed,,,Not looking at Target
+132,0.01656596,eye closed,eye closed,,,Not looking at Target
+133,0.016568,eye closed,eye closed,,,Not looking at Target
+134,0.01661409,eye closed,eye closed,,,Not looking at Target
+135,0.01651783,eye closed,eye closed,,,Not looking at Target
+136,0.01656732,eye closed,eye closed,,,Not looking at Target
+137,0.01689842,eye closed,eye closed,,,Not looking at Target
+138,0.01623384,eye closed,eye closed,,,Not looking at Target
+139,0.01656698,eye closed,eye closed,,,Not looking at Target
+140,0.01656732,eye closed,eye closed,,,Not looking at Target
+141,0.01662193,eye closed,eye closed,,,Not looking at Target
+142,0.01651066,eye closed,eye closed,,,Not looking at Target
+143,0.01656903,eye closed,eye closed,,,Not looking at Target
+144,0.0169008,56.28231,eye closed,,,Not looking at Target
+145,0.01623008,57.51915,eye closed,,,Not looking at Target
+146,0.01675267,58.46804,eye closed,,,Not looking at Target
+147,0.01699331,58.90394,eye closed,,,Not looking at Target
+148,0.01599251,59.13987,eye closed,,,Not looking at Target
+149,0.03210347,eye closed,eye closed,,,Not looking at Target
+150,0.01688067,eye closed,eye closed,,,Not looking at Target
+151,0.01625364,eye closed,eye closed,,,Not looking at Target
+152,0.01674311,eye closed,eye closed,,,Not looking at Target
+153,0.01639188,eye closed,eye closed,,,Not looking at Target
+154,0.0165919,eye closed,eye closed,,,Not looking at Target
+155,0.01699228,eye closed,eye closed,,,Not looking at Target
+156,0.01699296,eye closed,eye closed,,,Not looking at Target
+157,0.01600105,eye closed,eye closed,,,Not looking at Target
+158,0.01625466,eye closed,eye closed,,,Not looking at Target
+159,0.01656562,eye closed,eye closed,,,Not looking at Target
+160,0.01656835,eye closed,eye closed,,,Not looking at Target
+161,0.01658575,eye closed,eye closed,,,Not looking at Target
+162,0.01699672,eye closed,eye closed,,,Not looking at Target
+163,0.01611574,eye closed,eye closed,,,Not looking at Target
+164,0.01687077,eye closed,eye closed,,,Not looking at Target
+165,0.01626319,eye closed,eye closed,,,Not looking at Target
+166,0.01673287,eye closed,eye closed,,,Not looking at Target
+167,0.01640007,eye closed,eye closed,,,Not looking at Target
+168,0.01658678,eye closed,eye closed,,,Not looking at Target
+169,0.01654616,eye closed,eye closed,,,Not looking at Target
+170,0.0165663,eye closed,eye closed,,,Not looking at Target
+171,0.01687145,59.13646,eye closed,,,Not looking at Target
+172,0.01700491,58.89574,eye closed,,,Not looking at Target
+173,0.01598501,58.65872,eye closed,,,Not looking at Target
+174,0.01640587,58.49783,eye closed,,,Not looking at Target
+175,0.01657927,58.39249,eye closed,,,Not looking at Target
+176,0.01699399,58.3234,eye closed,,,Not looking at Target
+177,0.01612666,58.27396,eye closed,,,Not looking at Target
+178,0.01687418,58.2135,eye closed,,,Not looking at Target
+179,0.01626012,58.10108,eye closed,,,Not looking at Target
+180,0.01672024,57.97598,eye closed,,,Not looking at Target
+181,0.01699296,57.8633,eye closed,,,Not looking at Target
+182,0.01599456,57.78915,eye closed,,,Not looking at Target
+183,0.01655776,57.7643,eye closed,,,Not looking at Target
+184,0.01656664,57.72783,eye closed,,,Not looking at Target
+185,0.01686121,57.67751,eye closed,,,Not looking at Target
+186,0.01627241,57.62554,eye closed,,,Not looking at Target
+187,0.01656664,57.56379,eye closed,,,Not looking at Target
+188,0.01656698,57.49066,eye closed,,,Not looking at Target
+189,0.01657142,57.39185,eye closed,,,Not looking at Target
+190,0.01701174,57.2517,eye closed,,,Not looking at Target
+191,0.0161171,57.08508,eye closed,,,Not looking at Target
+192,0.01687179,56.9344,eye closed,,,Not looking at Target
+193,0.01698375,56.78209,eye closed,,,Not looking at Target
+194,0.01599627,56.66162,eye closed,,,Not looking at Target
+195,0.0170131,56.59149,eye closed,,,Not looking at Target
+196,0.01597204,56.59108,eye closed,,,Not looking at Target
+197,0.01656254,56.58036,eye closed,,,Not looking at Target
+198,0.01656698,56.52638,eye closed,,,Not looking at Target
+199,0.0165663,56.43529,eye closed,,,Not looking at Target
+200,0.01656664,56.23185,eye closed,,,Not looking at Target
+201,0.01672365,55.89993,eye closed,,,Not looking at Target
+202,0.01699433,55.49683,eye closed,,,Not looking at Target
+203,0.01598535,55.01315,eye closed,,,Not looking at Target
+204,0.01656323,54.55844,eye closed,,,Not looking at Target
+205,0.01656698,54.04699,eye closed,,,Not looking at Target
+206,0.01685097,53.36702,eye closed,,,Not looking at Target
+207,0.01628265,52.63607,eye closed,,,Not looking at Target
+208,0.01670863,51.88213,eye closed,,,Not looking at Target
+209,0.01699467,51.37333,eye closed,,,Not looking at Target
+210,0.03324728,50.16517,eye closed,,,Not looking at Target
+211,0.01675028,eye closed,eye closed,,,Not looking at Target
+212,0.01638368,eye closed,eye closed,,,Not looking at Target
+213,0.01659156,eye closed,eye closed,,,Not looking at Target
+214,0.01654206,eye closed,eye closed,,,Not looking at Target
+215,0.01656664,eye closed,eye closed,,,Not looking at Target
+216,0.01687418,eye closed,eye closed,,,Not looking at Target
+217,0.01625944,eye closed,68.05856,,,Not looking at Target
+218,0.01672741,eye closed,67.06736,,,Not looking at Target
+219,0.01640621,eye closed,65.70572,,,Not looking at Target
+220,0.0165878,eye closed,64.01674,,,Not looking at Target
+221,0.01699126,eye closed,eye closed,,,Not looking at Target
+222,0.01612086,eye closed,eye closed,,,Not looking at Target
+223,0.01688442,eye closed,eye closed,,,Not looking at Target
+224,0.01624851,eye closed,eye closed,,,Not looking at Target
+225,0.0167257,eye closed,eye closed,,,Not looking at Target
+226,0.01640758,eye closed,eye closed,,,Not looking at Target
+227,0.01658439,eye closed,eye closed,,,Not looking at Target
+228,0.01700525,eye closed,eye closed,,,Not looking at Target
+229,0.01611027,eye closed,eye closed,,,Not looking at Target
+230,0.01656698,eye closed,eye closed,,,Not looking at Target
+231,0.0165663,eye closed,eye closed,,,Not looking at Target
+232,0.01672502,eye closed,eye closed,,,Not looking at Target
+233,0.01699262,eye closed,eye closed,,,Not looking at Target
+234,0.01599764,eye closed,eye closed,,,Not looking at Target
+235,0.01655162,eye closed,eye closed,,,Not looking at Target
+236,0.0174367,eye closed,eye closed,,,Not looking at Target
+237,0.01569658,eye closed,eye closed,,,Not looking at Target
+238,0.0165663,eye closed,eye closed,,,Not looking at Target
+239,0.0167199,eye closed,eye closed,,,Not looking at Target
+240,0.01641372,eye closed,eye closed,,,Not looking at Target
+241,0.01657347,eye closed,eye closed,,,Not looking at Target
+242,0.01655981,eye closed,eye closed,,,Not looking at Target
+243,0.01656664,eye closed,eye closed,,,Not looking at Target
+244,0.01687657,eye closed,eye closed,,,Not looking at Target
+245,0.01625773,eye closed,eye closed,,,Looking at Target
+246,0.01671785,eye closed,eye closed,,,Looking at Target
+247,0.01641509,eye closed,eye closed,,,Looking at Target
+248,0.01657483,eye closed,eye closed,,,Not looking at Target
+249,0.01698921,eye closed,eye closed,,,Looking at Target
+250,0.01613622,eye closed,eye closed,,,Not looking at Target
+251,0.01656732,31.37173,eye closed,,,Not looking at Target
+252,0.01729846,30.64517,eye closed,,,Not looking at Target
+253,0.01599695,eye closed,eye closed,,,Not looking at Target
+254,0.01640382,eye closed,eye closed,,,Not looking at Target
+255,0.01656971,eye closed,eye closed,,,Not looking at Target
+256,0.01700696,eye closed,eye closed,,,Not looking at Target
+257,0.01612393,eye closed,eye closed,,,Not looking at Target
+258,0.0165663,eye closed,eye closed,,,Not looking at Target
+259,0.01656664,eye closed,eye closed,,,Not looking at Target
+260,0.01670693,eye closed,eye closed,,,Not looking at Target
+261,0.01642806,eye closed,eye closed,,,Not looking at Target
+262,0.01656459,eye closed,eye closed,,,Not looking at Target
+263,0.01699194,eye closed,eye closed,,,Not looking at Target
+

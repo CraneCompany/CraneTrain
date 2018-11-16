@@ -175,9 +175,18 @@ public class DataExport : MonoBehaviour
     private string s_getPath(string scene)
     {
 #if UNITY_EDITOR
-        return Application.dataPath + "/CSV/" + "Saved_" + scene + "_data.csv";
+
+        if (!Directory.Exists(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene))
+        {
+            Directory.CreateDirectory(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene);
+        }
+        return @Directory.GetCurrentDirectory() + "\\CSV\\" + scene + "/" + "Saved_" + scene + "_data.csv";
 #else
-        return Application.dataPath +"/"+"Saved" + scene + "_data.csv";
+        if (!Directory.Exists(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene))
+        {
+            Directory.CreateDirectory(@Directory.GetCurrentDirectory() + "\\CSV\\" + scene);
+        }
+        return @Directory.GetCurrentDirectory() + "\\CSV\\" + scene + "/" + "Saved_" + scene + "_data.csv";
 #endif
     }
 
