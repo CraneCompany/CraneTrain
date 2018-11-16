@@ -8,10 +8,11 @@ using UnityEngine.UI;
 public class GlobalManager : MonoBehaviour
 {
     public FoveInterfaceBase f_foveInterface;
-
+    public AddBoardToCamera cs_addboardtocam;
     // Use this for initialization
     void Start()
     {
+        cs_addboardtocam = GetComponent<AddBoardToCamera>();
         updateParameters();
     }
 
@@ -46,7 +47,8 @@ public class GlobalManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.N))
         {
-            SceneManager.LoadScene("Testing1");
+            cs_addboardtocam.RemoveBoardFromCam();
+            SceneManager.LoadScene(2);
         }
     }
 }
