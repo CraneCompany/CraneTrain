@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 114386802328124810}
   - component: {fileID: 65311898576339430}
   - component: {fileID: 54949118592647892}
+  - component: {fileID: 82550984065908140}
   m_Layer: 0
   m_Name: Politie auto
   m_TagString: Untagged
@@ -215,7 +216,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4592412918729592}
   - component: {fileID: 114761868472925650}
-  - component: {fileID: 82540263112877854}
   m_Layer: 0
   m_Name: PolitieEventAm2
   m_TagString: Untagged
@@ -342,8 +342,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1105298512318060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.86, y: 0.06, z: -80.8}
+  m_LocalRotation: {x: -0, y: 0.037715796, z: -0, w: 0.99928856}
+  m_LocalPosition: {x: -66.18, y: 0, z: 31.7}
   m_LocalScale: {x: 11.107876, y: 11.107876, z: 11.107876}
   m_Children:
   - {fileID: 4591143786730854}
@@ -390,7 +390,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1808305633826048}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -70.2, y: 0, z: -82.4}
+  m_LocalPosition: {x: -69.3, y: 0, z: -72.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4407381160634044}
@@ -609,7 +609,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1571231276842708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.1, y: 0, z: -83.1}
+  m_LocalPosition: {x: -68.8, y: 0, z: -83.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4407381160634044}
@@ -1080,12 +1080,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18939447, y: 0.191164, z: 0.40266502}
   m_Center: {x: 0.02065664, y: 0.10184505, z: -0.16609652}
---- !u!82 &82540263112877854
+--- !u!82 &82550984065908140
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1619865201489836}
+  m_GameObject: {fileID: 1105298512318060}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -1135,7 +1135,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1200,5 +1200,9 @@ MonoBehaviour:
   go_car: {fileID: 1105298512318060}
   go_waypoints:
   - {fileID: 1571231276842708}
-  f_driveSpeed: 6
+  - {fileID: 1808305633826048}
+  - {fileID: 1697984556733048}
+  - {fileID: 1509294693608434}
+  - {fileID: 1704124611289242}
+  f_driveSpeed: 10
   f_waypointRadius: 0.2

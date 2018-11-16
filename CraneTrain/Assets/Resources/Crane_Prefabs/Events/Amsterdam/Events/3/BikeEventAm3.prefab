@@ -290,7 +290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4916980315933974}
   - component: {fileID: 114170255626110992}
-  - component: {fileID: 82200640071206068}
   m_Layer: 0
   m_Name: BikeEventAm3
   m_TagString: Untagged
@@ -836,6 +835,7 @@ GameObject:
   - component: {fileID: 114106226522114902}
   - component: {fileID: 65171135259878594}
   - component: {fileID: 54933817985208218}
+  - component: {fileID: 82121230868532688}
   m_Layer: 0
   m_Name: Fiets
   m_TagString: Untagged
@@ -4233,12 +4233,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22229652, y: 0.2682519, z: 0.48366532}
   m_Center: {x: 0.0013308724, y: 0.15844497, z: 0.015895288}
---- !u!82 &82200640071206068
+--- !u!82 &82121230868532688
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1087001981967174}
+  m_GameObject: {fileID: 1341567730126290}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -4288,7 +4288,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
