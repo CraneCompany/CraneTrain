@@ -41,6 +41,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1311367854327642
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4958779904935306}
+  m_Layer: 0
+  m_Name: wp2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1370411532048264
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,7 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4081643983030498}
   m_Layer: 0
-  m_Name: wp2
+  m_Name: wp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,11 +115,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672155078112188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.29, y: 0, z: 3.3}
+  m_LocalPosition: {x: -144.9, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4943424710130386}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4395946582551632
 Transform:
@@ -113,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1271395067326872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.8, y: 0, z: -28.66}
+  m_LocalPosition: {x: -153.5, y: 0, z: 14.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4943424710130386}
@@ -143,8 +158,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4395946582551632}
+  - {fileID: 4958779904935306}
   - {fileID: 4081643983030498}
   m_Father: {fileID: 4999944259512898}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4958779904935306
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311367854327642}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -144.9, y: 0, z: 14.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4943424710130386}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4999944259512898
@@ -229,8 +258,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.617023, z: 1}
+  m_Center: {x: 0, y: 0.1914885, z: 0}
 --- !u!114 &114521042114499158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,7 +274,7 @@ MonoBehaviour:
   go_car: {fileID: 0}
   go_waypoints:
   - {fileID: 1271395067326872}
-  - {fileID: 1672155078112188}
+  - {fileID: 1311367854327642}
   f_driveSpeed: 2
   f_waypointRadius: 1
 --- !u!114 &114632322508526446
@@ -262,7 +291,7 @@ MonoBehaviour:
   go_car: {fileID: 1689585581513714}
   go_waypoints:
   - {fileID: 1271395067326872}
-  - {fileID: 1672155078112188}
+  - {fileID: 1311367854327642}
   f_driveSpeed: 2.5
   f_waypointRadius: 0.2
 --- !u!114 &114977739520425562
