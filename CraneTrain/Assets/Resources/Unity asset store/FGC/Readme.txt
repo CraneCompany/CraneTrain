@@ -1,24 +1,26 @@
-Welcome To The FGC /Freedom's Gate Characters)
+Welcome To The Freedom's Gate Characters (FGC)
+
 
 ********************************************
 ************** GETTING STARTED *************
 ********************************************
 it's all very easy
 
-1) Download the demo scene that you will find inside the package
+1) Open the demo scene that you will find inside the package
 
 2) Start and try first simple animations
 
 3) Test the blendshape.
 
-4) Hair, Props, and Clothing. For add hair and cloth you can use add Item script.
+4) For add hairs and cloths you can use add Item script; I improved the weight-map of cloth included (Wagsuit), but I always recommend you to use the alpha texture included and set rendering mode to "Cutout"
 
-5) I worked a lot on weight-map and for that there is already a good compatibility between the various game-object. If you want you can still use the alpha-texutre that I put in the package. Remember to set the rendering mode of the material character on "Cutout".
+5) Video links useful to better understand how it works: https://www.youtube.com/watch?v=0JCVMSpoO24&list=PLeIqGmCk1EICV8HxSCbMhXAk4qWosaQGH
 
-5) Video links useful to better understand how it works:
-https://www.youtube.com/watch?v=N_tDMGXhxyA
-https://www.youtube.com/watch?v=kzlG5nVyusQ
-https://www.youtube.com/watch?v=0JCVMSpoO24&list=PLeIqGmCk1EICV8HxSCbMhXAk4qWosaQGH
+I improved the weight-map of cloth included (Wagsuit), but I always recommend you to use the alpha texture included and set rendering mode to "Cutout"
+
+FGC Male Adam is a free-package to test my new blendshapes that allow the customization face of my 3d character. These blendsapes will soon be incorporated in some my FG-Characters. I kindly ask you to evaluate this product and place your rating. Also expect your advice to help me improve my proposals. 
+Thank you.
+MauSan
 
 ********************************************
 ************** VERSION HISTORY *************
@@ -27,26 +29,18 @@ https://www.youtube.com/watch?v=0JCVMSpoO24&list=PLeIqGmCk1EICV8HxSCbMhXAk4qWosa
 1.0 (First release)
 
 Technical data
-Faces: 65265
-Vertices: 34860
-Edges : 98411
-UVs: 36836
+Faces: 65264
+Vertices: 34985
+Edges : 98493
+UVs: 36950
 
 Maps:
-Albedo
+Albedo (2)
 Specular
 Normal
 Occlusion
-7 Alpha
-
-Morph-Blendshapes 47 (126 into full version):
-01 Vip Morph
-15 Face Morph ( Ears - Eyes - Lips - Mouth - Nose)
-05 Phoneme Morph
-09 Monster-Creature Morph
-10 Expressions Morph
-07 BodyMorph
-
+6 Alpha for Cloth
+Alpha MaskDetail
 
 ********************************************
 ****************** CREDITS *****************

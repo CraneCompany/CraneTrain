@@ -100,7 +100,6 @@ GameObject:
   - component: {fileID: 65720503315636298}
   - component: {fileID: 54678910881146030}
   - component: {fileID: 114977739520425562}
-  - component: {fileID: 114521042114499158}
   m_Layer: 0
   m_Name: Placeholder
   m_TagString: Untagged
@@ -260,23 +259,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.617023, z: 1}
   m_Center: {x: 0, y: 0.1914885, z: 0}
---- !u!114 &114521042114499158
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1689585581513714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe9c5c74a44d81242b7b62c45b7540d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  go_car: {fileID: 0}
-  go_waypoints:
-  - {fileID: 1271395067326872}
-  - {fileID: 1311367854327642}
-  f_driveSpeed: 2
-  f_waypointRadius: 1
 --- !u!114 &114632322508526446
 MonoBehaviour:
   m_ObjectHideFlags: 1

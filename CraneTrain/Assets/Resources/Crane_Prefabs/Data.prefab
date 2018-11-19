@@ -52,6 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneType: 0
+  objSeen: 0
   cs_GameLoopManager: {fileID: 0}
-  b_newSeen: 0
-  f_newReaction: 0
+  f_reaction: 0

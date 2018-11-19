@@ -1,37 +1,33 @@
 fileFormatVersion: 2
-guid: 22742cca438d2c54cb5519f89158d51e
-timeCreated: 1463741820
+guid: 2c90cdd653b267140936a76dc2c74942
+timeCreated: 1471943221
 licenseType: Store
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Abdomen
-    100002: Chest
-    100004: //RootNode
-    100006: FGC_Male_Hair_Short2_Rig
-    100008: FGC_Male_Hair_Short2_Skin
-    100010: Head
-    100012: Hip
-    100014: Left Collar
-    100016: Neck
-    100018: Right Collar
-    400000: Abdomen
-    400002: Chest
-    400004: //RootNode
-    400006: FGC_Male_Hair_Short2_Rig
-    400008: FGC_Male_Hair_Short2_Skin
-    400010: Head
-    400012: Hip
-    400014: Left Collar
-    400016: Neck
-    400018: Right Collar
+    100000: //RootNode
+    100002: FGC_Male_Hair_Short2_Rig
+    100004: FGC_Male_Hair_Short2_Skin
+    100006: mhr_Sh2_Abdomen
+    100008: mhr_Sh2_Chest
+    100010: mhr_Sh2_Head
+    100012: mhr_Sh2_Hip
+    100014: mhr_Sh2_Neck
+    400000: //RootNode
+    400002: FGC_Male_Hair_Short2_Rig
+    400004: FGC_Male_Hair_Short2_Skin
+    400006: mhr_Sh2_Abdomen
+    400008: mhr_Sh2_Chest
+    400010: mhr_Sh2_Head
+    400012: mhr_Sh2_Hip
+    400014: mhr_Sh2_Neck
     4300000: FGC_Male_Hair_Short2_Skin
     9500000: //RootNode
     13700000: FGC_Male_Hair_Short2_Skin
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 2
+    materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
