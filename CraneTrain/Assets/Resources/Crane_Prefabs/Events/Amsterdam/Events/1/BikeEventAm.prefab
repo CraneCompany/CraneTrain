@@ -395,7 +395,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4553209257043258}
   - component: {fileID: 114633655794614102}
-  - component: {fileID: 82188784759446806}
   m_Layer: 0
   m_Name: BikeEventAm
   m_TagString: Untagged
@@ -1811,6 +1810,7 @@ GameObject:
   - component: {fileID: 114292550123072886}
   - component: {fileID: 65139823829449262}
   - component: {fileID: 54757631615976372}
+  - component: {fileID: 82642367411036010}
   m_Layer: 0
   m_Name: Fiets
   m_TagString: Untagged
@@ -4262,12 +4262,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22229652, y: 0.2682519, z: 0.48366532}
   m_Center: {x: 0.0013308724, y: 0.15844497, z: 0.015895288}
---- !u!82 &82188784759446806
+--- !u!82 &82642367411036010
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152380292592414}
+  m_GameObject: {fileID: 1865188641455628}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
