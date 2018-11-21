@@ -21,14 +21,4 @@ public class ActiveRigManager : MonoBehaviour {
             go_foveRig.SetActive(false);
         }
     }
-
-    public void HandleData()
-    {
-        cs_data = GameObject.Find("Data").GetComponent<DataExport>();
-        if (cs_data != null)
-        {
-            string scene = SceneManager.GetActiveScene().name;
-            cs_data.SaveData(scene);
-        }
-    }
 }

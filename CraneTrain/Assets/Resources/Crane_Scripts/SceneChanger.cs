@@ -26,7 +26,7 @@ public class SceneChanger : MonoBehaviour {
     public void Testmap1()
     {
         Debug.Log("DebugTest 1");
-        cs_activeRigManager.HandleData();
+        gameObject.GetComponent<HandleData>().StoreData();
         SceneManager.LoadScene(2);
     }
 
