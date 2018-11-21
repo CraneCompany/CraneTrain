@@ -12,8 +12,6 @@ public class ActiveRigManager : MonoBehaviour {
 	public void rigActive () {
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            Debug.Log("SET ACTIVE");
-
             go_foveRig.SetActive(true);
     }
         if (SceneManager.GetActiveScene().buildIndex == 0)

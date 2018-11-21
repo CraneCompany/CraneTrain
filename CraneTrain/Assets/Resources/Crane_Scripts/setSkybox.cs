@@ -18,7 +18,7 @@ public class setSkybox : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Scene1")
+        if (SceneManager.GetActiveScene().name == "Training")
         {
             cam.clearFlags = CameraClearFlags.SolidColor;
         }

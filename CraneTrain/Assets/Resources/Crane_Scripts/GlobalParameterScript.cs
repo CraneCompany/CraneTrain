@@ -15,4 +15,5 @@ public class GlobalParameterScript : MonoBehaviour {
 
     public bool b_targLifeCycle = true;
 
+    public bool b_leftSided = true;
 }
