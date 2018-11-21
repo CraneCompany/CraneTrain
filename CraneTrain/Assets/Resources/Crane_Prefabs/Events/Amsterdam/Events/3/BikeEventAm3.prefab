@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4011045435249484}
   m_Layer: 0
-  m_Name: wp2
+  m_Name: wp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,6 +201,21 @@ GameObject:
   - component: {fileID: 4073924876542042}
   m_Layer: 0
   m_Name: pCylinder6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1078175163387604
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4824253816735742}
+  m_Layer: 0
+  m_Name: wp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4916980315933974}
   - component: {fileID: 114170255626110992}
-  - component: {fileID: 82200640071206068}
   m_Layer: 0
   m_Name: BikeEventAm3
   m_TagString: Untagged
@@ -821,6 +835,7 @@ GameObject:
   - component: {fileID: 114106226522114902}
   - component: {fileID: 65171135259878594}
   - component: {fileID: 54933817985208218}
+  - component: {fileID: 82121230868532688}
   m_Layer: 0
   m_Name: Fiets
   m_TagString: Untagged
@@ -2155,11 +2170,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1060304634720842}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.8, y: 0, z: 111.1}
+  m_LocalPosition: {x: -114.36, y: 0, z: -12.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4889126063121504}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4016093363371884
 Transform:
@@ -2990,8 +3005,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341567730126290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.2, y: 0, z: 37}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -112.09, y: 0, z: 37}
+  m_LocalScale: {x: 4.8438, y: 4.8438, z: 4.8438}
   m_Children:
   - {fileID: 4016093363371884}
   - {fileID: 4185787172361950}
@@ -3704,6 +3719,19 @@ Transform:
   m_Father: {fileID: 4931360184638844}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4824253816735742
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1078175163387604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -114.36, y: 0, z: -12.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4889126063121504}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4826488593367790
 Transform:
   m_ObjectHideFlags: 1
@@ -3752,7 +3780,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1656914772806856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.9, y: 0, z: 39.12}
+  m_LocalPosition: {x: -113.259995, y: 0, z: 81.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4889126063121504}
@@ -3850,6 +3878,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4854068975084184}
+  - {fileID: 4824253816735742}
   - {fileID: 4011045435249484}
   m_Father: {fileID: 4916980315933974}
   m_RootOrder: 1
@@ -3917,7 +3946,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087001981967174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.32, y: 0, z: -62.4}
+  m_LocalPosition: {x: 45.91, y: 0.22, z: -62.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4435380659506142}
@@ -4204,12 +4233,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22229652, y: 0.2682519, z: 0.48366532}
   m_Center: {x: 0.0013308724, y: 0.15844497, z: 0.015895288}
---- !u!82 &82200640071206068
+--- !u!82 &82121230868532688
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1087001981967174}
+  m_GameObject: {fileID: 1341567730126290}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -4259,7 +4288,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4324,6 +4353,7 @@ MonoBehaviour:
   go_car: {fileID: 1341567730126290}
   go_waypoints:
   - {fileID: 1656914772806856}
+  - {fileID: 1078175163387604}
   - {fileID: 1060304634720842}
-  f_driveSpeed: 2.5
+  f_driveSpeed: 4
   f_waypointRadius: 0.2
