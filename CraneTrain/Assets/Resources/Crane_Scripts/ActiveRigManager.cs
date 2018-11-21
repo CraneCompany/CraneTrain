@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ActiveRigManager : MonoBehaviour {
 
     public GameObject go_foveRig;
-    private DataExport cs_data;
+
 
 	// Use this for initialization
 	public void rigActive () {
