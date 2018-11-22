@@ -5,26 +5,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GlobalManager : MonoBehaviour
+public class ControlsScript : MonoBehaviour
 {
-    public FoveInterfaceBase f_foveInterface;
-    public AddBoardToCamera cs_addboardtocam;
-    // Use this for initialization
+    public FoveInterfaceBase fi_foveInterface;
+    private SceneChanger cs_sceneChanger;
+
     void Start()
     {
-        cs_addboardtocam = GetComponent<AddBoardToCamera>();
-        updateParameters();
+        cs_sceneChanger = GetComponent<SceneChanger>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-
         Controls();
-    }
-    void updateParameters()
-    {
-
     }
 
     void Controls()
@@ -32,12 +25,15 @@ public class GlobalManager : MonoBehaviour
         //start callibration
         if (Input.GetKeyDown(KeyCode.C))
         {
-            f_foveInterface.EnsureEyeTrackingCalibration();
+            if (fi_foveInterface)
+            {
+                fi_foveInterface.EnsureEyeTrackingCalibration();
+            }
         }
         //quit application
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            cs_sceneChanger.Quit();
         }
         //reload scene
         if (Input.GetKeyDown(KeyCode.R))
@@ -47,8 +43,7 @@ public class GlobalManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.N))
         {
-            cs_addboardtocam.RemoveBoardFromCam();
-            SceneManager.LoadScene(2);
+            cs_sceneChanger.AmsterdamScene();
         }
     }
 }
