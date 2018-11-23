@@ -43,7 +43,7 @@ public class ControlsScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.N))
         {
-            
+            cs_sceneChanger.MenuScene();
         }
     }
 }

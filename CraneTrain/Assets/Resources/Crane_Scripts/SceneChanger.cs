@@ -71,22 +71,24 @@ public class SceneChanger : MonoBehaviour
         {
             go_foveRig.SetActive(true);
         }
-        else
-        {
-            go_foveRig.SetActive(false);
-        }
+        
         if (fadeIn)
         {
             a_fadePlane.Play("FadeIn");
         }
-        StartCoroutine(ChangeSceneMethod(sceneName, fadeIn, fadeOut));
+        
+        StartCoroutine(ChangeSceneMethod(sceneName, fadeIn, fadeOut, menu));
     }
 
-    IEnumerator ChangeSceneMethod(string sceneName, bool fadeIn, bool fadeOut)
+    IEnumerator ChangeSceneMethod(string sceneName, bool fadeIn, bool fadeOut, bool menu)
     {
         if (fadeIn)
         {
             yield return new WaitForSeconds(2 / f_fadeSpeed);
+        }
+        if (menu)
+        {
+            go_foveRig.SetActive(false);
         }
         SceneManager.LoadScene(sceneName);
         if (fadeOut)
@@ -95,7 +97,7 @@ public class SceneChanger : MonoBehaviour
         }
         else
         {
-            //zet plane op onzichtbaar
+            //zet plane op onzichtbaar WERKT NIET REEEEEEEEEEE
             Debug.Log("plane onzichtbaar");
             a_fadePlane.gameObject.GetComponent<MeshRenderer>().material.color = new Color(0,0,0,0);
         }
