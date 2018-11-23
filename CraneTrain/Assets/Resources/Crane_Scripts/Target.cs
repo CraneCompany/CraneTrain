@@ -60,11 +60,11 @@ public class Target : MonoBehaviour
 
     public void PlayerDestroyed()
     {
+        cs_scoreManager.ScoreInscreased();
         cs_gameLoop.NextBlock();
         cs_gameLoop.PrepareDataVars(SEEN.YES, f_timer);
         Debug.Log(f_timer);
         cs_Audio.PlayCoinSound();
-        cs_scoreManager.i_globalScore++;
         DestroyThis();
     }
 

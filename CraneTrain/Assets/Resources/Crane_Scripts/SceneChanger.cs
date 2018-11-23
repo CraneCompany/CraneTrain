@@ -12,7 +12,7 @@ public class SceneChanger : MonoBehaviour
 
     private void Start()
     {
-        f_fadeSpeed = 1f; //1 = 100%
+        f_fadeSpeed = .5f; //1 = 100%
         cs_globalParameterScript = GetComponent<GlobalParameterScript>();
 
         go_foveRig.SetActive(true);
