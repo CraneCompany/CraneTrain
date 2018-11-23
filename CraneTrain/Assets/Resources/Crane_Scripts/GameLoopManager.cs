@@ -44,10 +44,11 @@ public class GameLoopManager : MonoBehaviour
 
     public void TrainingFinished()
     {
+        //tbo
         if (cs_globalParameterScript.i_amountToFinish == cs_scoreManager.i_globalScore)
         {
             cs_addBoardToCam.RemoveBoardFromCam();
-            cs_sceneChanger.Testmap1();
+            cs_sceneChanger.AmsterdamScene();
         }
     }
 
