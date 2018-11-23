@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameLoopManager : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class GameLoopManager : MonoBehaviour
     public GlobalParameterScript cs_globalParameterScript;
     public ScoreManager cs_scoreManager;
     public SceneChanger cs_sceneChanger;
-
     private AddBoardToCamera cs_addBoardToCam;
 
     private int i_targNum;
@@ -28,7 +28,18 @@ public class GameLoopManager : MonoBehaviour
         cs_addBoardToCam = GetComponent<AddBoardToCamera>();
 
         i_targNum = 0;
+
+        AddTargetsToList();
         NextBlock();
+    }
+
+    void AddTargetsToList()
+    {
+        foreach (GameObject go in GameObject.FindGameObjectsWithTag("Target"))
+        {
+            goL_targets.Add(go);
+            go.SetActive(false);
+        }
     }
 
     public void NextBlock()

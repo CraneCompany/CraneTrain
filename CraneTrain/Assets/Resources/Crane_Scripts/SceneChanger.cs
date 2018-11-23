@@ -36,7 +36,7 @@ public class SceneChanger : MonoBehaviour
 
     public void TrainingScene()
     {
-        CallEnum("Training", true, false, true);
+        CallEnum("Training", false, true, false);
     }
 
     public void MenuScene()
@@ -46,7 +46,7 @@ public class SceneChanger : MonoBehaviour
 
     public void TutorialScene()
     {
-        CallEnum("Tutorial", true, true, false);
+        CallEnum("Tutorial", false, true, false);
     }
 
     public void AmsterdamScene()
@@ -56,7 +56,7 @@ public class SceneChanger : MonoBehaviour
 
     public void SupermarktScene()
     {
-        CallEnum("Supermarkt", true, true, false);
+        CallEnum("Supermarkt", false, true, false);
     }
 
     public void Quit()
@@ -92,6 +92,12 @@ public class SceneChanger : MonoBehaviour
         if (fadeOut)
         {
             a_fadePlane.Play("FadeOut");
+        }
+        else
+        {
+            //zet plane op onzichtbaar
+            Debug.Log("plane onzichtbaar");
+            a_fadePlane.gameObject.GetComponent<MeshRenderer>().material.color = new Color(0,0,0,0);
         }
     }
 }
