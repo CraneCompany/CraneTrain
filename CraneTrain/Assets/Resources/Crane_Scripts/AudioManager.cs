@@ -1,9 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine.Audio;
 
+using UnityEngine;
+[System.Serializable]
 public class AudioManager : MonoBehaviour
 {
+    public Sound[] sounds;
+
     private AudioSource as_audioSource;
     public AudioClip[] ac_coinSounds = new AudioClip[3];
     private AudioClip ac_lvlUp;
