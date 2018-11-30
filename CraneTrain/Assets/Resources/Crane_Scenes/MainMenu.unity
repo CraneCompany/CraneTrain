@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 64556494}
   - component: {fileID: 64556495}
   - component: {fileID: 64556496}
+  - component: {fileID: 64556493}
   m_Layer: 0
   m_Name: _GlobalGameObject
   m_TagString: Untagged
@@ -303,14 +304,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb9c6bc5d24e7e4e9b3d4ed3690e872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i_lvlReq: 0
   i_targLifeCycle: 0
+  f_stareTime: 0
+  i_lvlReq: 0
   i_amountToFinish: 0
+  b_targLifeCycle: 0
   f_trainVolume: 0
   f_globalVolume: 0
-  f_stareTime: 0
-  b_targLifeCycle: 0
   b_leftSided: 1
+--- !u!114 &64556493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64556490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d7f5745cb7393408e4eec09a7ba954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ac_coinSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  f_trainingVolume: 0
+  f_globalVolume: 0
 --- !u!114 &64556494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,7 +3725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.50006, y: 0.000091552734}
+  m_AnchoredPosition: {x: -232.50012, y: 0.000061035156}
   m_SizeDelta: {x: -465, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &935645082
@@ -8294,6 +8312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b05f91f143b9b44f900b44e9529ef73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cs_GlobalParameterScript: {fileID: 0}
   csA_buttonValues:
   - {fileID: 1343512001}
   - {fileID: 109921237}
@@ -8489,6 +8508,16 @@ Prefab:
     - target: {fileID: 4916389244540040, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818701667296004, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: m_Text
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134936069750390, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: i_buttonValue
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
