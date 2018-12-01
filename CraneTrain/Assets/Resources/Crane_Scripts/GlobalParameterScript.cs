@@ -26,7 +26,7 @@ public class GlobalParameterScript : MonoBehaviour
 
         f_stareTime = 4;
         f_trainVolume = 1;
-        f_globalVolume = 1;
+        f_globalVolume = .3f;
 
         b_targLifeCycle = false;
         b_leftSided = true;
