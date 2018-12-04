@@ -9,9 +9,11 @@ public class EagleCamFollow : MonoBehaviour {
 
     public int i_timer = 25;
     private float f_time = 0.0f;
+
+    float yRotation;
 	// Use this for initialization
-	void Start () {
-        this.gameObject.SetActive(false);
+	void Start ()
+    {
         line = GetComponentInChildren<LineRenderer>();
     }
 	
@@ -19,7 +21,8 @@ public class EagleCamFollow : MonoBehaviour {
 	void LateUpdate ()
     {
         transform.position = go_target.transform.position;
-        transform.rotation = go_target.transform.rotation;
+        yRotation = go_target.transform.eulerAngles.y;
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotation, transform.eulerAngles.z);
         CamTimer();
         OrientationLine();
 	}
@@ -28,7 +31,8 @@ public class EagleCamFollow : MonoBehaviour {
     {
         if(f_time <= 0.0f)
         {
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
         else
         {
@@ -46,9 +50,8 @@ public class EagleCamFollow : MonoBehaviour {
     void OrientationLine()
     {
         RaycastHit hit;
-        Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity);
+        Physics.Raycast(transform.position, Vector3.forward, out hit, Mathf.Infinity);
         line.SetPosition(0, Vector3.zero);
-        //Debug.Log(hit.transform.position);
-        line.SetPosition(1, transform.TransformDirection(Vector3.forward) * hit.distance);
+        line.SetPosition(1, Vector3.forward * hit.distance);
     }
 }

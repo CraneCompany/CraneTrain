@@ -6,6 +6,7 @@ public class TriggerEvent : MonoBehaviour
 {
     public GameObject[] go_events;
     public GameObject go_Eagle_Cam;
+    public GameObject spawnedBoi;
 
     void OnTriggerEnter(Collider col)
     {
@@ -13,7 +14,8 @@ public class TriggerEvent : MonoBehaviour
         {
             int i = Random.Range(0, go_events.Length);
             Instantiate(go_events[i]);
-            EagleCam(col.transform.parent.gameObject);
+            spawnedBoi = Instantiate(go_Eagle_Cam);
+            EagleCam(col.transform.parent.GetChild(0).gameObject);
         }
     }
 
@@ -21,13 +23,13 @@ public class TriggerEvent : MonoBehaviour
     //Call this function when you want to activate an event camera (with eagle PoV)
     void EagleCam(GameObject go)
     {
-        if (go_Eagle_Cam == null)
+        if (spawnedBoi == null)
         {
             Debug.LogError("Eagle Cam has not been assigned.");
         }
         else
         {
-            go_Eagle_Cam.GetComponent<EagleCamFollow>().ParamReset(go);
+            spawnedBoi.GetComponent<EagleCamFollow>().ParamReset(go);
         }
     }
 }
