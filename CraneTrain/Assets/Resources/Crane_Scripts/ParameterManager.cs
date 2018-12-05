@@ -10,6 +10,8 @@ public class ParameterManager : MonoBehaviour {
     public IncrementButtonScript[] csA_buttonValues = new IncrementButtonScript[4];
 
     public Toggle b_lifeCycleToggle;
+    public Slider slider_globalVolume;
+    public Slider slider_trainingVolume;
 
     private int i_updateTimer;
 
@@ -18,6 +20,13 @@ public class ParameterManager : MonoBehaviour {
     {
         i_updateTimer = 0;
         cs_GlobalParameterScript = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
+
+        slider_globalVolume.maxValue = 1;
+        slider_globalVolume.minValue = 0;
+
+        slider_trainingVolume.maxValue = 1;
+        slider_trainingVolume.minValue = 0;
+
         GetDefaultValues();
     }
 
@@ -35,7 +44,9 @@ public class ParameterManager : MonoBehaviour {
         csA_buttonValues[3].i_buttonValue = cs_GlobalParameterScript.i_amountToFinish;
         csA_buttonValues[3].GetComponent<Text>().text = cs_GlobalParameterScript.i_amountToFinish.ToString();
 
-        //TODO: Slider volume
+        slider_globalVolume.value = cs_GlobalParameterScript.f_globalVolume;
+        slider_trainingVolume.value = cs_GlobalParameterScript.f_trainVolume;
+
         b_lifeCycleToggle.isOn = cs_GlobalParameterScript.b_targLifeCycle;
     }
 
@@ -55,5 +66,8 @@ public class ParameterManager : MonoBehaviour {
         cs_GlobalParameterScript.i_lvlReq = csA_buttonValues[2].i_buttonValue;
         cs_GlobalParameterScript.i_amountToFinish = csA_buttonValues[3].i_buttonValue;
         cs_GlobalParameterScript.b_targLifeCycle = b_lifeCycleToggle.isOn;
+        cs_GlobalParameterScript.f_globalVolume = slider_globalVolume.value;
+        cs_GlobalParameterScript.f_trainVolume = slider_trainingVolume.value;
+
     }
 }
