@@ -1464,7 +1464,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1750314575}
-  - component: {fileID: 1750314576}
   - component: {fileID: 1750314577}
   - component: {fileID: 1750314579}
   - component: {fileID: 1750314578}
@@ -1488,23 +1487,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1750314576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1750314573}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d7f5745cb7393408e4eec09a7ba954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ac_coinSounds:
-  - {fileID: 8300000, guid: 45e26ac391238ed47a59599828e0e8e1, type: 3}
-  - {fileID: 8300000, guid: fab33015ef6525b4db08e645d8b3f762, type: 3}
-  - {fileID: 8300000, guid: d1a1ab074c0856f42a4cd37507bc1f14, type: 3}
-  f_trainingVolume: 0
-  f_globalVolume: 0
 --- !u!114 &1750314577
 MonoBehaviour:
   m_ObjectHideFlags: 0

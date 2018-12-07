@@ -44,7 +44,7 @@ public class FeedBackRing : MonoBehaviour
         f_x -= ((t_childTrans.localScale.x * v3_myScales.x) / f_shrinkTime) * Time.deltaTime;
         f_y -= ((t_childTrans.localScale.y * v3_myScales.y) / f_shrinkTime) * Time.deltaTime;
 
-        Debug.Log(f_x);
+        //Debug.Log(f_x);
         t_childTrans.localScale = new Vector3(f_x, f_y, f_z);
         if ((t_childTrans.localScale.x*v3_myScales.x) <= v3_myScales.x)
         {
