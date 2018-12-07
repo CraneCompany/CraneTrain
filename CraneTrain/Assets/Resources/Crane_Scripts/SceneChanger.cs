@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     public GameObject go_foveRig;
+    private HandleData cs_handleData;
     private GlobalParameterScript cs_globalParameterScript;
     private Animator a_fadePlane;
     private float f_fadeSpeed;
@@ -19,6 +20,7 @@ public class SceneChanger : MonoBehaviour
         a_fadePlane = GameObject.Find("FadePlane").GetComponent<Animator>();
         go_foveRig.SetActive(false);
 
+        cs_handleData = GetComponent<HandleData>();
         a_fadePlane.speed = f_fadeSpeed;
     }
 
@@ -76,7 +78,8 @@ public class SceneChanger : MonoBehaviour
         {
             a_fadePlane.Play("FadeIn");
         }
-        
+
+        cs_handleData.StoreData();
         StartCoroutine(ChangeSceneMethod(sceneName, fadeIn, fadeOut, menu));
     }
 
