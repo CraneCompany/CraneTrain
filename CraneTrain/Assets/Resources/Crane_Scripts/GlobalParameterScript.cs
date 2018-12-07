@@ -24,7 +24,7 @@ public class GlobalParameterScript : MonoBehaviour
         i_amountToFinish = 30;
         
 
-        f_stareTime = 4;
+        f_stareTime = 1.5f;
         f_trainVolume = 1;
         f_globalVolume = .3f;
 

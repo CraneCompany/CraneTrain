@@ -65,15 +65,12 @@ public class auto_walk : MonoBehaviour
     {
         if (Vector3.Angle(go_foveInterface.transform.forward, go_waypoints[i_currentWP].transform.position - go_foveInterface.transform.position) < 15)
         {
-            Debug.Log("Right Direction!");
             b_rightDirection = true;
         }
         else
         {
-            Debug.Log("Wrong Direction!");
             b_rightDirection = false;
         }
-        Debug.Log(go_waypoints[i_currentWP].name);
     }
 
     void PulseFade()
