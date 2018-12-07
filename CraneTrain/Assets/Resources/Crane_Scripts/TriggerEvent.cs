@@ -6,7 +6,7 @@ public class TriggerEvent : MonoBehaviour
 {
     public GameObject[] go_events;
     public GameObject go_Eagle_Cam;
-    public GameObject spawnedBoi;
+    private GameObject spawnedBoi;
 
     void OnTriggerEnter(Collider col)
     {
