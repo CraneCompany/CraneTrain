@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 64556494}
   - component: {fileID: 64556495}
   - component: {fileID: 64556496}
+  - component: {fileID: 64556493}
   m_Layer: 0
   m_Name: _GlobalGameObject
   m_TagString: Untagged
@@ -303,14 +304,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb9c6bc5d24e7e4e9b3d4ed3690e872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i_lvlReq: 0
   i_targLifeCycle: 0
+  f_stareTime: 0
+  i_lvlReq: 0
   i_amountToFinish: 0
+  b_targLifeCycle: 0
   f_trainVolume: 0
   f_globalVolume: 0
-  f_stareTime: 0
-  b_targLifeCycle: 0
   b_leftSided: 1
+--- !u!114 &64556493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64556490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d7f5745cb7393408e4eec09a7ba954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ac_coinSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  ac_lvlUp: {fileID: 0}
+  f_trainingVolume: 0
+  f_globalVolume: 0
 --- !u!114 &64556494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46.37503, y: 0}
+  m_AnchoredPosition: {x: -45.9, y: -33}
   m_SizeDelta: {x: 154.75, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87255040
@@ -878,7 +897,7 @@ GameObject:
   - component: {fileID: 147504859}
   - component: {fileID: 147504858}
   m_Layer: 5
-  m_Name: Mouse X
+  m_Name: General Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -935,7 +954,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse X
+  m_Text: General Volume
 --- !u!222 &147504859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1509,7 +1528,7 @@ GameObject:
   - component: {fileID: 278873390}
   - component: {fileID: 278873389}
   m_Layer: 5
-  m_Name: Mouse Y
+  m_Name: Training Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1531,7 +1550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -38}
   m_SizeDelta: {x: 247.5, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278873389
@@ -1566,7 +1585,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mouse Y
+  m_Text: Training Volume
 --- !u!222 &278873390
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2448,7 +2467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46.37503, y: 0}
+  m_AnchoredPosition: {x: -45.8, y: -33.8}
   m_SizeDelta: {x: 154.75, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472283464
@@ -3131,59 +3150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41e58c74463edf43a9624fcdf483d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _postCaptureSettings:
-    writeFastStartStreamingForMp4: 1
-  _captureKey: 0
-  _captureOnStart: 0
-  _startPaused: 0
-  _listVideoCodecsOnStart: 0
-  _isRealTime: 1
-  _persistAcrossSceneLoads: 0
-  _stopMode: 0
-  _stopFrames: 0
-  _stopSeconds: 0
-  _useMediaFoundationH264: 0
-  _videoCodecPriority:
-  - Lagarith Lossless Codec
-  - x264vfw - H.264/MPEG-4 AVC codec
-  - Xvid MPEG-4 Codec
-  _frameRate: 30
-  _timelapseScale: 1
-  _downScale: 1
-  _maxVideoSize: {x: 0, y: 0}
-  _forceVideoCodecIndex: -1
-  _flipVertically: 0
-  _supportAlpha: 0
-  _forceGpuFlush: 0
-  _noAudio: 1
-  _audioCodecPriority: []
-  _forceAudioCodecIndex: -1
-  _forceAudioDeviceIndex: -1
-  _audioCapture: {fileID: 0}
-  _autoGenerateFilename: 1
-  _outputFolderType: 0
-  _outputFolderPath: Captures
-  _autoFilenamePrefix: MovieCapture
-  _autoFilenameExtension: avi
-  _forceFilename: movie.avi
-  _imageSequenceStartFrame: 0
-  _imageSequenceZeroDigits: 6
-  _outputType: 0
-  _imageSequenceFormat: 0
-  _renderResolution: 18
-  _renderSize: {x: 1, y: 1}
-  _renderAntiAliasing: -1
-  _useMotionBlur: 0
-  _motionBlurSamples: 16
-  _motionBlurCameras: []
-  _allowVSyncDisable: 1
-  _supportTextureRecreate: 0
-  _captureMouseCursor: 0
-  _mouseCursor: {fileID: 0}
-  _minimumDiskSpaceMB: -1
-  _lastCamera: {fileID: 0}
-  _contribCameras: []
-  _useContributingCameras: 1
 --- !u!20 &830888418
 Camera:
   m_ObjectHideFlags: 0
@@ -3707,7 +3673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.50006, y: 0.000091552734}
+  m_AnchoredPosition: {x: -232.50012, y: 0.000061035156}
   m_SizeDelta: {x: -465, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &935645082
@@ -8294,12 +8260,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b05f91f143b9b44f900b44e9529ef73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cs_GlobalParameterScript: {fileID: 0}
   csA_buttonValues:
   - {fileID: 1343512001}
   - {fileID: 109921237}
   - {fileID: 863224588}
   - {fileID: 522669257}
   b_lifeCycleToggle: {fileID: 615390775}
+  slider_globalVolume: {fileID: 87255040}
+  slider_trainingVolume: {fileID: 472283464}
 --- !u!1 &1780695220
 GameObject:
   m_ObjectHideFlags: 0
@@ -8386,7 +8355,7 @@ GameObject:
   - component: {fileID: 1792465926}
   - component: {fileID: 1792465925}
   m_Layer: 5
-  m_Name: 'ControlsText '
+  m_Name: VolumeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8443,7 +8412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Controls
+  m_Text: Volume
 --- !u!222 &1792465926
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8489,6 +8458,16 @@ Prefab:
     - target: {fileID: 4916389244540040, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114818701667296004, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: m_Text
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114134936069750390, guid: 5877213ce4033654daf5448a17fa7336,
+        type: 2}
+      propertyPath: i_buttonValue
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5877213ce4033654daf5448a17fa7336, type: 2}
@@ -9146,7 +9125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 216.49982, y: 0}
+  m_AnchoredPosition: {x: 195, y: 0}
   m_SizeDelta: {x: -433, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1959021106

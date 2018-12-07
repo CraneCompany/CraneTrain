@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3002fc2f3cff649bdcc2d195885d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_shrinkRate: 0.03
+  f_shrinkTime: 0
   b_lookedAt: 0
 --- !u!114 &5019812
 MonoBehaviour:
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3002fc2f3cff649bdcc2d195885d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_shrinkRate: 0.03
+  f_shrinkTime: 0
   b_lookedAt: 0
 --- !u!114 &127392559
 MonoBehaviour:
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3002fc2f3cff649bdcc2d195885d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_shrinkRate: 0.03
+  f_shrinkTime: 0
   b_lookedAt: 0
 --- !u!114 &1271495853
 MonoBehaviour:
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750314573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8d7f5745cb7393408e4eec09a7ba954, type: 3}
   m_Name: 
@@ -1503,7 +1503,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 45e26ac391238ed47a59599828e0e8e1, type: 3}
   - {fileID: 8300000, guid: fab33015ef6525b4db08e645d8b3f762, type: 3}
   - {fileID: 8300000, guid: d1a1ab074c0856f42a4cd37507bc1f14, type: 3}
-  f_volume: 0.2
+  f_trainingVolume: 0
+  f_globalVolume: 0
 --- !u!114 &1750314577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,7 +1611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3002fc2f3cff649bdcc2d195885d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_shrinkRate: 0.03
+  f_shrinkTime: 0
   b_lookedAt: 0
 --- !u!114 &1797691599
 MonoBehaviour:
@@ -1742,7 +1743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3002fc2f3cff649bdcc2d195885d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_shrinkRate: 0.03
+  f_shrinkTime: 0
   b_lookedAt: 0
 --- !u!114 &1806631787
 MonoBehaviour:
@@ -1918,7 +1919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3002fc2f3cff649bdcc2d195885d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_shrinkRate: 0.03
+  f_shrinkTime: 0
   b_lookedAt: 0
 --- !u!114 &1937911215
 MonoBehaviour:

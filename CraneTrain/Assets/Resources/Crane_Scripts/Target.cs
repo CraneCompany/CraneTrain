@@ -29,9 +29,10 @@ public class Target : MonoBehaviour
         cs_Audio = go_scriptManager.GetComponent<AudioManager>();
         cs_scoreManager = go_scriptManager.GetComponent<ScoreManager>();
 
-        cs_globalParameters = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
-        //b_timer = cs_gameLoop.b_targLifeCycle;
-        //f_lifeTime = cs_gameLoop.f_targLifeCycle;
+        GameObject go_globalGameobject = GameObject.Find("_GlobalGameObject");
+        cs_globalParameters = go_globalGameobject.GetComponent<GlobalParameterScript>();
+        cs_Audio = go_scriptManager.GetComponent<AudioManager>();
+
         b_timer = cs_globalParameters.b_targLifeCycle;
         f_lifeTime = cs_globalParameters.i_targLifeCycle;
     }

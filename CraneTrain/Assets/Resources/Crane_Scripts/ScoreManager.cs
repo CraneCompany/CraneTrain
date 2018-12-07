@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour {
 
-    private AudioManager am_Audio;
+    private AudioManager cs_audioManager;
     private GlobalParameterScript cs_globalParameters;
 
     public int i_globalScore;
@@ -16,8 +16,9 @@ public class ScoreManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        am_Audio = GameObject.Find("_ScriptManagerObj").GetComponent<AudioManager>();
-        cs_globalParameters = GameObject.Find("_GlobalGameObject").GetComponent<GlobalParameterScript>();
+        GameObject go_globalGameobject = GameObject.Find("_GlobalGameObject");
+        cs_audioManager = go_globalGameobject.GetComponent<AudioManager>();
+        cs_globalParameters = go_globalGameobject.GetComponent<GlobalParameterScript>();
         i_lvlReq = cs_globalParameters.i_lvlReq;
 
         if (i_lvlReq<=0)
@@ -59,7 +60,7 @@ public class ScoreManager : MonoBehaviour {
         if (i_globalScore%i_lvlReq == 0 && !b_lvlUpPlayed)
         {
             i_currentLvl++;
-            am_Audio.LvlUpSound();
+            cs_audioManager.LvlUpSound();
             b_lvlUpPlayed = true;
         }
     }
