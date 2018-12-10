@@ -11,6 +11,8 @@ public class EventData : MonoBehaviour
     private DataExport cs_dataExport;
     private Event_Active cs_active_event;
 
+    public float f_detectRange = 40f;
+
     // Use this for initialization
     void Start()
     {
@@ -25,14 +27,18 @@ public class EventData : MonoBehaviour
     {
         if (b_checkGaze)
         {
-            f_lifeTime += 1 * Time.deltaTime;
-            if (cs_foveInterface.Gazecast(col_Event))
+            if (Vector3.Distance(cs_foveInterface.transform.parent.transform.position, col_Event.transform.position) < f_detectRange)
             {
-                cs_dataExport.f_reaction = f_lifeTime;
-                cs_dataExport.objSeen = SEEN.YES;
-                cs_active_event.walk = WALKTYPE.stop;
-                b_checkGaze = false;
+                f_lifeTime += 1 * Time.deltaTime;
+                if (cs_foveInterface.Gazecast(col_Event))
+                {
+                    cs_dataExport.f_reaction = f_lifeTime;
+                    cs_dataExport.objSeen = SEEN.YES;
+                    cs_active_event.walk = WALKTYPE.stop;
+                    b_checkGaze = false;
+                }
             }
+
         }
     }
 
