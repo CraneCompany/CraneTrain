@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 1ed61b6b9123d2b42af01d7ac4173135
+ScriptedImporter:
+  fileIDToRecycleName:
+    100184: 1 clo evente/1 clo evente
+    100186: 1 clo evente/1 clo evente/Avatar
+    100188: 1 clo evente/1 clo evente/Avatar/Walking
+    100190: 1 clo evente/1 clo evente/Avatar/Walking/bodyShape_skin_Shape
+    100192: 1 clo evente/1 clo evente/Avatar/Walking/bodyShape_skin_Shape/bodyShape_skin_Shape
+    100194: 1 clo evente/1 clo evente/Avatar/Walking/ear_dummy_Shape
+    100196: 1 clo evente/1 clo evente/Avatar/Walking/ear_dummy_Shape/ear_dummy_Shape
+    100198: 1 clo evente/1 clo evente/Avatar/Walking/eye_l_Shape
+    100200: 1 clo evente/1 clo evente/Avatar/Walking/eye_l_Shape/eye_l_Shape
+    100202: 1 clo evente/1 clo evente/Avatar/Walking/eye_r_Shape
+    100204: 1 clo evente/1 clo evente/Avatar/Walking/eye_r_Shape/eye_r_Shape
+    100206: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_down_Shape
+    100208: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_down_Shape/eyelash_l_down_Shape
+    100210: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_up_Shape
+    100212: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_up_Shape/eyelash_l_up_Shape
+    100214: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_down_Shape
+    100216: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_down_Shape/eyelash_r_down_Shape
+    100218: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_up_Shape
+    100220: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_up_Shape/eyelash_r_up_Shape
+    100222: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips
+    100224: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg
+    100226: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg
+    100228: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot
+    100230: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot/mixamorig:LeftToeBase
+    100232: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot/mixamorig:LeftToeBase/mixamorig:LeftToe_End
+    100234: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg
+    100236: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg
+    100238: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot
+    100240: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot/mixamorig:RightToeBase
+    100242: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot/mixamorig:RightToeBase/mixamorig:RightToe_End
+    100244: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine
+    100246: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1
+    100248: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2
+    100250: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder
+    100252: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm
+    100254: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm
+    100256: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand
+    100258: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1
+    100260: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/mixamorig:LeftHandIndex2
+    100262: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/mixamorig:LeftHandIndex2/mixamorig:LeftHandIndex3
+    100264: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/mixamorig:LeftHandIndex2/mixamorig:LeftHandIndex3/mixamorig:LeftHandIndex4
+    100266: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1
+    100268: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/mixamorig:LeftHandMiddle2
+    100270: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/mixamorig:LeftHandMiddle2/mixamorig:LeftHandMiddle3
+    100272: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/mixamorig:LeftHandMiddle2/mixamorig:LeftHandMiddle3/mixamorig:LeftHandMiddle4
+    100274: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1
+    100276: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/mixamorig:LeftHandPinky2
+    100278: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/mixamorig:LeftHandPinky2/mixamorig:LeftHandPinky3
+    100280: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/mixamorig:LeftHandPinky2/mixamorig:LeftHandPinky3/mixamorig:LeftHandPinky4
+    100282: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1
+    100284: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/mixamorig:LeftHandRing2
+    100286: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/mixamorig:LeftHandRing2/mixamorig:LeftHandRing3
+    100288: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/mixamorig:LeftHandRing2/mixamorig:LeftHandRing3/mixamorig:LeftHandRing4
+    100290: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1
+    100292: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/mixamorig:LeftHandThumb2
+    100294: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/mixamorig:LeftHandThumb2/mixamorig:LeftHandThumb3
+    100296: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/mixamorig:LeftHandThumb2/mixamorig:LeftHandThumb3/mixamorig:LeftHandThumb4
+    100298: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck
+    100300: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head
+    100302: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/mixamorig:HeadTop_End
+    100304: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder
+    100306: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm
+    100308: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm
+    100310: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand
+    100312: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1
+    100314: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/mixamorig:RightHandIndex2
+    100316: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/mixamorig:RightHandIndex2/mixamorig:RightHandIndex3
+    100318: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/mixamorig:RightHandIndex2/mixamorig:RightHandIndex3/mixamorig:RightHandIndex4
+    100320: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1
+    100322: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/mixamorig:RightHandMiddle2
+    100324: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/mixamorig:RightHandMiddle2/mixamorig:RightHandMiddle3
+    100326: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/mixamorig:RightHandMiddle2/mixamorig:RightHandMiddle3/mixamorig:RightHandMiddle4
+    100328: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1
+    100330: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/mixamorig:RightHandPinky2
+    100332: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/mixamorig:RightHandPinky2/mixamorig:RightHandPinky3
+    100334: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/mixamorig:RightHandPinky2/mixamorig:RightHandPinky3/mixamorig:RightHandPinky4
+    100336: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1
+    100338: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/mixamorig:RightHandRing2
+    100340: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/mixamorig:RightHandRing2/mixamorig:RightHandRing3
+    100342: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/mixamorig:RightHandRing2/mixamorig:RightHandRing3/mixamorig:RightHandRing4
+    100344: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1
+    100346: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/mixamorig:RightHandThumb2
+    100348: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/mixamorig:RightHandThumb2/mixamorig:RightHandThumb3
+    100350: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/mixamorig:RightHandThumb2/mixamorig:RightHandThumb3/mixamorig:RightHandThumb4
+    100352: 1 clo evente/1 clo evente/Avatar/Walking/MV_Hair_Shape
+    100354: 1 clo evente/1 clo evente/Avatar/Walking/MV_Hair_Shape/MV_Hair_Shape
+    100356: 1 clo evente/1 clo evente/Avatar/Walking/shoes_l_Shape
+    100358: 1 clo evente/1 clo evente/Avatar/Walking/shoes_l_Shape/shoes_l_Shape
+    100360: 1 clo evente/1 clo evente/Avatar/Walking/shoes_r_Shape
+    100362: 1 clo evente/1 clo evente/Avatar/Walking/shoes_r_Shape/shoes_r_Shape
+    100364: 1 clo evente/1 clo evente/cloth_parent
+    100366: 1 clo evente/1 clo evente/cloth_parent/cloth_shape_0
+    400184: 1 clo evente/1 clo evente/Transform
+    400186: 1 clo evente/1 clo evente/Avatar/Transform
+    400188: 1 clo evente/1 clo evente/Avatar/Walking/Transform
+    400190: 1 clo evente/1 clo evente/Avatar/Walking/bodyShape_skin_Shape/Transform
+    400192: 1 clo evente/1 clo evente/Avatar/Walking/bodyShape_skin_Shape/bodyShape_skin_Shape/Transform
+    400194: 1 clo evente/1 clo evente/Avatar/Walking/ear_dummy_Shape/Transform
+    400196: 1 clo evente/1 clo evente/Avatar/Walking/ear_dummy_Shape/ear_dummy_Shape/Transform
+    400198: 1 clo evente/1 clo evente/Avatar/Walking/eye_l_Shape/Transform
+    400200: 1 clo evente/1 clo evente/Avatar/Walking/eye_l_Shape/eye_l_Shape/Transform
+    400202: 1 clo evente/1 clo evente/Avatar/Walking/eye_r_Shape/Transform
+    400204: 1 clo evente/1 clo evente/Avatar/Walking/eye_r_Shape/eye_r_Shape/Transform
+    400206: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_down_Shape/Transform
+    400208: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_down_Shape/eyelash_l_down_Shape/Transform
+    400210: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_up_Shape/Transform
+    400212: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_up_Shape/eyelash_l_up_Shape/Transform
+    400214: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_down_Shape/Transform
+    400216: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_down_Shape/eyelash_r_down_Shape/Transform
+    400218: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_up_Shape/Transform
+    400220: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_up_Shape/eyelash_r_up_Shape/Transform
+    400222: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/Transform
+    400224: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/Transform
+    400226: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/Transform
+    400228: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot/Transform
+    400230: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot/mixamorig:LeftToeBase/Transform
+    400232: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:LeftUpLeg/mixamorig:LeftLeg/mixamorig:LeftFoot/mixamorig:LeftToeBase/mixamorig:LeftToe_End/Transform
+    400234: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/Transform
+    400236: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/Transform
+    400238: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot/Transform
+    400240: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot/mixamorig:RightToeBase/Transform
+    400242: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:RightUpLeg/mixamorig:RightLeg/mixamorig:RightFoot/mixamorig:RightToeBase/mixamorig:RightToe_End/Transform
+    400244: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/Transform
+    400246: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/Transform
+    400248: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/Transform
+    400250: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/Transform
+    400252: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/Transform
+    400254: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/Transform
+    400256: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/Transform
+    400258: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/Transform
+    400260: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/mixamorig:LeftHandIndex2/Transform
+    400262: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/mixamorig:LeftHandIndex2/mixamorig:LeftHandIndex3/Transform
+    400264: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandIndex1/mixamorig:LeftHandIndex2/mixamorig:LeftHandIndex3/mixamorig:LeftHandIndex4/Transform
+    400266: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/Transform
+    400268: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/mixamorig:LeftHandMiddle2/Transform
+    400270: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/mixamorig:LeftHandMiddle2/mixamorig:LeftHandMiddle3/Transform
+    400272: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandMiddle1/mixamorig:LeftHandMiddle2/mixamorig:LeftHandMiddle3/mixamorig:LeftHandMiddle4/Transform
+    400274: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/Transform
+    400276: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/mixamorig:LeftHandPinky2/Transform
+    400278: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/mixamorig:LeftHandPinky2/mixamorig:LeftHandPinky3/Transform
+    400280: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandPinky1/mixamorig:LeftHandPinky2/mixamorig:LeftHandPinky3/mixamorig:LeftHandPinky4/Transform
+    400282: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/Transform
+    400284: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/mixamorig:LeftHandRing2/Transform
+    400286: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/mixamorig:LeftHandRing2/mixamorig:LeftHandRing3/Transform
+    400288: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandRing1/mixamorig:LeftHandRing2/mixamorig:LeftHandRing3/mixamorig:LeftHandRing4/Transform
+    400290: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/Transform
+    400292: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/mixamorig:LeftHandThumb2/Transform
+    400294: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/mixamorig:LeftHandThumb2/mixamorig:LeftHandThumb3/Transform
+    400296: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:LeftShoulder/mixamorig:LeftArm/mixamorig:LeftForeArm/mixamorig:LeftHand/mixamorig:LeftHandThumb1/mixamorig:LeftHandThumb2/mixamorig:LeftHandThumb3/mixamorig:LeftHandThumb4/Transform
+    400298: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/Transform
+    400300: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/Transform
+    400302: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/mixamorig:HeadTop_End/Transform
+    400304: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/Transform
+    400306: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/Transform
+    400308: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/Transform
+    400310: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/Transform
+    400312: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/Transform
+    400314: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/mixamorig:RightHandIndex2/Transform
+    400316: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/mixamorig:RightHandIndex2/mixamorig:RightHandIndex3/Transform
+    400318: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandIndex1/mixamorig:RightHandIndex2/mixamorig:RightHandIndex3/mixamorig:RightHandIndex4/Transform
+    400320: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/Transform
+    400322: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/mixamorig:RightHandMiddle2/Transform
+    400324: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/mixamorig:RightHandMiddle2/mixamorig:RightHandMiddle3/Transform
+    400326: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandMiddle1/mixamorig:RightHandMiddle2/mixamorig:RightHandMiddle3/mixamorig:RightHandMiddle4/Transform
+    400328: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/Transform
+    400330: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/mixamorig:RightHandPinky2/Transform
+    400332: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/mixamorig:RightHandPinky2/mixamorig:RightHandPinky3/Transform
+    400334: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandPinky1/mixamorig:RightHandPinky2/mixamorig:RightHandPinky3/mixamorig:RightHandPinky4/Transform
+    400336: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/Transform
+    400338: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/mixamorig:RightHandRing2/Transform
+    400340: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/mixamorig:RightHandRing2/mixamorig:RightHandRing3/Transform
+    400342: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandRing1/mixamorig:RightHandRing2/mixamorig:RightHandRing3/mixamorig:RightHandRing4/Transform
+    400344: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/Transform
+    400346: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/mixamorig:RightHandThumb2/Transform
+    400348: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/mixamorig:RightHandThumb2/mixamorig:RightHandThumb3/Transform
+    400350: 1 clo evente/1 clo evente/Avatar/Walking/mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/mixamorig:RightHand/mixamorig:RightHandThumb1/mixamorig:RightHandThumb2/mixamorig:RightHandThumb3/mixamorig:RightHandThumb4/Transform
+    400352: 1 clo evente/1 clo evente/Avatar/Walking/MV_Hair_Shape/Transform
+    400354: 1 clo evente/1 clo evente/Avatar/Walking/MV_Hair_Shape/MV_Hair_Shape/Transform
+    400356: 1 clo evente/1 clo evente/Avatar/Walking/shoes_l_Shape/Transform
+    400358: 1 clo evente/1 clo evente/Avatar/Walking/shoes_l_Shape/shoes_l_Shape/Transform
+    400360: 1 clo evente/1 clo evente/Avatar/Walking/shoes_r_Shape/Transform
+    400362: 1 clo evente/1 clo evente/Avatar/Walking/shoes_r_Shape/shoes_r_Shape/Transform
+    400364: 1 clo evente/1 clo evente/cloth_parent/Transform
+    400366: 1 clo evente/1 clo evente/cloth_parent/cloth_shape_0/Transform
+    2100000: Default Material
+    2300024: 1 clo evente/1 clo evente/Avatar/Walking/bodyShape_skin_Shape/bodyShape_skin_Shape/MeshRenderer
+    2300026: 1 clo evente/1 clo evente/Avatar/Walking/ear_dummy_Shape/ear_dummy_Shape/MeshRenderer
+    2300028: 1 clo evente/1 clo evente/Avatar/Walking/eye_l_Shape/eye_l_Shape/MeshRenderer
+    2300030: 1 clo evente/1 clo evente/Avatar/Walking/eye_r_Shape/eye_r_Shape/MeshRenderer
+    2300032: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_down_Shape/eyelash_l_down_Shape/MeshRenderer
+    2300034: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_up_Shape/eyelash_l_up_Shape/MeshRenderer
+    2300036: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_down_Shape/eyelash_r_down_Shape/MeshRenderer
+    2300038: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_up_Shape/eyelash_r_up_Shape/MeshRenderer
+    2300040: 1 clo evente/1 clo evente/Avatar/Walking/MV_Hair_Shape/MV_Hair_Shape/MeshRenderer
+    2300042: 1 clo evente/1 clo evente/Avatar/Walking/shoes_l_Shape/shoes_l_Shape/MeshRenderer
+    2300044: 1 clo evente/1 clo evente/Avatar/Walking/shoes_r_Shape/shoes_r_Shape/MeshRenderer
+    2300046: 1 clo evente/1 clo evente/cloth_parent/cloth_shape_0/MeshRenderer
+    3300024: 1 clo evente/1 clo evente/Avatar/Walking/bodyShape_skin_Shape/bodyShape_skin_Shape/MeshFilter
+    3300026: 1 clo evente/1 clo evente/Avatar/Walking/ear_dummy_Shape/ear_dummy_Shape/MeshFilter
+    3300028: 1 clo evente/1 clo evente/Avatar/Walking/eye_l_Shape/eye_l_Shape/MeshFilter
+    3300030: 1 clo evente/1 clo evente/Avatar/Walking/eye_r_Shape/eye_r_Shape/MeshFilter
+    3300032: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_down_Shape/eyelash_l_down_Shape/MeshFilter
+    3300034: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_l_up_Shape/eyelash_l_up_Shape/MeshFilter
+    3300036: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_down_Shape/eyelash_r_down_Shape/MeshFilter
+    3300038: 1 clo evente/1 clo evente/Avatar/Walking/eyelash_r_up_Shape/eyelash_r_up_Shape/MeshFilter
+    3300040: 1 clo evente/1 clo evente/Avatar/Walking/MV_Hair_Shape/MV_Hair_Shape/MeshFilter
+    3300042: 1 clo evente/1 clo evente/Avatar/Walking/shoes_l_Shape/shoes_l_Shape/MeshFilter
+    3300044: 1 clo evente/1 clo evente/Avatar/Walking/shoes_r_Shape/shoes_r_Shape/MeshFilter
+    3300046: 1 clo evente/1 clo evente/cloth_parent/cloth_shape_0/MeshFilter
+    4300000: /cloth_parent/cloth_shape_0
+    4300002: /Avatar/Walking/eyelash_r_up_Shape/eyelash_r_up_Shape
+    4300004: /Avatar/Walking/eyelash_r_down_Shape/eyelash_r_down_Shape
+    4300006: /Avatar/Walking/eyelash_l_down_Shape/eyelash_l_down_Shape
+    4300008: /Avatar/Walking/eyelash_l_up_Shape/eyelash_l_up_Shape
+    4300010: /Avatar/Walking/ear_dummy_Shape/ear_dummy_Shape
+    4300012: /Avatar/Walking/MV_Hair_Shape/MV_Hair_Shape
+    4300014: /Avatar/Walking/eye_l_Shape/eye_l_Shape
+    4300016: /Avatar/Walking/eye_r_Shape/eye_r_Shape
+    4300018: /Avatar/Walking/bodyShape_skin_Shape/bodyShape_skin_Shape
+    4300020: /Avatar/Walking/shoes_l_Shape/shoes_l_Shape
+    4300022: /Avatar/Walking/shoes_r_Shape/shoes_r_Shape
+    7400000: Default Animation
+    7400006: 1 clo evente_Frames1
+    7400008: 1 clo evente_Frames2
+    11400004: 1 clo evente/1 clo evente/MonoBehaviour-UTJ.Alembic.AlembicStreamPlayer
+    11400006: 1 clo evente_ABCDesc
+    100100002: 1 clo evente
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f53f5fc499d31e44b9deee84d28a9ee8, type: 3}
+  streamSettings:
+    normals: 1
+    tangents: 1
+    cameraAspectRatio: 2
+    scaleFactor: 0.01
+    swapHandedness: 1
+    flipFaces: 0
+    turnQuadEdges: 0
+    interpolateSamples: 1
+    importPointPolygon: 1
+    importLinePolygon: 1
+    importTrianglePolygon: 1
+    importXform: 1
+    importCameras: 1
+    importMeshes: 1
+    importPoints: 1
+    importVisibility: 1
+  abcStartTime: -0.0066666667660077415
+  abcEndTime: 1.2
+  startTime: -0.0066666667660077415
+  endTime: 1.2
+  importWarning: 
+  varyingTopologyMeshNames: []
+  splittingMeshNames: []
