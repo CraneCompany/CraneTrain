@@ -74,6 +74,12 @@ public class MainMenuController : MonoBehaviour
         PanelManager(i_thisPanel);
     }
 
+    public void MapSelectPanel()
+    {
+        int i_thisPanel = 7;
+        PanelManager(i_thisPanel);
+    }
+
     #endregion
 
     void PanelManager(int panel)

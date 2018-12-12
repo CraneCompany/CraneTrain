@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 20000013469000644}
   - component: {fileID: 114000010313761880}
   - component: {fileID: 81842540290895494}
+  - component: {fileID: 114988181482331374}
   m_Layer: 0
   m_Name: Fove Interface
   m_TagString: FIB
@@ -45,17 +46,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1082649278995860
+--- !u!1 &1098969375921990
 GameObject:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4562092187408612}
-  - component: {fileID: 114569240685378328}
+  - component: {fileID: 4271527012713986}
+  - component: {fileID: 33373440781131368}
+  - component: {fileID: 23369937149234158}
+  - component: {fileID: 64353455231978930}
+  - component: {fileID: 95682997889507792}
   m_Layer: 0
-  m_Name: Data
+  m_Name: FadePlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,10 +140,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4687330940896098}
-  - {fileID: 4562092187408612}
+  - {fileID: 4271527012713986}
   m_Father: {fileID: 4000013084846212}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4271527012713986
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098969375921990}
+  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 0, y: 0, z: 0.23}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 4000013440253868}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!4 &4491391883176024
 Transform:
   m_ObjectHideFlags: 1
@@ -152,19 +169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000013084846212}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4562092187408612
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082649278995860}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4000013440253868}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4687330940896098
 Transform:
@@ -272,6 +276,62 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!23 &23369937149234158
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098969375921990}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: d296b01eaa533d24d8456b8170c9d57b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33373440781131368
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098969375921990}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64353455231978930
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098969375921990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!81 &81842540290895494
 AudioListener:
   m_ObjectHideFlags: 1
@@ -374,6 +434,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &95682997889507792
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098969375921990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b543abc829c4afe45997976d730c89c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114000010313761880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -432,7 +510,7 @@ MonoBehaviour:
   _stopMode: 0
   _stopFrames: 0
   _stopSeconds: 0
-  _useMediaFoundationH264: 0
+  _useMediaFoundationH264: 1
   _videoCodecPriority:
   - Lagarith Lossless Codec
   - x264vfw - H.264/MPEG-4 AVC codec
@@ -454,7 +532,7 @@ MonoBehaviour:
   _outputFolderType: 0
   _outputFolderPath: Captures
   _autoFilenamePrefix: MovieCapture
-  _autoFilenameExtension: avi
+  _autoFilenameExtension: mp4
   _forceFilename: movie.avi
   _imageSequenceStartFrame: 0
   _imageSequenceZeroDigits: 6
@@ -474,20 +552,17 @@ MonoBehaviour:
   _lastCamera: {fileID: 20546827918447530}
   _contribCameras: []
   _useContributingCameras: 1
---- !u!114 &114569240685378328
+--- !u!114 &114988181482331374
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082649278995860}
+  m_GameObject: {fileID: 1000010938986662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c564f88680117ab47be7157acdc9aa73, type: 3}
+  m_Script: {fileID: 11500000, guid: eeab381d73f74af4a880a031973fbb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cs_FoveInterface: {fileID: 114000010313761880}
-  cs_GameLoopManager: {fileID: 0}
-  b_newSeen: 0
 --- !u!136 &136597216967930568
 CapsuleCollider:
   m_ObjectHideFlags: 1

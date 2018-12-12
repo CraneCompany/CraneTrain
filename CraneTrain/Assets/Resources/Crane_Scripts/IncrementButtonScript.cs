@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Reflection;
+using System;
 
 public class IncrementButtonScript : MonoBehaviour {
 
     public int i_buttonValue;
     private Text textComp;
-    private ParameterManager cs_parameterManager;
+    [HideInInspector]
+    public ParameterManager cs_parameterManager;
 
     // Use this for initialization
     void Start () {
+        
         cs_parameterManager = GameObject.Find("ParameterManagerObj").GetComponent<ParameterManager>();
         textComp = gameObject.GetComponent<Text>();
     }
-	
-	// Update is called once per frame
+
 	public void Plus1()
     {
         i_buttonValue++;

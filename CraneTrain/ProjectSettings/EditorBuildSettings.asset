@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/Resources/Crane_Scenes/MainMenu.unity
     guid: c09f4b0b2a9226946aa44a3dd8ffdfa6
   - enabled: 1
-    path: Assets/Resources/Crane_Scenes/Scene1.unity
+    path: Assets/Resources/Crane_Scenes/Training.unity
     guid: 976ddc9a2c5a4e04181025f8403f5cb1
   - enabled: 1
-    path: Assets/Resources/Crane_Scenes/SupermarktMap.unity
+    path: Assets/Resources/Crane_Scenes/Supermarkt.unity
     guid: 07235831781e1434181a4ec6dcc2f660
   - enabled: 1
     path: Assets/Resources/Crane_Scenes/Amsterdam.unity
     guid: e523bb72eeaa82440887e0b24a06bce2
+  - enabled: 1
+    path: Assets/Resources/Crane_Scenes/Tutorial.unity
+    guid: 0111ab4ab65b1d346bd502ad1200fcb3
   m_configObjects: {}
