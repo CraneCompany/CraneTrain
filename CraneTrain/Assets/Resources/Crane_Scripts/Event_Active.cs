@@ -66,14 +66,17 @@ public class Event_Active : MonoBehaviour
             go_car.transform.position = Vector3.MoveTowards(go_car.transform.position,
                 go_waypoints[i_currentWP].transform.position, Time.deltaTime * f_driveSpeed);
         }
+        if (i_currentWP == go_waypoints.Length - 1 && Vector3.Distance(go_waypoints[i_currentWP].transform.position, go_car.transform.position) < f_waypointRadius)
+        {
+            Destroy(go_car.transform.parent.gameObject);
+        }
 
         go_car.transform.LookAt(go_waypoints[i_currentWP].transform);
     }
 
     void stop()
     {
-        if (Vector3.Distance(go_car.transform.position, go_fove.transform.position) < 20 && Vector3.Distance(go_car.transform.position, go_fove.transform.position) > 3
-                && currentDriveSpeed > 0)
+        if (Vector3.Distance(go_car.transform.position, go_fove.transform.position) < 20 && currentDriveSpeed > 0)
         {
             currentDriveSpeed -= (4 * Time.deltaTime);
         }

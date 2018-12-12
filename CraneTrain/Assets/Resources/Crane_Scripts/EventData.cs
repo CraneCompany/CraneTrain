@@ -10,8 +10,9 @@ public class EventData : MonoBehaviour
     private Collider col_Event;
     private DataExport cs_dataExport;
     private Event_Active cs_active_event;
+    public float recognitionTime = 0.5f;
 
-    public float f_detectRange = 40f;
+    public float f_detectRange = 30f;
 
     // Use this for initialization
     void Start()
@@ -29,16 +30,19 @@ public class EventData : MonoBehaviour
         {
             if (Vector3.Distance(cs_foveInterface.transform.parent.transform.position, col_Event.transform.position) < f_detectRange)
             {
-                f_lifeTime += 1 * Time.deltaTime;
-                if (cs_foveInterface.Gazecast(col_Event))
+                recognitionTime -= 1 * Time.deltaTime;
+                if(recognitionTime <= 0f)
                 {
-                    cs_dataExport.f_reaction = f_lifeTime;
-                    cs_dataExport.objSeen = SEEN.YES;
-                    cs_active_event.walk = WALKTYPE.stop;
-                    b_checkGaze = false;
+                    f_lifeTime += 1 * Time.deltaTime;
+                    if (cs_foveInterface.Gazecast(col_Event))
+                    {
+                        cs_dataExport.f_reaction = f_lifeTime;
+                        cs_dataExport.objSeen = SEEN.YES;
+                        cs_active_event.walk = WALKTYPE.stop;
+                        b_checkGaze = false;
+                    }
                 }
             }
-
         }
     }
 
