@@ -1406,7 +1406,8 @@ MonoBehaviour:
   f_driveSpeed: 10
   go_fove: {fileID: 0}
   f_waypointRadius: 0.2
-  eventMat: {fileID: 2100008, guid: c32633ebc87009b4b8bbaf7306e4b3f8, type: 3}
+  eventRend: {fileID: 23582891688976934}
+  eventMat: {fileID: 2100010, guid: c32633ebc87009b4b8bbaf7306e4b3f8, type: 3}
 --- !u!114 &114565603945471426
 MonoBehaviour:
   m_ObjectHideFlags: 1

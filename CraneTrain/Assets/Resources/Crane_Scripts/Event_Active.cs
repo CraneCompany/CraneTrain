@@ -24,7 +24,9 @@ public class Event_Active : MonoBehaviour
     private float f_timer = 4;
 
     private bool seen = false;
+    public Renderer eventRend;
     public Material eventMat;
+    private Material newEventMat;
 
     // Use this for initialization
     void Start()
@@ -85,7 +87,10 @@ public class Event_Active : MonoBehaviour
             if (!seen && eventMat != null)
             {
                 seen = true;
-                eventMat.color = new Color(eventMat.color.r, eventMat.color.g + 100, eventMat.color.b);
+                newEventMat = eventMat;
+                newEventMat.color = new Color(eventMat.color.r, eventMat.color.g + 100, eventMat.color.b);
+                eventRend.material = new Material(newEventMat);
+
             }
             currentDriveSpeed -= (4 * Time.deltaTime);
         }
