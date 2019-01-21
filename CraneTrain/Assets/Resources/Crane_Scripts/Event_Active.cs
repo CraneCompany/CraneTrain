@@ -120,8 +120,7 @@ public class Event_Active : MonoBehaviour
         if (f_timer <= 0)
         {
             walk = WALKTYPE.standard;
-            newEventMat = eventMat;
-            eventRend.materials[eventRend.materials.Length - 1] = null;
+            eventRend.materials[eventRend.materials.Length - 1] = eventMat;
             
         }
     }
