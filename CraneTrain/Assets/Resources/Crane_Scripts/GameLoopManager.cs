@@ -39,6 +39,7 @@ public class GameLoopManager : MonoBehaviour
         {
             goL_targets.Add(go);
             go.SetActive(false);
+
         }
     }
 
