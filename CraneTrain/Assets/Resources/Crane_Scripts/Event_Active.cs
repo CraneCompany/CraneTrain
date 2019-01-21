@@ -24,9 +24,8 @@ public class Event_Active : MonoBehaviour
     private float f_timer = 4;
 
     private bool seen = false;
-    public Renderer eventRend;
     public Material eventMat;
-    private Material newEventMat;
+    public float r, g, b;
 
     // Use this for initialization
     void Start()
@@ -34,6 +33,9 @@ public class Event_Active : MonoBehaviour
         go_car.transform.position = go_waypoints[0].transform.position;
         currentDriveSpeed = f_driveSpeed;
         go_fove = GameObject.Find("Fove Rig");
+        r = eventMat.color.r;
+        g = eventMat.color.g;
+        b = eventMat.color.b;
     }
 
     // Update is called once per frame
@@ -73,6 +75,7 @@ public class Event_Active : MonoBehaviour
         }
         if (i_currentWP == go_waypoints.Length - 1 && Vector3.Distance(go_waypoints[i_currentWP].transform.position, go_car.transform.position) < f_waypointRadius)
         {
+            eventMat.color = new Color(r, g, b);
             Destroy(go_car.transform.parent.gameObject);
         }
 
@@ -83,18 +86,14 @@ public class Event_Active : MonoBehaviour
     {
         if (Vector3.Distance(go_car.transform.position, go_fove.transform.position) < 20 && currentDriveSpeed > 0)
         {
-            Debug.Log("TEST IF COLOR CHAAANGE *dab*");
             if (!seen && eventMat != null)
             {
                 seen = true;
-                newEventMat = eventMat;
-                newEventMat.color = new Color(eventMat.color.r, eventMat.color.g + 100, eventMat.color.b);
-                eventRend.material = new Material(newEventMat);
-
+                eventMat.color = new Color(0, 255, 0);
             }
             currentDriveSpeed -= (4 * Time.deltaTime);
         }
-        if(currentDriveSpeed <= 0)
+        if (currentDriveSpeed <= 0)
         {
             currentDriveSpeed = 0;
             wait();
