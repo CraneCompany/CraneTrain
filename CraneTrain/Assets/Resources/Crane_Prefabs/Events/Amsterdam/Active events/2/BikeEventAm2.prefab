@@ -11552,13 +11552,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe9c5c74a44d81242b7b62c45b7540d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walk: 1
   go_car: {fileID: 1558784078113750}
   go_waypoints:
   - {fileID: 1036900054338868}
   - {fileID: 1248533215826408}
   - {fileID: 1773050162757410}
   f_driveSpeed: 2.5
+  go_fove: {fileID: 0}
   f_waypointRadius: 0.2
+  eventMat: {fileID: 2100002, guid: ea659dbf6bd2d2a48b197f44a3dbcdb1, type: 3}
 --- !u!114 &114576068134310390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11570,6 +11573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd070a3c1e3fa2428967000b80583e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recognitionTime: 0.5
+  f_detectRange: 30
 --- !u!137 &137437004568268032
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -23,6 +23,9 @@ public class Event_Active : MonoBehaviour
     private float currentDriveSpeed;
     private float f_timer = 4;
 
+    private bool seen = false;
+    public Material eventMat;
+
     // Use this for initialization
     void Start()
     {
@@ -78,6 +81,12 @@ public class Event_Active : MonoBehaviour
     {
         if (Vector3.Distance(go_car.transform.position, go_fove.transform.position) < 20 && currentDriveSpeed > 0)
         {
+            Debug.Log("TEST IF COLOR CHAAANGE *dab*");
+            if (!seen && eventMat != null)
+            {
+                seen = true;
+                eventMat.color = new Color(eventMat.color.r, eventMat.color.g + 100, eventMat.color.b);
+            }
             currentDriveSpeed -= (4 * Time.deltaTime);
         }
         if(currentDriveSpeed <= 0)

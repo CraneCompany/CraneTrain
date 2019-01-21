@@ -4413,6 +4413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbd070a3c1e3fa2428967000b80583e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recognitionTime: 0.5
+  f_detectRange: 30
 --- !u!114 &114633655794614102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4424,6 +4426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe9c5c74a44d81242b7b62c45b7540d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walk: 1
   go_car: {fileID: 1865188641455628}
   go_waypoints:
   - {fileID: 1142735385352754}
@@ -4431,4 +4434,6 @@ MonoBehaviour:
   - {fileID: 1493557559928606}
   - {fileID: 1033319393578072}
   f_driveSpeed: 2.5
+  go_fove: {fileID: 0}
   f_waypointRadius: 0.2
+  eventMat: {fileID: 2100000, guid: 0a9d6a2a13d82514280ea6e85c72a60d, type: 3}
