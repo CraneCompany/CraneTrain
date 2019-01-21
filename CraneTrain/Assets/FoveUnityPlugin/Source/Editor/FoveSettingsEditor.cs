@@ -119,10 +119,10 @@ namespace FoveSettings
 			wantsMouseMove = true;
 		}
 
-		private bool MouseInLastElement()
-		{
-			return Event.current.type == EventType.Repaint && GUILayoutUtility.GetLastRect().Contains(Event.current.mousePosition);
-		}
+		//private bool MouseInLastElement()
+		//{
+		//	//return Event.current.type == EventType.Repaint && GUILayoutUtility.GetLastRect().Contains(Event.current.mousePosition);
+		//}
 
 		private void ResetHelpMessage()
 		{
@@ -143,8 +143,8 @@ namespace FoveSettings
 			bool result = GUILayout.Button("Fix");
 			GUILayout.EndHorizontal();
 
-			if (MouseInLastElement())
-				SetHelpMessage(suggestion.HelpText);
+			//if (MouseInLastElement())
+			//	SetHelpMessage(suggestion.HelpText);
 
 			return result;
 		}
@@ -161,8 +161,8 @@ namespace FoveSettings
 
 		private void OnGUI()
 		{
-			if (Event.current.type == EventType.MouseMove)
-				Repaint();
+			//if (Event.current.type == EventType.MouseMove)
+			//	Repaint();
 
 			if (m_WordWrapLabel == null)
 			{
@@ -171,16 +171,16 @@ namespace FoveSettings
 			}
 
 			// We can only check for mouse position on repaint, so we shouldn't reset this except on repaint
-			if (Event.current.type == EventType.Repaint)
-				m_HelpMessageWasSet = false;
+			//if (Event.current.type == EventType.Repaint)
+			//	m_HelpMessageWasSet = false;
 			
 			EditorGUILayout.BeginHorizontal();
 			{
 				m_Settings.interfaceChoice = (InterfaceChoice)EditorGUILayout.Popup("FOVE interface version", (int)m_Settings.interfaceChoice, InterfaceDescriptions, GUILayout.Width(350));
 				if (GUI.changed)
 					m_forceCheck = true;
-				if (MouseInLastElement())
-					SetHelpMessage("Which FOVE interface do you use in your project? You should only use one of them, and this will help us inform what optimizations will work best for you.");
+				//if (MouseInLastElement())
+				//	SetHelpMessage("Which FOVE interface do you use in your project? You should only use one of them, and this will help us inform what optimizations will work best for you.");
 
 				GUILayout.FlexibleSpace();
 				
@@ -249,8 +249,8 @@ namespace FoveSettings
 								}
 								m_forceCheck = true;
 							}
-							if (MouseInLastElement())
-								SetHelpMessage("Implement all available optimizations for the selected FOVE interface version.");
+							//if (MouseInLastElement())
+							//	SetHelpMessage("Implement all available optimizations for the selected FOVE interface version.");
 						} // hasSuggestions
 					}
 					EditorGUILayout.EndHorizontal();
@@ -270,12 +270,12 @@ namespace FoveSettings
 			{
 				Close();
 			}
-			if (MouseInLastElement())
-				SetHelpMessage("Close the FOVE settings window.");
+			//if (MouseInLastElement())
+				//SetHelpMessage("Close the FOVE settings window.");
 
 			m_Settings.showAutomatically = GUILayout.Toggle(m_Settings.showAutomatically, "Always Show Suggestions", GUILayout.ExpandWidth(false));
-			if (MouseInLastElement())
-				SetHelpMessage("Whether or not to check for available optimizations every time the plugin is reloaded (typically just on the initial project load).");
+			//if (MouseInLastElement())
+				//SetHelpMessage("Whether or not to check for available optimizations every time the plugin is reloaded (typically just on the initial project load).");
 			EditorGUILayout.EndHorizontal();
 
 			if (!m_HelpMessageWasSet)
