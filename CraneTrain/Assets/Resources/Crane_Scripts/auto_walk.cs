@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class auto_walk : MonoBehaviour
 {
@@ -25,11 +26,13 @@ public class auto_walk : MonoBehaviour
     private Color col_newCol;
 
     private bool b_rightDirection;
+    public GameObject go_globalGameObject;
 
     // Use this for initialization
     void Start()
     {
         go_foveRig = GameObject.Find("Fove Rig");
+        go_globalGameObject = GameObject.Find("_GlobalGameObject");
         go_foveInterface = go_foveRig.transform.GetChild(0).gameObject;
         go_foveRig.transform.position = go_waypoints[0].transform.position;
         go_marker.transform.position = go_waypoints[1].transform.position;
@@ -54,6 +57,20 @@ public class auto_walk : MonoBehaviour
                 go_waypoints[i_currentWP].transform.position, Time.deltaTime * f_walkSpeed);
 
             SetMarker();
+        }
+        if (i_currentWP == go_waypoints.Length-1 && Vector3.Distance(go_waypoints[i_currentWP].transform.position, go_foveRig.transform.position) <
+            f_waypointRadius)
+        {
+            //change scene
+            if (SceneManager.GetActiveScene().name == "Supermarkt")
+            {
+                go_globalGameObject.GetComponent<SceneChanger>().MenuScene();
+
+            }
+            else
+            {
+                go_globalGameObject.GetComponent<SceneChanger>().SupermarktScene();
+            }
         }
         if (!b_rightDirection)
         {

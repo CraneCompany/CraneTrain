@@ -75,7 +75,8 @@ public class Event_Active : MonoBehaviour
         }
         if (i_currentWP == go_waypoints.Length - 1 && Vector3.Distance(go_waypoints[i_currentWP].transform.position, go_car.transform.position) < f_waypointRadius)
         {
-            eventMat.color = new Color(r, g, b);
+            if (eventMat != null)
+                eventMat.color = new Color(r, g, b);
             Destroy(go_car.transform.parent.gameObject);
         }
 
